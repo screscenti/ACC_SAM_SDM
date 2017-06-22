@@ -1,0 +1,187 @@
+<dataDictionary name="DataDictionary">
+  <entry name="D_BRAKE_sedan">
+    <type>double </type>
+    <unit>m</unit>
+    <constant></constant>
+    <description><![CDATA[Maximum braking distance (i.e braking distance  at notional maximum vehicle speed  75mph)]]></description>
+    <constraints>
+      <max></max>
+    </constraints>
+  </entry>
+  <entry name="KP_SS">
+    <type>double </type>
+    <constant></constant>
+    <description><![CDATA[Proportional gain for the speed setpoint computation loop]]></description>
+  </entry>
+  <entry name="KI_SS_hatchback">
+    <type>double </type>
+    <constant></constant>
+    <description><![CDATA[Integral gain for the speed setpoint computation loop]]></description>
+    <constraints>
+      <max></max>
+    </constraints>
+  </entry>
+  <entry name="KD_SS">
+    <type>double </type>
+    <constant></constant>
+    <description><![CDATA[Derivative gain for the speed setpoint computation loop]]></description>
+  </entry>
+  <entry name="KP_ST">
+    <type>double </type>
+    <constant></constant>
+    <description><![CDATA[Proportional gain for the speed tracking loop]]></description>
+  </entry>
+  <entry name="KI_ST">
+    <type>double </type>
+    <constant></constant>
+    <description><![CDATA[Integral gain for the speed tracking loop]]></description>
+  </entry>
+  <entry name="KD_ST">
+    <type>double </type>
+    <constant></constant>
+    <description><![CDATA[Derivative gain for the speed tracking loop]]></description>
+  </entry>
+  <entry name="BRAKE_OFF">
+    <type>double </type>
+    <constant></constant>
+    <description><![CDATA[Brake is off]]></description>
+  </entry>
+  <entry name="THROTTLE_ZERO">
+    <type>double </type>
+    <constant></constant>
+    <description><![CDATA[Zero throttle]]></description>
+  </entry>
+  <entry name="T_SAFE">
+    <type>double </type>
+    <unit>s</unit>
+    <constant></constant>
+    <description><![CDATA[Minimum time required for the driver to avoid collision]]></description>
+    <constraints>
+      <range></range>
+    </constraints>
+  </entry>
+  <entry name="MODE_CRUISE">
+    <type>double </type>
+    <constant></constant>
+    <description><![CDATA[Cruise Mode]]></description>
+  </entry>
+  <entry name="MODE_DISTFOLLOW">
+    <type>double </type>
+    <constant></constant>
+    <description><![CDATA[Distance following mode]]></description>
+  </entry>
+  <entry name="v_acc">
+    <type>double </type>
+    <unit>mps</unit>
+    <quantity></quantity>
+    <description><![CDATA[ACC Vehicle speed]]></description>
+    <constraints>
+      <range></range>
+    </constraints>
+  </entry>
+  <entry name="v_set">
+    <type>double </type>
+    <unit>mps</unit>
+    <quantity></quantity>
+    <description><![CDATA[Speed setpoint determined by the ACC]]></description>
+    <constraints>
+      <range></range>
+    </constraints>
+  </entry>
+  <entry name="v_lead">
+    <type>double </type>
+    <unit>mps</unit>
+    <quantity></quantity>
+    <description><![CDATA[Leading vehicle Speed]]></description>
+    <constraints>
+      <range></range>
+    </constraints>
+  </entry>
+  <entry name="d_lead">
+    <type>double </type>
+    <unit>m</unit>
+    <quantity></quantity>
+    <description><![CDATA[Distance between lead vehicle and car equipped with ACC]]></description>
+    <constraints>
+      <range></range>
+    </constraints>
+  </entry>
+  <entry name="d_safe_new">
+    <type>double </type>
+    <unit>m</unit>
+    <quantity></quantity>
+    <description><![CDATA[Safe distance that need to be maintained to avoid collision]]></description>
+    <constraints>
+      <range></range>
+    </constraints>
+  </entry>
+  <entry name="ACC_switch">
+    <type>uint8 </type>
+    <quantity></quantity>
+    <description><![CDATA[Switch to turn off and on ACC]]></description>
+    <constraints>
+      <range></range>
+    </constraints>
+  </entry>
+  <entry name="c_vset">
+    <type>double </type>
+    <unit>mps</unit>
+    <quantity></quantity>
+    <constraints>
+      <range></range>
+    </constraints>
+  </entry>
+  <entry name="d_vset">
+    <type>double </type>
+    <unit>mps</unit>
+    <quantity></quantity>
+    <constraints>
+      <range></range>
+    </constraints>
+  </entry>
+  <entry name="v_ref">
+    <type>double </type>
+    <unit>mps</unit>
+    <quantity></quantity>
+    <constraints>
+      <range></range>
+    </constraints>
+  </entry>
+  <entry name="v_pid">
+    <type>double </type>
+    <unit>mps</unit>
+    <quantity></quantity>
+    <constraints>
+      <range></range>
+    </constraints>
+  </entry>
+  <entry name="d_brake">
+    <type>double </type>
+    <unit>m</unit>
+    <quantity></quantity>
+    <description><![CDATA[Braking distance]]></description>
+    <constraints>
+      <range></range>
+    </constraints>
+  </entry>
+  <entry name="v_acc_demo">
+    <type>double </type>
+    <unit>mps</unit>
+    <quantity></quantity>
+    <constraints>
+      <range></range>
+    </constraints>
+  </entry>
+  <entry name="dLead">
+    <type>double </type>
+    <quantity></quantity>
+  </entry>
+  <entry name="tamb">
+    <type>double </type>
+    <quantity></quantity>
+  </entry>
+  <entry name="tact">
+    <type>double </type>
+    <quantity></quantity>
+  </entry>
+</dataDictionary>

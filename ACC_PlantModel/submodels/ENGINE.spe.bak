@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE SPE>
+<SPE DOC_VERSION="2" AME_VERSION="14.0.0 -  42489-40390 2015">
+
+ <SUBMODEL>
+  <SUB_TYPE>1</SUB_TYPE>
+  <SUB_ID_MAX>7</SUB_ID_MAX>
+  <DEFAULT_ICON>Engine</DEFAULT_ICON>
+  <SUB_LABEL>Engine</SUB_LABEL>
+  <SUB_UNIT>0</SUB_UNIT>
+  <OUTPUT_TYPE>0</OUTPUT_TYPE>
+  <EVARS_LIST>
+   <PORT>
+    <EVAR>
+     <SUB_ID>1</SUB_ID>
+     <TITLE>output at port 1</TITLE>
+     <NB_IN_GROUP>dim2</NB_IN_GROUP>
+     <VARNAME>out</VARNAME>
+     <VISIBILITY>True</VISIBILITY>
+     <TYPE>0</TYPE>
+     <DIMENSION>1</DIMENSION>
+     <IO>2</IO>
+     <UNITS>null</UNITS>
+    </EVAR>
+   </PORT>
+   <PORT>
+    <EVAR>
+     <SUB_ID>4</SUB_ID>
+     <TITLE>output</TITLE>
+     <VARNAME>out</VARNAME>
+     <VISIBILITY>True</VISIBILITY>
+     <TYPE>7</TYPE>
+     <UNITS>null</UNITS>
+     <EXPRESS2>r1</EXPRESS2>
+    </EVAR>
+   </PORT>
+   <PORT>
+    <EVAR>
+     <SUB_ID>1</SUB_ID>
+     <TITLE>output from saturation element</TITLE>
+     <VARNAME>output</VARNAME>
+     <VISIBILITY>True</VISIBILITY>
+     <TYPE>0</TYPE>
+     <DIMENSION>1</DIMENSION>
+     <IO>2</IO>
+     <UNITS>null</UNITS>
+    </EVAR>
+   </PORT>
+   <PORT>
+    <EVAR>
+     <SUB_ID>4</SUB_ID>
+     <TITLE>multiplied signal at port 2</TITLE>
+     <VARNAME>outp</VARNAME>
+     <VISIBILITY>True</VISIBILITY>
+     <TYPE>7</TYPE>
+     <UNITS>null</UNITS>
+     <EXPRESS2>@_1_1*@_3_1</EXPRESS2>
+    </EVAR>
+   </PORT>
+   <PORT>
+    <EVAR>
+     <SUB_ID>3</SUB_ID>
+     <TITLE>input to junction</TITLE>
+     <VARNAME>in3</VARNAME>
+     <VISIBILITY>True</VISIBILITY>
+     <TYPE>0</TYPE>
+     <DIMENSION>1</DIMENSION>
+     <IO>1</IO>
+     <UNITS>null</UNITS>
+    </EVAR>
+   </PORT>
+   <PORT>
+    <EVAR>
+     <SUB_ID>3</SUB_ID>
+     <TITLE>input signal at port 3</TITLE>
+     <VARNAME>inp3</VARNAME>
+     <VISIBILITY>True</VISIBILITY>
+     <TYPE>0</TYPE>
+     <DIMENSION>1</DIMENSION>
+     <IO>1</IO>
+     <UNITS>null</UNITS>
+    </EVAR>
+   </PORT>
+   <PORT>
+    <EVAR>
+     <SUB_ID>2</SUB_ID>
+     <TITLE>input at port 2</TITLE>
+     <NB_IN_GROUP>numInp</NB_IN_GROUP>
+     <VARNAME>p2__input</VARNAME>
+     <ORIG_VARNAME>input</ORIG_VARNAME>
+     <VISIBILITY>True</VISIBILITY>
+     <TYPE>0</TYPE>
+     <DIMENSION>1</DIMENSION>
+     <DIM_EXPRESSION>dimInp</DIM_EXPRESSION>
+     <IO>1</IO>
+     <UNITS>null</UNITS>
+    </EVAR>
+   </PORT>
+  </EVARS_LIST>
+ </SUBMODEL>
+</SPE>

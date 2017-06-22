@@ -1,0 +1,1102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<connection_layout>
+    <connection>
+        <srceblock blckheight="77" blckwidth="93">
+            <srceblockName>readHMIInput</srceblockName>
+            <srceXcoordinate>500</srceXcoordinate>
+            <srceYcoordinate>11</srceYcoordinate>
+            <srceportXlocation>1</srceportXlocation>
+            <srceportYlocation>45</srceportYlocation>
+        </srceblock>
+        <tgtblock blckheight="31" blckwidth="50">
+            <tgtblockName>readHMIInputdesVehSpeeddup</tgtblockName>
+            <tgtXcoordinate>884</tgtXcoordinate>
+            <tgtYcoordinate>125</tgtYcoordinate>
+            <tgtportXlocation>31</tgtportXlocation>
+            <tgtportYlocation>25</tgtportYlocation>
+        </tgtblock>
+        <bendPoint XCord="869.0" YCord="356.5"/>
+        <bendPoint XCord="869.0" YCord="450.0"/>
+    </connection>
+    <connection>
+        <srceblock blckheight="50" blckwidth="31">
+            <srceblockName>readHMIInputdesVehSpeeddup</srceblockName>
+            <srceXcoordinate>884</srceXcoordinate>
+            <srceYcoordinate>125</srceYcoordinate>
+            <srceportXlocation>1</srceportXlocation>
+            <srceportYlocation>12</srceportYlocation>
+        </srceblock>
+        <tgtblock blckheight="83" blckwidth="100">
+            <tgtblockName>HMI_Supercomponent</tgtblockName>
+            <tgtXcoordinate>985</tgtXcoordinate>
+            <tgtYcoordinate>211</tgtYcoordinate>
+            <tgtportXlocation>1</tgtportXlocation>
+            <tgtportYlocation>53</tgtportYlocation>
+        </tgtblock>
+        <bendPoint XCord="970.0" YCord="437.0"/>
+        <bendPoint XCord="970.0" YCord="564.0"/>
+    </connection>
+    <connection>
+        <srceblock blckheight="77" blckwidth="93">
+            <srceblockName>readHMIInput</srceblockName>
+            <srceXcoordinate>500</srceXcoordinate>
+            <srceYcoordinate>11</srceYcoordinate>
+            <srceportXlocation>1</srceportXlocation>
+            <srceportYlocation>18</srceportYlocation>
+        </srceblock>
+        <tgtblock blckheight="31" blckwidth="50">
+            <tgtblockName>readHMIInputvehicle_speeddup</tgtblockName>
+            <tgtXcoordinate>623</tgtXcoordinate>
+            <tgtYcoordinate>125</tgtYcoordinate>
+            <tgtportXlocation>31</tgtportXlocation>
+            <tgtportYlocation>25</tgtportYlocation>
+        </tgtblock>
+        <bendPoint XCord="608.0" YCord="329.5"/>
+        <bendPoint XCord="608.0" YCord="450.0"/>
+    </connection>
+    <connection>
+        <srceblock blckheight="50" blckwidth="31">
+            <srceblockName>readHMIInputvehicle_speeddup</srceblockName>
+            <srceXcoordinate>623</srceXcoordinate>
+            <srceYcoordinate>125</srceYcoordinate>
+            <srceportXlocation>1</srceportXlocation>
+            <srceportYlocation>12</srceportYlocation>
+        </srceblock>
+        <tgtblock blckheight="83" blckwidth="100">
+            <tgtblockName>HMI_Supercomponent</tgtblockName>
+            <tgtXcoordinate>985</tgtXcoordinate>
+            <tgtYcoordinate>211</tgtYcoordinate>
+            <tgtportXlocation>45</tgtportXlocation>
+            <tgtportYlocation>100</tgtportYlocation>
+        </tgtblock>
+        <bendPoint XCord="849.0" YCord="437.0"/>
+        <bendPoint XCord="849.0" YCord="485.0"/>
+        <bendPoint XCord="950.0" YCord="485.0"/>
+        <bendPoint XCord="950.0" YCord="626.0"/>
+        <bendPoint XCord="985.0" YCord="626.0"/>
+    </connection>
+    <connection>
+        <srceblock blckheight="77" blckwidth="93">
+            <srceblockName>ChassisInput</srceblockName>
+            <srceXcoordinate>945</srceXcoordinate>
+            <srceYcoordinate>486</srceYcoordinate>
+            <srceportXlocation>1</srceportXlocation>
+            <srceportYlocation>45</srceportYlocation>
+        </srceblock>
+        <tgtblock blckheight="31" blckwidth="50">
+            <tgtblockName>ChassisInputdrivingdup</tgtblockName>
+            <tgtXcoordinate>1169</tgtXcoordinate>
+            <tgtYcoordinate>647</tgtYcoordinate>
+            <tgtportXlocation>31</tgtportXlocation>
+            <tgtportYlocation>25</tgtportYlocation>
+        </tgtblock>
+        <bendPoint XCord="1154.0" YCord="831.0"/>
+        <bendPoint XCord="1154.0" YCord="972.0"/>
+    </connection>
+    <connection>
+        <srceblock blckheight="50" blckwidth="31">
+            <srceblockName>ChassisInputdrivingdup</srceblockName>
+            <srceXcoordinate>1169</srceXcoordinate>
+            <srceYcoordinate>647</srceYcoordinate>
+            <srceportXlocation>1</srceportXlocation>
+            <srceportYlocation>12</srceportYlocation>
+        </srceblock>
+        <tgtblock blckheight="83" blckwidth="100">
+            <tgtblockName>Chassis_Supercomponent</tgtblockName>
+            <tgtXcoordinate>1311</tgtXcoordinate>
+            <tgtYcoordinate>820</tgtYcoordinate>
+            <tgtportXlocation>1</tgtportXlocation>
+            <tgtportYlocation>25</tgtportYlocation>
+        </tgtblock>
+        <bendPoint XCord="1235.0" YCord="959.0"/>
+        <bendPoint XCord="1235.0" YCord="1145.5"/>
+    </connection>
+    <connection>
+        <srceblock blckheight="77" blckwidth="93">
+            <srceblockName>ChassisInput</srceblockName>
+            <srceXcoordinate>945</srceXcoordinate>
+            <srceYcoordinate>486</srceYcoordinate>
+            <srceportXlocation>1</srceportXlocation>
+            <srceportYlocation>18</srceportYlocation>
+        </srceblock>
+        <tgtblock blckheight="31" blckwidth="50">
+            <tgtblockName>ChassisInputroadProfiledup</tgtblockName>
+            <tgtXcoordinate>1068</tgtXcoordinate>
+            <tgtYcoordinate>647</tgtYcoordinate>
+            <tgtportXlocation>31</tgtportXlocation>
+            <tgtportYlocation>25</tgtportYlocation>
+        </tgtblock>
+        <bendPoint XCord="1053.0" YCord="804.0"/>
+        <bendPoint XCord="1053.0" YCord="972.0"/>
+    </connection>
+    <connection>
+        <srceblock blckheight="50" blckwidth="31">
+            <srceblockName>ChassisInputroadProfiledup</srceblockName>
+            <srceXcoordinate>1068</srceXcoordinate>
+            <srceYcoordinate>647</srceYcoordinate>
+            <srceportXlocation>1</srceportXlocation>
+            <srceportYlocation>12</srceportYlocation>
+        </srceblock>
+        <tgtblock blckheight="83" blckwidth="100">
+            <tgtblockName>Chassis_Supercomponent</tgtblockName>
+            <tgtXcoordinate>1311</tgtXcoordinate>
+            <tgtYcoordinate>820</tgtYcoordinate>
+            <tgtportXlocation>1</tgtportXlocation>
+            <tgtportYlocation>81</tgtportYlocation>
+        </tgtblock>
+        <bendPoint XCord="1134.0" YCord="959.0"/>
+        <bendPoint XCord="1134.0" YCord="1050.5"/>
+        <bendPoint XCord="1215.0" YCord="1050.5"/>
+        <bendPoint XCord="1215.0" YCord="1201.5"/>
+    </connection>
+    <connection>
+        <srceblock blckheight="100" blckwidth="83">
+            <srceblockName>HMI_Supercomponent</srceblockName>
+            <srceXcoordinate>985</srceXcoordinate>
+            <srceYcoordinate>211</srceYcoordinate>
+            <srceportXlocation>83</srceportXlocation>
+            <srceportYlocation>81</srceportYlocation>
+        </srceblock>
+        <tgtblock blckheight="31" blckwidth="50">
+            <tgtblockName>HMI_SupercomponentACCSwitchPosdup</tgtblockName>
+            <tgtXcoordinate>1200</tgtXcoordinate>
+            <tgtYcoordinate>362</tgtYcoordinate>
+            <tgtportXlocation>31</tgtportXlocation>
+            <tgtportYlocation>25</tgtportYlocation>
+        </tgtblock>
+        <bendPoint XCord="1185.0" YCord="592.0"/>
+        <bendPoint XCord="1185.0" YCord="687.0"/>
+    </connection>
+    <connection>
+        <srceblock blckheight="50" blckwidth="31">
+            <srceblockName>HMI_SupercomponentACCSwitchPosdup</srceblockName>
+            <srceXcoordinate>1200</srceXcoordinate>
+            <srceYcoordinate>362</srceYcoordinate>
+            <srceportXlocation>1</srceportXlocation>
+            <srceportYlocation>12</srceportYlocation>
+        </srceblock>
+        <tgtblock blckheight="93" blckwidth="125">
+            <tgtblockName>Acc_control_algorithm</tgtblockName>
+            <tgtXcoordinate>1301</tgtXcoordinate>
+            <tgtYcoordinate>462</tgtYcoordinate>
+            <tgtportXlocation>93</tgtportXlocation>
+            <tgtportYlocation>12</tgtportYlocation>
+        </tgtblock>
+        <bendPoint XCord="1246.0" YCord="674.0"/>
+        <bendPoint XCord="1246.0" YCord="774.0"/>
+    </connection>
+    <connection>
+        <srceblock blckheight="77" blckwidth="93">
+            <srceblockName>LeadingVehDistance</srceblockName>
+            <srceXcoordinate>684</srceXcoordinate>
+            <srceYcoordinate>222</srceYcoordinate>
+            <srceportXlocation>1</srceportXlocation>
+            <srceportYlocation>18</srceportYlocation>
+        </srceblock>
+        <tgtblock blckheight="31" blckwidth="50">
+            <tgtblockName>LeadingVehDistanceleadingVehicleDistdup</tgtblockName>
+            <tgtXcoordinate>807</tgtXcoordinate>
+            <tgtYcoordinate>362</tgtYcoordinate>
+            <tgtportXlocation>31</tgtportXlocation>
+            <tgtportYlocation>25</tgtportYlocation>
+        </tgtblock>
+        <bendPoint XCord="792.0" YCord="540.5"/>
+        <bendPoint XCord="792.0" YCord="687.0"/>
+    </connection>
+    <connection>
+        <srceblock blckheight="50" blckwidth="31">
+            <srceblockName>LeadingVehDistanceleadingVehicleDistdup</srceblockName>
+            <srceXcoordinate>807</srceXcoordinate>
+            <srceYcoordinate>362</srceYcoordinate>
+            <srceportXlocation>1</srceportXlocation>
+            <srceportYlocation>12</srceportYlocation>
+        </srceblock>
+        <tgtblock blckheight="93" blckwidth="125">
+            <tgtblockName>Acc_control_algorithm</tgtblockName>
+            <tgtXcoordinate>1301</tgtXcoordinate>
+            <tgtYcoordinate>462</tgtYcoordinate>
+            <tgtportXlocation>93</tgtportXlocation>
+            <tgtportYlocation>37</tgtportYlocation>
+        </tgtblock>
+        <bendPoint XCord="910.0" YCord="674.0"/>
+        <bendPoint XCord="910.0" YCord="697.0"/>
+        <bendPoint XCord="1053.0" YCord="697.0"/>
+        <bendPoint XCord="1053.0" YCord="799.0"/>
+    </connection>
+    <connection>
+        <srceblock blckheight="100" blckwidth="83">
+            <srceblockName>Chassis_Supercomponent</srceblockName>
+            <srceXcoordinate>1311</srceXcoordinate>
+            <srceYcoordinate>820</srceYcoordinate>
+            <srceportXlocation>83</srceportXlocation>
+            <srceportYlocation>25</srceportYlocation>
+        </srceblock>
+        <tgtblock blckheight="31" blckwidth="50">
+            <tgtblockName>Chassis_SupercomponentvehicleSpddup</tgtblockName>
+            <tgtXcoordinate>1363</tgtXcoordinate>
+            <tgtYcoordinate>996</tgtYcoordinate>
+            <tgtportXlocation>31</tgtportXlocation>
+            <tgtportYlocation>25</tgtportYlocation>
+        </tgtblock>
+        <bendPoint XCord="1409.0" YCord="1145.5"/>
+        <bendPoint XCord="1409.0" YCord="1230.5"/>
+        <bendPoint XCord="1348.0" YCord="1230.5"/>
+        <bendPoint XCord="1348.0" YCord="1321.5"/>
+    </connection>
+    <connection>
+        <srceblock blckheight="50" blckwidth="31">
+            <srceblockName>Chassis_SupercomponentvehicleSpddup</srceblockName>
+            <srceXcoordinate>1363</srceXcoordinate>
+            <srceYcoordinate>996</srceYcoordinate>
+            <srceportXlocation>1</srceportXlocation>
+            <srceportYlocation>12</srceportYlocation>
+        </srceblock>
+        <tgtblock blckheight="93" blckwidth="125">
+            <tgtblockName>Acc_control_algorithm</tgtblockName>
+            <tgtXcoordinate>1301</tgtXcoordinate>
+            <tgtYcoordinate>462</tgtYcoordinate>
+            <tgtportXlocation>93</tgtportXlocation>
+            <tgtportYlocation>62</tgtportYlocation>
+        </tgtblock>
+        <bendPoint XCord="1409.0" YCord="1308.5"/>
+        <bendPoint XCord="1409.0" YCord="1240.5"/>
+        <bendPoint XCord="1195.0" YCord="1240.5"/>
+        <bendPoint XCord="1195.0" YCord="1040.5"/>
+        <bendPoint XCord="1255.0" YCord="1040.5"/>
+        <bendPoint XCord="1255.0" YCord="824.0"/>
+    </connection>
+    <connection>
+        <srceblock blckheight="122" blckwidth="83">
+            <srceblockName>aEnvironment</srceblockName>
+            <srceXcoordinate>1524</srceXcoordinate>
+            <srceYcoordinate>200</srceYcoordinate>
+            <srceportXlocation>25</srceportXlocation>
+            <srceportYlocation>1</srceportYlocation>
+        </srceblock>
+        <tgtblock blckheight="31" blckwidth="50">
+            <tgtblockName>aEnvironmentleadingVehSpeeddup</tgtblockName>
+            <tgtXcoordinate>1544</tgtXcoordinate>
+            <tgtYcoordinate>362</tgtYcoordinate>
+            <tgtportXlocation>31</tgtportXlocation>
+            <tgtportYlocation>25</tgtportYlocation>
+        </tgtblock>
+        <bendPoint XCord="1622.0" YCord="501.0"/>
+        <bendPoint XCord="1622.0" YCord="632.0"/>
+        <bendPoint XCord="1529.0" YCord="632.0"/>
+        <bendPoint XCord="1529.0" YCord="687.0"/>
+    </connection>
+    <connection>
+        <srceblock blckheight="50" blckwidth="31">
+            <srceblockName>aEnvironmentleadingVehSpeeddup</srceblockName>
+            <srceXcoordinate>1544</srceXcoordinate>
+            <srceYcoordinate>362</srceYcoordinate>
+            <srceportXlocation>1</srceportXlocation>
+            <srceportYlocation>12</srceportYlocation>
+        </srceblock>
+        <tgtblock blckheight="93" blckwidth="125">
+            <tgtblockName>Acc_control_algorithm</tgtblockName>
+            <tgtXcoordinate>1301</tgtXcoordinate>
+            <tgtYcoordinate>462</tgtYcoordinate>
+            <tgtportXlocation>93</tgtportXlocation>
+            <tgtportYlocation>87</tgtportYlocation>
+        </tgtblock>
+        <bendPoint XCord="1590.0" YCord="674.0"/>
+        <bendPoint XCord="1590.0" YCord="722.0"/>
+        <bendPoint XCord="1266.0" YCord="722.0"/>
+        <bendPoint XCord="1266.0" YCord="849.0"/>
+    </connection>
+    <connection>
+        <srceblock blckheight="122" blckwidth="83">
+            <srceblockName>aEnvironment</srceblockName>
+            <srceXcoordinate>1524</srceXcoordinate>
+            <srceYcoordinate>200</srceYcoordinate>
+            <srceportXlocation>64</srceportXlocation>
+            <srceportYlocation>1</srceportYlocation>
+        </srceblock>
+        <tgtblock blckheight="31" blckwidth="50">
+            <tgtblockName>aEnvironmentDesired_Vehicle_Speeddup</tgtblockName>
+            <tgtXcoordinate>1645</tgtXcoordinate>
+            <tgtYcoordinate>362</tgtYcoordinate>
+            <tgtportXlocation>31</tgtportXlocation>
+            <tgtportYlocation>25</tgtportYlocation>
+        </tgtblock>
+        <bendPoint XCord="1642.0" YCord="501.0"/>
+        <bendPoint XCord="1642.0" YCord="642.0"/>
+        <bendPoint XCord="1630.0" YCord="642.0"/>
+        <bendPoint XCord="1630.0" YCord="687.0"/>
+    </connection>
+    <connection>
+        <srceblock blckheight="50" blckwidth="31">
+            <srceblockName>aEnvironmentDesired_Vehicle_Speeddup</srceblockName>
+            <srceXcoordinate>1645</srceXcoordinate>
+            <srceYcoordinate>362</srceYcoordinate>
+            <srceportXlocation>1</srceportXlocation>
+            <srceportYlocation>12</srceportYlocation>
+        </srceblock>
+        <tgtblock blckheight="93" blckwidth="125">
+            <tgtblockName>Acc_control_algorithm</tgtblockName>
+            <tgtXcoordinate>1301</tgtXcoordinate>
+            <tgtYcoordinate>462</tgtYcoordinate>
+            <tgtportXlocation>93</tgtportXlocation>
+            <tgtportYlocation>112</tgtportYlocation>
+        </tgtblock>
+        <bendPoint XCord="1691.0" YCord="674.0"/>
+        <bendPoint XCord="1691.0" YCord="742.0"/>
+        <bendPoint XCord="1286.0" YCord="742.0"/>
+        <bendPoint XCord="1286.0" YCord="874.0"/>
+    </connection>
+    <connection>
+        <srceblock blckheight="125" blckwidth="93">
+            <srceblockName>Acc_control_algorithm</srceblockName>
+            <srceXcoordinate>1301</srceXcoordinate>
+            <srceYcoordinate>462</srceYcoordinate>
+            <srceportXlocation>1</srceportXlocation>
+            <srceportYlocation>77</srceportYlocation>
+        </srceblock>
+        <tgtblock blckheight="31" blckwidth="50">
+            <tgtblockName>Acc_control_algorithmd_brakedup</tgtblockName>
+            <tgtXcoordinate>1089</tgtXcoordinate>
+            <tgtYcoordinate>845</tgtYcoordinate>
+            <tgtportXlocation>31</tgtportXlocation>
+            <tgtportYlocation>25</tgtportYlocation>
+        </tgtblock>
+        <bendPoint XCord="1409.0" YCord="839.0"/>
+        <bendPoint XCord="1409.0" YCord="897.0"/>
+        <bendPoint XCord="1275.0" YCord="897.0"/>
+        <bendPoint XCord="1275.0" YCord="1070.5"/>
+        <bendPoint XCord="1074.0" YCord="1070.5"/>
+        <bendPoint XCord="1074.0" YCord="1170.5"/>
+    </connection>
+    <connection>
+        <srceblock blckheight="50" blckwidth="31">
+            <srceblockName>Acc_control_algorithmd_brakedup</srceblockName>
+            <srceXcoordinate>1089</srceXcoordinate>
+            <srceYcoordinate>845</srceYcoordinate>
+            <srceportXlocation>1</srceportXlocation>
+            <srceportYlocation>12</srceportYlocation>
+        </srceblock>
+        <tgtblock blckheight="83" blckwidth="122">
+            <tgtblockName>Engine_Supercomponent</tgtblockName>
+            <tgtXcoordinate>1170</tgtXcoordinate>
+            <tgtYcoordinate>960</tgtYcoordinate>
+            <tgtportXlocation>1</tgtportXlocation>
+            <tgtportYlocation>103</tgtportYlocation>
+        </tgtblock>
+        <bendPoint XCord="1155.0" YCord="1157.5"/>
+        <bendPoint XCord="1155.0" YCord="1363.5"/>
+    </connection>
+    <connection>
+        <srceblock blckheight="125" blckwidth="93">
+            <srceblockName>Acc_control_algorithm</srceblockName>
+            <srceXcoordinate>1301</srceXcoordinate>
+            <srceYcoordinate>462</srceYcoordinate>
+            <srceportXlocation>1</srceportXlocation>
+            <srceportYlocation>46</srceportYlocation>
+        </srceblock>
+        <tgtblock blckheight="31" blckwidth="50">
+            <tgtblockName>Acc_control_algorithmd_safe_newdup</tgtblockName>
+            <tgtXcoordinate>1350</tgtXcoordinate>
+            <tgtYcoordinate>647</tgtYcoordinate>
+            <tgtportXlocation>31</tgtportXlocation>
+            <tgtportYlocation>25</tgtportYlocation>
+        </tgtblock>
+        <bendPoint XCord="1469.0" YCord="808.0"/>
+        <bendPoint XCord="1469.0" YCord="927.0"/>
+        <bendPoint XCord="1335.0" YCord="927.0"/>
+        <bendPoint XCord="1335.0" YCord="972.0"/>
+    </connection>
+    <connection>
+        <srceblock blckheight="50" blckwidth="31">
+            <srceblockName>Acc_control_algorithmd_safe_newdup</srceblockName>
+            <srceXcoordinate>1350</srceXcoordinate>
+            <srceYcoordinate>647</srceYcoordinate>
+            <srceportXlocation>1</srceportXlocation>
+            <srceportYlocation>12</srceportYlocation>
+        </srceblock>
+        <tgtblock blckheight="83" blckwidth="100">
+            <tgtblockName>Chassis_Supercomponent</tgtblockName>
+            <tgtXcoordinate>1311</tgtXcoordinate>
+            <tgtYcoordinate>820</tgtYcoordinate>
+            <tgtportXlocation>1</tgtportXlocation>
+            <tgtportYlocation>53</tgtportYlocation>
+        </tgtblock>
+        <bendPoint XCord="1416.0" YCord="959.0"/>
+        <bendPoint XCord="1416.0" YCord="1100.5"/>
+        <bendPoint XCord="1296.0" YCord="1100.5"/>
+        <bendPoint XCord="1296.0" YCord="1173.5"/>
+    </connection>
+    <connection>
+        <srceblock blckheight="77" blckwidth="93">
+            <srceblockName>EngineInput</srceblockName>
+            <srceXcoordinate>684</srceXcoordinate>
+            <srceYcoordinate>633</srceYcoordinate>
+            <srceportXlocation>1</srceportXlocation>
+            <srceportYlocation>45</srceportYlocation>
+        </srceblock>
+        <tgtblock blckheight="31" blckwidth="50">
+            <tgtblockName>EngineInputloaddup</tgtblockName>
+            <tgtXcoordinate>807</tgtXcoordinate>
+            <tgtYcoordinate>845</tgtYcoordinate>
+            <tgtportXlocation>31</tgtportXlocation>
+            <tgtportYlocation>25</tgtportYlocation>
+        </tgtblock>
+        <bendPoint XCord="792.0" YCord="978.5"/>
+        <bendPoint XCord="792.0" YCord="1170.5"/>
+    </connection>
+    <connection>
+        <srceblock blckheight="50" blckwidth="31">
+            <srceblockName>EngineInputloaddup</srceblockName>
+            <srceXcoordinate>807</srceXcoordinate>
+            <srceYcoordinate>845</srceYcoordinate>
+            <srceportXlocation>1</srceportXlocation>
+            <srceportYlocation>12</srceportYlocation>
+        </srceblock>
+        <tgtblock blckheight="83" blckwidth="122">
+            <tgtblockName>Engine_Supercomponent</tgtblockName>
+            <tgtXcoordinate>1170</tgtXcoordinate>
+            <tgtYcoordinate>960</tgtYcoordinate>
+            <tgtportXlocation>1</tgtportXlocation>
+            <tgtportYlocation>64</tgtportYlocation>
+        </tgtblock>
+        <bendPoint XCord="873.0" YCord="1157.5"/>
+        <bendPoint XCord="873.0" YCord="1245.5"/>
+        <bendPoint XCord="1114.0" YCord="1245.5"/>
+        <bendPoint XCord="1114.0" YCord="1324.5"/>
+    </connection>
+    <connection>
+        <srceblock blckheight="77" blckwidth="93">
+            <srceblockName>EngineInput</srceblockName>
+            <srceXcoordinate>684</srceXcoordinate>
+            <srceYcoordinate>633</srceYcoordinate>
+            <srceportXlocation>1</srceportXlocation>
+            <srceportYlocation>18</srceportYlocation>
+        </srceblock>
+        <tgtblock blckheight="31" blckwidth="50">
+            <tgtblockName>EngineInputspeeddup</tgtblockName>
+            <tgtXcoordinate>908</tgtXcoordinate>
+            <tgtYcoordinate>845</tgtYcoordinate>
+            <tgtportXlocation>31</tgtportXlocation>
+            <tgtportYlocation>25</tgtportYlocation>
+        </tgtblock>
+        <bendPoint XCord="893.0" YCord="951.5"/>
+        <bendPoint XCord="893.0" YCord="1170.5"/>
+    </connection>
+    <connection>
+        <srceblock blckheight="50" blckwidth="31">
+            <srceblockName>EngineInputspeeddup</srceblockName>
+            <srceXcoordinate>908</srceXcoordinate>
+            <srceYcoordinate>845</srceYcoordinate>
+            <srceportXlocation>1</srceportXlocation>
+            <srceportYlocation>12</srceportYlocation>
+        </srceblock>
+        <tgtblock blckheight="83" blckwidth="122">
+            <tgtblockName>Engine_Supercomponent</tgtblockName>
+            <tgtXcoordinate>1170</tgtXcoordinate>
+            <tgtYcoordinate>960</tgtYcoordinate>
+            <tgtportXlocation>1</tgtportXlocation>
+            <tgtportYlocation>25</tgtportYlocation>
+        </tgtblock>
+        <bendPoint XCord="974.0" YCord="1157.5"/>
+        <bendPoint XCord="974.0" YCord="1235.5"/>
+        <bendPoint XCord="1134.0" YCord="1235.5"/>
+        <bendPoint XCord="1134.0" YCord="1285.5"/>
+    </connection>
+    <connection>
+        <srceblock blckheight="122" blckwidth="83">
+            <srceblockName>aEnvironment</srceblockName>
+            <srceXcoordinate>1524</srceXcoordinate>
+            <srceYcoordinate>200</srceYcoordinate>
+            <srceportXlocation>83</srceportXlocation>
+            <srceportYlocation>25</srceportYlocation>
+        </srceblock>
+        <tgtblock blckheight="31" blckwidth="376">
+            <tgtblockName>dynamic_mux_2</tgtblockName>
+            <tgtXcoordinate>1826</tgtXcoordinate>
+            <tgtYcoordinate>1102</tgtYcoordinate>
+            <tgtportXlocation>1</tgtportXlocation>
+            <tgtportYlocation>6</tgtportYlocation>
+        </tgtblock>
+        <bendPoint XCord="1811.0" YCord="525.0"/>
+        <bendPoint XCord="1811.0" YCord="1408.5"/>
+    </connection>
+    <connection>
+        <srceblock blckheight="122" blckwidth="83">
+            <srceblockName>aEnvironment</srceblockName>
+            <srceXcoordinate>1524</srceXcoordinate>
+            <srceYcoordinate>200</srceYcoordinate>
+            <srceportXlocation>83</srceportXlocation>
+            <srceportYlocation>51</srceportYlocation>
+        </srceblock>
+        <tgtblock blckheight="31" blckwidth="376">
+            <tgtblockName>dynamic_mux_2</tgtblockName>
+            <tgtXcoordinate>1826</tgtXcoordinate>
+            <tgtYcoordinate>1102</tgtYcoordinate>
+            <tgtportXlocation>1</tgtportXlocation>
+            <tgtportYlocation>19</tgtportYlocation>
+        </tgtblock>
+        <bendPoint XCord="1791.0" YCord="551.0"/>
+        <bendPoint XCord="1791.0" YCord="1421.5"/>
+    </connection>
+    <connection>
+        <srceblock blckheight="50" blckwidth="31">
+            <srceblockName>aEnvironmentDesired_Vehicle_Speeddup</srceblockName>
+            <srceXcoordinate>1645</srceXcoordinate>
+            <srceYcoordinate>362</srceYcoordinate>
+            <srceportXlocation>1</srceportXlocation>
+            <srceportYlocation>38</srceportYlocation>
+        </srceblock>
+        <tgtblock blckheight="31" blckwidth="376">
+            <tgtblockName>dynamic_mux_2</tgtblockName>
+            <tgtXcoordinate>1826</tgtXcoordinate>
+            <tgtYcoordinate>1102</tgtYcoordinate>
+            <tgtportXlocation>1</tgtportXlocation>
+            <tgtportYlocation>32</tgtportYlocation>
+        </tgtblock>
+        <bendPoint XCord="1711.0" YCord="700.0"/>
+        <bendPoint XCord="1711.0" YCord="710.0"/>
+        <bendPoint XCord="1771.0" YCord="710.0"/>
+        <bendPoint XCord="1771.0" YCord="1434.5"/>
+    </connection>
+    <connection>
+        <srceblock blckheight="122" blckwidth="83">
+            <srceblockName>aEnvironment</srceblockName>
+            <srceXcoordinate>1524</srceXcoordinate>
+            <srceYcoordinate>200</srceYcoordinate>
+            <srceportXlocation>83</srceportXlocation>
+            <srceportYlocation>77</srceportYlocation>
+        </srceblock>
+        <tgtblock blckheight="31" blckwidth="376">
+            <tgtblockName>dynamic_mux_2</tgtblockName>
+            <tgtXcoordinate>1826</tgtXcoordinate>
+            <tgtYcoordinate>1102</tgtYcoordinate>
+            <tgtportXlocation>1</tgtportXlocation>
+            <tgtportYlocation>45</tgtportYlocation>
+        </tgtblock>
+        <bendPoint XCord="1751.0" YCord="577.0"/>
+        <bendPoint XCord="1751.0" YCord="1447.5"/>
+    </connection>
+    <connection>
+        <srceblock blckheight="122" blckwidth="83">
+            <srceblockName>aEnvironment</srceblockName>
+            <srceXcoordinate>1524</srceXcoordinate>
+            <srceYcoordinate>200</srceYcoordinate>
+            <srceportXlocation>83</srceportXlocation>
+            <srceportYlocation>103</srceportYlocation>
+        </srceblock>
+        <tgtblock blckheight="31" blckwidth="376">
+            <tgtblockName>dynamic_mux_2</tgtblockName>
+            <tgtXcoordinate>1826</tgtXcoordinate>
+            <tgtYcoordinate>1102</tgtYcoordinate>
+            <tgtportXlocation>1</tgtportXlocation>
+            <tgtportYlocation>58</tgtportYlocation>
+        </tgtblock>
+        <bendPoint XCord="1731.0" YCord="603.0"/>
+        <bendPoint XCord="1731.0" YCord="1460.5"/>
+    </connection>
+    <connection>
+        <srceblock blckheight="50" blckwidth="31">
+            <srceblockName>aEnvironmentleadingVehSpeeddup</srceblockName>
+            <srceXcoordinate>1544</srceXcoordinate>
+            <srceYcoordinate>362</srceYcoordinate>
+            <srceportXlocation>1</srceportXlocation>
+            <srceportYlocation>38</srceportYlocation>
+        </srceblock>
+        <tgtblock blckheight="31" blckwidth="376">
+            <tgtblockName>dynamic_mux_2</tgtblockName>
+            <tgtXcoordinate>1826</tgtXcoordinate>
+            <tgtYcoordinate>1102</tgtYcoordinate>
+            <tgtportXlocation>1</tgtportXlocation>
+            <tgtportYlocation>71</tgtportYlocation>
+        </tgtblock>
+        <bendPoint XCord="1610.0" YCord="700.0"/>
+        <bendPoint XCord="1610.0" YCord="1473.5"/>
+    </connection>
+    <connection>
+        <srceblock blckheight="50" blckwidth="31">
+            <srceblockName>HMI_SupercomponentACCSwitchPosdup</srceblockName>
+            <srceXcoordinate>1200</srceXcoordinate>
+            <srceYcoordinate>362</srceYcoordinate>
+            <srceportXlocation>1</srceportXlocation>
+            <srceportYlocation>38</srceportYlocation>
+        </srceblock>
+        <tgtblock blckheight="31" blckwidth="376">
+            <tgtblockName>dynamic_mux_2</tgtblockName>
+            <tgtXcoordinate>1826</tgtXcoordinate>
+            <tgtYcoordinate>1102</tgtYcoordinate>
+            <tgtportXlocation>1</tgtportXlocation>
+            <tgtportYlocation>84</tgtportYlocation>
+        </tgtblock>
+        <bendPoint XCord="1469.0" YCord="700.0"/>
+        <bendPoint XCord="1469.0" YCord="732.0"/>
+        <bendPoint XCord="1529.0" YCord="732.0"/>
+        <bendPoint XCord="1529.0" YCord="1486.5"/>
+    </connection>
+    <connection>
+        <srceblock blckheight="100" blckwidth="83">
+            <srceblockName>HMI_Supercomponent</srceblockName>
+            <srceXcoordinate>985</srceXcoordinate>
+            <srceYcoordinate>211</srceYcoordinate>
+            <srceportXlocation>83</srceportXlocation>
+            <srceportYlocation>25</srceportYlocation>
+        </srceblock>
+        <tgtblock blckheight="31" blckwidth="376">
+            <tgtblockName>dynamic_mux_2</tgtblockName>
+            <tgtXcoordinate>1826</tgtXcoordinate>
+            <tgtYcoordinate>1102</tgtYcoordinate>
+            <tgtportXlocation>1</tgtportXlocation>
+            <tgtportYlocation>97</tgtportYlocation>
+        </tgtblock>
+        <bendPoint XCord="1509.0" YCord="536.0"/>
+        <bendPoint XCord="1509.0" YCord="1499.5"/>
+    </connection>
+    <connection>
+        <srceblock blckheight="100" blckwidth="83">
+            <srceblockName>HMI_Supercomponent</srceblockName>
+            <srceXcoordinate>985</srceXcoordinate>
+            <srceYcoordinate>211</srceYcoordinate>
+            <srceportXlocation>83</srceportXlocation>
+            <srceportYlocation>53</srceportYlocation>
+        </srceblock>
+        <tgtblock blckheight="31" blckwidth="376">
+            <tgtblockName>dynamic_mux_2</tgtblockName>
+            <tgtXcoordinate>1826</tgtXcoordinate>
+            <tgtYcoordinate>1102</tgtYcoordinate>
+            <tgtportXlocation>1</tgtportXlocation>
+            <tgtportYlocation>110</tgtportYlocation>
+        </tgtblock>
+        <bendPoint XCord="1489.0" YCord="564.0"/>
+        <bendPoint XCord="1489.0" YCord="1512.5"/>
+    </connection>
+    <connection>
+        <srceblock blckheight="100" blckwidth="83">
+            <srceblockName>Chassis_Supercomponent</srceblockName>
+            <srceXcoordinate>1311</srceXcoordinate>
+            <srceYcoordinate>820</srceYcoordinate>
+            <srceportXlocation>83</srceportXlocation>
+            <srceportYlocation>81</srceportYlocation>
+        </srceblock>
+        <tgtblock blckheight="31" blckwidth="376">
+            <tgtblockName>dynamic_mux_2</tgtblockName>
+            <tgtXcoordinate>1826</tgtXcoordinate>
+            <tgtYcoordinate>1102</tgtYcoordinate>
+            <tgtportXlocation>1</tgtportXlocation>
+            <tgtportYlocation>123</tgtportYlocation>
+        </tgtblock>
+        <bendPoint XCord="1469.0" YCord="1201.5"/>
+        <bendPoint XCord="1469.0" YCord="1525.5"/>
+    </connection>
+    <connection>
+        <srceblock blckheight="100" blckwidth="83">
+            <srceblockName>Chassis_Supercomponent</srceblockName>
+            <srceXcoordinate>1311</srceXcoordinate>
+            <srceYcoordinate>820</srceYcoordinate>
+            <srceportXlocation>45</srceportXlocation>
+            <srceportYlocation>1</srceportYlocation>
+        </srceblock>
+        <tgtblock blckheight="31" blckwidth="376">
+            <tgtblockName>dynamic_mux_2</tgtblockName>
+            <tgtXcoordinate>1826</tgtXcoordinate>
+            <tgtYcoordinate>1102</tgtYcoordinate>
+            <tgtportXlocation>1</tgtportXlocation>
+            <tgtportYlocation>136</tgtportYlocation>
+        </tgtblock>
+        <bendPoint XCord="1449.0" YCord="1121.5"/>
+        <bendPoint XCord="1449.0" YCord="1538.5"/>
+    </connection>
+    <connection>
+        <srceblock blckheight="100" blckwidth="83">
+            <srceblockName>Chassis_Supercomponent</srceblockName>
+            <srceXcoordinate>1311</srceXcoordinate>
+            <srceYcoordinate>820</srceYcoordinate>
+            <srceportXlocation>83</srceportXlocation>
+            <srceportYlocation>53</srceportYlocation>
+        </srceblock>
+        <tgtblock blckheight="31" blckwidth="376">
+            <tgtblockName>dynamic_mux_2</tgtblockName>
+            <tgtXcoordinate>1826</tgtXcoordinate>
+            <tgtYcoordinate>1102</tgtYcoordinate>
+            <tgtportXlocation>1</tgtportXlocation>
+            <tgtportYlocation>149</tgtportYlocation>
+        </tgtblock>
+        <bendPoint XCord="1429.0" YCord="1173.5"/>
+        <bendPoint XCord="1429.0" YCord="1551.5"/>
+    </connection>
+    <connection>
+        <srceblock blckheight="50" blckwidth="31">
+            <srceblockName>Chassis_SupercomponentvehicleSpddup</srceblockName>
+            <srceXcoordinate>1363</srceXcoordinate>
+            <srceYcoordinate>996</srceYcoordinate>
+            <srceportXlocation>1</srceportXlocation>
+            <srceportYlocation>38</srceportYlocation>
+        </srceblock>
+        <tgtblock blckheight="31" blckwidth="376">
+            <tgtblockName>dynamic_mux_2</tgtblockName>
+            <tgtXcoordinate>1826</tgtXcoordinate>
+            <tgtYcoordinate>1102</tgtYcoordinate>
+            <tgtportXlocation>1</tgtportXlocation>
+            <tgtportYlocation>162</tgtportYlocation>
+        </tgtblock>
+        <bendPoint XCord="1409.0" YCord="1334.5"/>
+        <bendPoint XCord="1409.0" YCord="1564.5"/>
+    </connection>
+    <connection>
+        <srceblock blckheight="122" blckwidth="83">
+            <srceblockName>Engine_Supercomponent</srceblockName>
+            <srceXcoordinate>1170</srceXcoordinate>
+            <srceYcoordinate>960</srceYcoordinate>
+            <srceportXlocation>83</srceportXlocation>
+            <srceportYlocation>103</srceportYlocation>
+        </srceblock>
+        <tgtblock blckheight="31" blckwidth="376">
+            <tgtblockName>dynamic_mux_2</tgtblockName>
+            <tgtXcoordinate>1826</tgtXcoordinate>
+            <tgtYcoordinate>1102</tgtYcoordinate>
+            <tgtportXlocation>1</tgtportXlocation>
+            <tgtportYlocation>175</tgtportYlocation>
+        </tgtblock>
+        <bendPoint XCord="1328.0" YCord="1363.5"/>
+        <bendPoint XCord="1328.0" YCord="1392.5"/>
+        <bendPoint XCord="1248.0" YCord="1392.5"/>
+        <bendPoint XCord="1248.0" YCord="1577.5"/>
+    </connection>
+    <connection>
+        <srceblock blckheight="122" blckwidth="83">
+            <srceblockName>Engine_Supercomponent</srceblockName>
+            <srceXcoordinate>1170</srceXcoordinate>
+            <srceYcoordinate>960</srceYcoordinate>
+            <srceportXlocation>83</srceportXlocation>
+            <srceportYlocation>77</srceportYlocation>
+        </srceblock>
+        <tgtblock blckheight="31" blckwidth="376">
+            <tgtblockName>dynamic_mux_2</tgtblockName>
+            <tgtXcoordinate>1826</tgtXcoordinate>
+            <tgtYcoordinate>1102</tgtYcoordinate>
+            <tgtportXlocation>1</tgtportXlocation>
+            <tgtportYlocation>188</tgtportYlocation>
+        </tgtblock>
+        <bendPoint XCord="1308.0" YCord="1337.5"/>
+        <bendPoint XCord="1308.0" YCord="1412.5"/>
+        <bendPoint XCord="1268.0" YCord="1412.5"/>
+        <bendPoint XCord="1268.0" YCord="1590.5"/>
+    </connection>
+    <connection>
+        <srceblock blckheight="122" blckwidth="83">
+            <srceblockName>Engine_Supercomponent</srceblockName>
+            <srceXcoordinate>1170</srceXcoordinate>
+            <srceYcoordinate>960</srceYcoordinate>
+            <srceportXlocation>83</srceportXlocation>
+            <srceportYlocation>51</srceportYlocation>
+        </srceblock>
+        <tgtblock blckheight="31" blckwidth="376">
+            <tgtblockName>dynamic_mux_2</tgtblockName>
+            <tgtXcoordinate>1826</tgtXcoordinate>
+            <tgtYcoordinate>1102</tgtYcoordinate>
+            <tgtportXlocation>1</tgtportXlocation>
+            <tgtportYlocation>201</tgtportYlocation>
+        </tgtblock>
+        <bendPoint XCord="1288.0" YCord="1311.5"/>
+        <bendPoint XCord="1288.0" YCord="1603.5"/>
+    </connection>
+    <connection>
+        <srceblock blckheight="122" blckwidth="83">
+            <srceblockName>Engine_Supercomponent</srceblockName>
+            <srceXcoordinate>1170</srceXcoordinate>
+            <srceYcoordinate>960</srceYcoordinate>
+            <srceportXlocation>83</srceportXlocation>
+            <srceportYlocation>25</srceportYlocation>
+        </srceblock>
+        <tgtblock blckheight="31" blckwidth="376">
+            <tgtblockName>dynamic_mux_2</tgtblockName>
+            <tgtXcoordinate>1826</tgtXcoordinate>
+            <tgtYcoordinate>1102</tgtYcoordinate>
+            <tgtportXlocation>1</tgtportXlocation>
+            <tgtportYlocation>214</tgtportYlocation>
+        </tgtblock>
+        <bendPoint XCord="1268.0" YCord="1285.5"/>
+        <bendPoint XCord="1268.0" YCord="1402.5"/>
+        <bendPoint XCord="1308.0" YCord="1402.5"/>
+        <bendPoint XCord="1308.0" YCord="1616.5"/>
+    </connection>
+    <connection>
+        <srceblock blckheight="125" blckwidth="93">
+            <srceblockName>Acc_control_algorithm</srceblockName>
+            <srceXcoordinate>1301</srceXcoordinate>
+            <srceYcoordinate>462</srceYcoordinate>
+            <srceportXlocation>1</srceportXlocation>
+            <srceportYlocation>108</srceportYlocation>
+        </srceblock>
+        <tgtblock blckheight="31" blckwidth="376">
+            <tgtblockName>dynamic_mux_2</tgtblockName>
+            <tgtXcoordinate>1826</tgtXcoordinate>
+            <tgtYcoordinate>1102</tgtYcoordinate>
+            <tgtportXlocation>1</tgtportXlocation>
+            <tgtportYlocation>227</tgtportYlocation>
+        </tgtblock>
+        <bendPoint XCord="1449.0" YCord="870.0"/>
+        <bendPoint XCord="1449.0" YCord="917.0"/>
+        <bendPoint XCord="1315.0" YCord="917.0"/>
+        <bendPoint XCord="1315.0" YCord="1090.5"/>
+        <bendPoint XCord="1175.0" YCord="1090.5"/>
+        <bendPoint XCord="1175.0" YCord="1215.5"/>
+        <bendPoint XCord="1094.0" YCord="1215.5"/>
+        <bendPoint XCord="1094.0" YCord="1629.5"/>
+    </connection>
+    <connection>
+        <srceblock blckheight="50" blckwidth="31">
+            <srceblockName>Acc_control_algorithmd_brakedup</srceblockName>
+            <srceXcoordinate>1089</srceXcoordinate>
+            <srceYcoordinate>845</srceYcoordinate>
+            <srceportXlocation>1</srceportXlocation>
+            <srceportYlocation>38</srceportYlocation>
+        </srceblock>
+        <tgtblock blckheight="31" blckwidth="376">
+            <tgtblockName>dynamic_mux_2</tgtblockName>
+            <tgtXcoordinate>1826</tgtXcoordinate>
+            <tgtYcoordinate>1102</tgtYcoordinate>
+            <tgtportXlocation>1</tgtportXlocation>
+            <tgtportYlocation>240</tgtportYlocation>
+        </tgtblock>
+        <bendPoint XCord="1135.0" YCord="1183.5"/>
+        <bendPoint XCord="1135.0" YCord="1205.5"/>
+        <bendPoint XCord="1074.0" YCord="1205.5"/>
+        <bendPoint XCord="1074.0" YCord="1642.5"/>
+    </connection>
+    <connection>
+        <srceblock blckheight="50" blckwidth="31">
+            <srceblockName>Acc_control_algorithmd_safe_newdup</srceblockName>
+            <srceXcoordinate>1350</srceXcoordinate>
+            <srceYcoordinate>647</srceYcoordinate>
+            <srceportXlocation>1</srceportXlocation>
+            <srceportYlocation>38</srceportYlocation>
+        </srceblock>
+        <tgtblock blckheight="31" blckwidth="376">
+            <tgtblockName>dynamic_mux_2</tgtblockName>
+            <tgtXcoordinate>1826</tgtXcoordinate>
+            <tgtYcoordinate>1102</tgtYcoordinate>
+            <tgtportXlocation>1</tgtportXlocation>
+            <tgtportYlocation>253</tgtportYlocation>
+        </tgtblock>
+        <bendPoint XCord="1396.0" YCord="985.0"/>
+        <bendPoint XCord="1396.0" YCord="1080.5"/>
+        <bendPoint XCord="1054.0" YCord="1080.5"/>
+        <bendPoint XCord="1054.0" YCord="1655.5"/>
+    </connection>
+    <connection>
+        <srceblock blckheight="125" blckwidth="93">
+            <srceblockName>Acc_control_algorithm</srceblockName>
+            <srceXcoordinate>1301</srceXcoordinate>
+            <srceYcoordinate>462</srceYcoordinate>
+            <srceportXlocation>1</srceportXlocation>
+            <srceportYlocation>15</srceportYlocation>
+        </srceblock>
+        <tgtblock blckheight="31" blckwidth="376">
+            <tgtblockName>dynamic_mux_2</tgtblockName>
+            <tgtXcoordinate>1826</tgtXcoordinate>
+            <tgtYcoordinate>1102</tgtYcoordinate>
+            <tgtportXlocation>1</tgtportXlocation>
+            <tgtportYlocation>266</tgtportYlocation>
+        </tgtblock>
+        <bendPoint XCord="1429.0" YCord="777.0"/>
+        <bendPoint XCord="1429.0" YCord="907.0"/>
+        <bendPoint XCord="1295.0" YCord="907.0"/>
+        <bendPoint XCord="1295.0" YCord="1060.5"/>
+        <bendPoint XCord="1034.0" YCord="1060.5"/>
+        <bendPoint XCord="1034.0" YCord="1668.5"/>
+    </connection>
+    <connection>
+        <srceblock blckheight="50" blckwidth="31">
+            <srceblockName>readHMIInputdesVehSpeeddup</srceblockName>
+            <srceXcoordinate>884</srceXcoordinate>
+            <srceYcoordinate>125</srceYcoordinate>
+            <srceportXlocation>1</srceportXlocation>
+            <srceportYlocation>38</srceportYlocation>
+        </srceblock>
+        <tgtblock blckheight="31" blckwidth="376">
+            <tgtblockName>dynamic_mux_2</tgtblockName>
+            <tgtXcoordinate>1826</tgtXcoordinate>
+            <tgtYcoordinate>1102</tgtYcoordinate>
+            <tgtportXlocation>1</tgtportXlocation>
+            <tgtportYlocation>279</tgtportYlocation>
+        </tgtblock>
+        <bendPoint XCord="930.0" YCord="463.0"/>
+        <bendPoint XCord="930.0" YCord="982.0"/>
+        <bendPoint XCord="994.0" YCord="982.0"/>
+        <bendPoint XCord="994.0" YCord="1681.5"/>
+    </connection>
+    <connection>
+        <srceblock blckheight="50" blckwidth="31">
+            <srceblockName>readHMIInputvehicle_speeddup</srceblockName>
+            <srceXcoordinate>623</srceXcoordinate>
+            <srceYcoordinate>125</srceYcoordinate>
+            <srceportXlocation>1</srceportXlocation>
+            <srceportYlocation>38</srceportYlocation>
+        </srceblock>
+        <tgtblock blckheight="31" blckwidth="376">
+            <tgtblockName>dynamic_mux_2</tgtblockName>
+            <tgtXcoordinate>1826</tgtXcoordinate>
+            <tgtYcoordinate>1102</tgtYcoordinate>
+            <tgtportXlocation>1</tgtportXlocation>
+            <tgtportYlocation>292</tgtportYlocation>
+        </tgtblock>
+        <bendPoint XCord="669.0" YCord="463.0"/>
+        <bendPoint XCord="669.0" YCord="1255.5"/>
+        <bendPoint XCord="974.0" YCord="1255.5"/>
+        <bendPoint XCord="974.0" YCord="1694.5"/>
+    </connection>
+    <connection>
+        <srceblock blckheight="50" blckwidth="31">
+            <srceblockName>ChassisInputdrivingdup</srceblockName>
+            <srceXcoordinate>1169</srceXcoordinate>
+            <srceYcoordinate>647</srceYcoordinate>
+            <srceportXlocation>1</srceportXlocation>
+            <srceportYlocation>38</srceportYlocation>
+        </srceblock>
+        <tgtblock blckheight="31" blckwidth="376">
+            <tgtblockName>dynamic_mux_2</tgtblockName>
+            <tgtXcoordinate>1826</tgtXcoordinate>
+            <tgtYcoordinate>1102</tgtYcoordinate>
+            <tgtportXlocation>1</tgtportXlocation>
+            <tgtportYlocation>305</tgtportYlocation>
+        </tgtblock>
+        <bendPoint XCord="1215.0" YCord="985.0"/>
+        <bendPoint XCord="1215.0" YCord="1030.5"/>
+        <bendPoint XCord="1014.0" YCord="1030.5"/>
+        <bendPoint XCord="1014.0" YCord="1225.5"/>
+        <bendPoint XCord="954.0" YCord="1225.5"/>
+        <bendPoint XCord="954.0" YCord="1707.5"/>
+    </connection>
+    <connection>
+        <srceblock blckheight="50" blckwidth="31">
+            <srceblockName>ChassisInputroadProfiledup</srceblockName>
+            <srceXcoordinate>1068</srceXcoordinate>
+            <srceYcoordinate>647</srceYcoordinate>
+            <srceportXlocation>1</srceportXlocation>
+            <srceportYlocation>38</srceportYlocation>
+        </srceblock>
+        <tgtblock blckheight="31" blckwidth="376">
+            <tgtblockName>dynamic_mux_2</tgtblockName>
+            <tgtXcoordinate>1826</tgtXcoordinate>
+            <tgtYcoordinate>1102</tgtYcoordinate>
+            <tgtportXlocation>1</tgtportXlocation>
+            <tgtportYlocation>318</tgtportYlocation>
+        </tgtblock>
+        <bendPoint XCord="1114.0" YCord="985.0"/>
+        <bendPoint XCord="1114.0" YCord="1020.5"/>
+        <bendPoint XCord="772.0" YCord="1020.5"/>
+        <bendPoint XCord="772.0" YCord="1720.5"/>
+    </connection>
+    <connection>
+        <srceblock blckheight="50" blckwidth="31">
+            <srceblockName>EngineInputloaddup</srceblockName>
+            <srceXcoordinate>807</srceXcoordinate>
+            <srceYcoordinate>845</srceYcoordinate>
+            <srceportXlocation>1</srceportXlocation>
+            <srceportYlocation>38</srceportYlocation>
+        </srceblock>
+        <tgtblock blckheight="31" blckwidth="376">
+            <tgtblockName>dynamic_mux_2</tgtblockName>
+            <tgtXcoordinate>1826</tgtXcoordinate>
+            <tgtYcoordinate>1102</tgtYcoordinate>
+            <tgtportXlocation>1</tgtportXlocation>
+            <tgtportYlocation>331</tgtportYlocation>
+        </tgtblock>
+        <bendPoint XCord="853.0" YCord="1183.5"/>
+        <bendPoint XCord="853.0" YCord="1205.5"/>
+        <bendPoint XCord="752.0" YCord="1205.5"/>
+        <bendPoint XCord="752.0" YCord="1733.5"/>
+    </connection>
+    <connection>
+        <srceblock blckheight="50" blckwidth="31">
+            <srceblockName>EngineInputspeeddup</srceblockName>
+            <srceXcoordinate>908</srceXcoordinate>
+            <srceYcoordinate>845</srceYcoordinate>
+            <srceportXlocation>1</srceportXlocation>
+            <srceportYlocation>38</srceportYlocation>
+        </srceblock>
+        <tgtblock blckheight="31" blckwidth="376">
+            <tgtblockName>dynamic_mux_2</tgtblockName>
+            <tgtXcoordinate>1826</tgtXcoordinate>
+            <tgtYcoordinate>1102</tgtYcoordinate>
+            <tgtportXlocation>1</tgtportXlocation>
+            <tgtportYlocation>344</tgtportYlocation>
+        </tgtblock>
+        <bendPoint XCord="954.0" YCord="1183.5"/>
+        <bendPoint XCord="954.0" YCord="1215.5"/>
+        <bendPoint XCord="732.0" YCord="1215.5"/>
+        <bendPoint XCord="732.0" YCord="1746.5"/>
+    </connection>
+    <connection>
+        <srceblock blckheight="50" blckwidth="31">
+            <srceblockName>LeadingVehDistanceleadingVehicleDistdup</srceblockName>
+            <srceXcoordinate>807</srceXcoordinate>
+            <srceYcoordinate>362</srceYcoordinate>
+            <srceportXlocation>1</srceportXlocation>
+            <srceportYlocation>38</srceportYlocation>
+        </srceblock>
+        <tgtblock blckheight="31" blckwidth="376">
+            <tgtblockName>dynamic_mux_2</tgtblockName>
+            <tgtXcoordinate>1826</tgtXcoordinate>
+            <tgtYcoordinate>1102</tgtYcoordinate>
+            <tgtportXlocation>1</tgtportXlocation>
+            <tgtportYlocation>357</tgtportYlocation>
+        </tgtblock>
+        <bendPoint XCord="853.0" YCord="700.0"/>
+        <bendPoint XCord="853.0" YCord="722.0"/>
+        <bendPoint XCord="649.0" YCord="722.0"/>
+        <bendPoint XCord="649.0" YCord="1759.5"/>
+    </connection>
+    <connection>
+        <srceblock blckheight="29" blckwidth="40">
+            <srceblockName>clock</srceblockName>
+            <srceXcoordinate>574</srceXcoordinate>
+            <srceYcoordinate>1007</srceYcoordinate>
+            <srceportXlocation>40</srceportXlocation>
+            <srceportYlocation>15</srceportYlocation>
+        </srceblock>
+        <tgtblock blckheight="31" blckwidth="376">
+            <tgtblockName>dynamic_mux_2</tgtblockName>
+            <tgtXcoordinate>1826</tgtXcoordinate>
+            <tgtYcoordinate>1102</tgtYcoordinate>
+            <tgtportXlocation>1</tgtportXlocation>
+            <tgtportYlocation>383</tgtportYlocation>
+        </tgtblock>
+        <bendPoint XCord="629.0" YCord="1322.0"/>
+        <bendPoint XCord="629.0" YCord="1785.5"/>
+    </connection>
+    <connection>
+        <srceblock blckheight="376" blckwidth="31">
+            <srceblockName>dynamic_mux_2</srceblockName>
+            <srceXcoordinate>1826</srceXcoordinate>
+            <srceYcoordinate>1102</srceYcoordinate>
+            <srceportXlocation>31</srceportXlocation>
+            <srceportYlocation>188</srceportYlocation>
+        </srceblock>
+        <tgtblock blckheight="31" blckwidth="49">
+            <tgtblockName>dynamic_expressions</tgtblockName>
+            <tgtXcoordinate>1887</tgtXcoordinate>
+            <tgtYcoordinate>1505</tgtYcoordinate>
+            <tgtportXlocation>1</tgtportXlocation>
+            <tgtportYlocation>16</tgtportYlocation>
+        </tgtblock>
+        <bendPoint XCord="1872.0" YCord="1590.5"/>
+        <bendPoint XCord="1872.0" YCord="1821.5"/>
+    </connection>
+    <connection>
+        <srceblock blckheight="49" blckwidth="31">
+            <srceblockName>dynamic_expressions</srceblockName>
+            <srceXcoordinate>1887</srceXcoordinate>
+            <srceYcoordinate>1505</srceYcoordinate>
+            <srceportXlocation>49</srceportXlocation>
+            <srceportYlocation>16</srceportYlocation>
+        </srceblock>
+        <tgtblock blckheight="29" blckwidth="40">
+            <tgtblockName>stop</tgtblockName>
+            <tgtXcoordinate>1948</tgtXcoordinate>
+            <tgtYcoordinate>1615</tgtYcoordinate>
+            <tgtportXlocation>1</tgtportXlocation>
+            <tgtportYlocation>15</tgtportYlocation>
+        </tgtblock>
+        <bendPoint XCord="1933.0" YCord="1821.5"/>
+        <bendPoint XCord="1933.0" YCord="1930.5"/>
+    </connection>
+</connection_layout>

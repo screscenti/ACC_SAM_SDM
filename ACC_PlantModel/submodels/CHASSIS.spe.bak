@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE SPE>
+<SPE DOC_VERSION="2" AME_VERSION="14.0.0 -  42489-40390 2015">
+
+ <SUBMODEL>
+  <SUB_TYPE>1</SUB_TYPE>
+  <DEFAULT_ICON>Chassis</DEFAULT_ICON>
+  <SUB_LABEL>Chassis</SUB_LABEL>
+  <SUB_UNIT>0</SUB_UNIT>
+  <OUTPUT_TYPE>0</OUTPUT_TYPE>
+  <EVARS_LIST>
+   <PORT>
+    <EVAR>
+     <SUB_ID>1</SUB_ID>
+     <TITLE>output from transfer function</TITLE>
+     <VARNAME>output</VARNAME>
+     <VISIBILITY>True</VISIBILITY>
+     <TYPE>0</TYPE>
+     <DIMENSION>1</DIMENSION>
+     <IO>2</IO>
+     <UNITS>null</UNITS>
+    </EVAR>
+   </PORT>
+   <PORT>
+    <EVAR>
+     <SUB_ID>1</SUB_ID>
+     <TITLE>integrator output</TITLE>
+     <VARNAME>output</VARNAME>
+     <VARNAME2>dout</VARNAME2>
+     <VISIBILITY>True</VISIBILITY>
+     <TYPE>1</TYPE>
+     <DIMENSION>1</DIMENSION>
+     <IO>2</IO>
+     <UNITS>null</UNITS>
+     <MIN_VALUE>-1.00000000000000e+030</MIN_VALUE>
+     <MAX_VALUE>1.00000000000000e+030</MAX_VALUE>
+     <DEF_VALUE>0.00000000000000e+000</DEF_VALUE>
+     <VALUE>0.00000000000000e+000</VALUE>
+    </EVAR>
+   </PORT>
+   <PORT>
+    <EVAR>
+     <SUB_ID>2</SUB_ID>
+     <TITLE>input to junction</TITLE>
+     <VISIBILITY>True</VISIBILITY>
+     <TYPE>4</TYPE>
+     <PRIMARY_PORT>3</PRIMARY_PORT>
+     <PRIMARY_VAR>0</PRIMARY_VAR>
+     <DUP_TYPE>0</DUP_TYPE>
+    </EVAR>
+   </PORT>
+   <PORT>
+    <EVAR>
+     <SUB_ID>2</SUB_ID>
+     <TITLE>input to junction</TITLE>
+     <VARNAME>out2</VARNAME>
+     <VISIBILITY>True</VISIBILITY>
+     <TYPE>4</TYPE>
+     <PRIMARY_PORT>2</PRIMARY_PORT>
+     <PRIMARY_VAR>0</PRIMARY_VAR>
+     <DUP_TYPE>0</DUP_TYPE>
+    </EVAR>
+   </PORT>
+   <PORT>
+    <EVAR>
+     <SUB_ID>3</SUB_ID>
+     <TITLE>input signal at port 3</TITLE>
+     <VARNAME>inp3</VARNAME>
+     <VISIBILITY>True</VISIBILITY>
+     <TYPE>0</TYPE>
+     <DIMENSION>1</DIMENSION>
+     <IO>1</IO>
+     <UNITS>null</UNITS>
+    </EVAR>
+   </PORT>
+   <PORT>
+    <EVAR>
+     <SUB_ID>2</SUB_ID>
+     <TITLE>input at port 2</TITLE>
+     <NB_IN_GROUP>numInp</NB_IN_GROUP>
+     <VARNAME>p2__input</VARNAME>
+     <ORIG_VARNAME>input</ORIG_VARNAME>
+     <VISIBILITY>True</VISIBILITY>
+     <TYPE>0</TYPE>
+     <DIMENSION>1</DIMENSION>
+     <DIM_EXPRESSION>dimInp</DIM_EXPRESSION>
+     <IO>1</IO>
+     <UNITS>null</UNITS>
+    </EVAR>
+   </PORT>
+   <PORT>
+    <EVAR>
+     <SUB_ID>2P1</SUB_ID>
+     <TITLE>input at port 3</TITLE>
+     <NB_IN_GROUP>numInp</NB_IN_GROUP>
+     <VARNAME>p3__input</VARNAME>
+     <ORIG_VARNAME>input</ORIG_VARNAME>
+     <VISIBILITY>True</VISIBILITY>
+     <TYPE>0</TYPE>
+     <DIMENSION>1</DIMENSION>
+     <DIM_EXPRESSION>dimInp</DIM_EXPRESSION>
+     <IO>1</IO>
+     <UNITS>null</UNITS>
+    </EVAR>
+   </PORT>
+  </EVARS_LIST>
+ </SUBMODEL>
+</SPE>

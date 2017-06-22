@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+<testsuite name="_50_UnitTests.interfaceTesting" tests="3" errors="0" failures="2">
+<testcase name="Test_ssd_safe_distance_TableUT_testCase_0"  assertions="0" classname="Test_ssd_safe_distance_TableUT_testCase_0">
+<failure message="todo" type=""  ></failure>
+<system-out>
+runningTest: running test (location=@BlockInterfaces:Test_ssd_safe_distance_TableUT?r:f599b715-12fa-44c1-a288-a72fd0bffe50(_30_Architecture)#3980660603150528821) 
+Contract_Failed: Pre- or Post-condition failed (contractID=ACC_SafeDistance_Atomic_ssd_safe_distance_computation_samplePre ,location=@BlockInterfaces:ssd_safe_distance_computationInterface:1?r:f599b715-12fa-44c1-a288-a72fd0bffe50(_30_Architecture)#6504848816738695791) 
+v_lead=18.000000
+v_acc_demo=20.000000
+FAILED_DOUBLE_DOUBLE: ***FAILED*** (testID=0, act=69.533709, op=assert-equals, exp=14.000000 ,location=@BlockInterfaces:Test_ssd_safe_distance_TableUT?r:f599b715-12fa-44c1-a288-a72fd0bffe50(_30_Architecture)#3980660603150539564) 
+FAILED_DOUBLE_DOUBLE: ***FAILED*** (testID=1, act=78.796931, op=assert-equals, exp=20.000000 ,location=@BlockInterfaces:Test_ssd_safe_distance_TableUT:1?r:f599b715-12fa-44c1-a288-a72fd0bffe50(_30_Architecture)#3980660603150545985) 
+</system-out><system-err>
+</system-err>
+</testcase>
+<testcase name="Test_ssd_safe_distance_cCode_UT_testCase_1"  assertions="0" classname="Test_ssd_safe_distance_cCode_UT_testCase_1">
+
+<system-out>
+runningTest: running test (location=@BlockInterfaces:Test_ssd_safe_distance_cCode_UT?r:f599b715-12fa-44c1-a288-a72fd0bffe50(_30_Architecture)#6427938858666183513) 
+Contract_Failed: Pre- or Post-condition failed (contractID=ACC_SafeDistance_Atomic_ssd_safe_distance_computation_samplePre ,location=@BlockInterfaces:ssd_safe_distance_computationInterface:1?r:f599b715-12fa-44c1-a288-a72fd0bffe50(_30_Architecture)#6504848816738695791) 
+v_lead=29.000000
+v_acc_demo=28.000000
+Safe distance achieved</system-out><system-err>
+</system-err>
+</testcase>
+<testcase name="Implementation_UT_testCase_2"  assertions="0" classname="Implementation_UT_testCase_2">
+<failure message="todo" type=""  ></failure>
+<system-out>
+runningTest: running test (location=@UnitTesting:Implementation_UT?r:221d17b6-0d30-436d-93ec-0fdb6b1be14f(_50_UnitTests)#3980660603152168580) 
+Contract_Failed: Pre- or Post-condition failed (contractID=ACC_SafeDistance_Atomic_ssd_safe_distance_computation_samplePre ,location=@BlockInterfaces:ssd_safe_distance_computationInterface:1?r:f599b715-12fa-44c1-a288-a72fd0bffe50(_30_Architecture)#6504848816738695791) 
+v_lead=27.000000
+v_acc_demo=28.000000
+FAILED_DOUBLE_DOUBLE: ***FAILED*** (testID=0, act=113.302070, op=assert-equals, exp=9.000000 ,location=@UnitTesting:Implementation_UT?r:221d17b6-0d30-436d-93ec-0fdb6b1be14f(_50_UnitTests)#3980660603152320167) 
+Contract_Failed: Pre- or Post-condition failed (contractID=ACC_SafeDistance_Atomic_ssd_safe_distance_computation_samplePre ,location=@BlockInterfaces:ssd_safe_distance_computationInterface:1?r:f599b715-12fa-44c1-a288-a72fd0bffe50(_30_Architecture)#6504848816738695791) 
+v_lead=29.000000
+v_acc_demo=28.000000
+</system-out><system-err>
+</system-err>
+</testcase>
+</testsuite>
+</testsuites>

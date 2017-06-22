@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CLSimulationResults name="Amesim_cls">
+ <simulation id="0" startTime="0.0" terminateCondition="simTime &gt;= 10 s">
+  <targetSignal instance="" name="brakeCmd">
+   <data idx="0" time="0.0" value="0.0"/>
+   <data idx="1" time="1.0" value="0.0"/>
+   <data idx="2" time="2.0" value="0.0"/>
+   <data idx="3" time="3.0" value="0.0"/>
+   <data idx="4" time="4.0" value="0.0"/>
+   <data idx="5" time="5.0" value="0.0"/>
+   <data idx="6" time="6.0" value="0.0"/>
+   <data idx="7" time="7.0" value="0.0"/>
+   <data idx="8" time="8.0" value="0.0"/>
+   <data idx="9" time="9.0" value="0.0"/>
+  </targetSignal>
+  <targetSignal instance="" name="throttleCmd">
+   <data idx="0" time="0.0" value="0.0"/>
+   <data idx="1" time="1.0" value="0.2"/>
+   <data idx="2" time="2.0" value="0.4"/>
+   <data idx="3" time="3.0" value="0.6"/>
+   <data idx="4" time="4.0" value="0.8"/>
+   <data idx="5" time="5.0" value="1.0"/>
+   <data idx="6" time="6.0" value="1.2"/>
+   <data idx="7" time="7.0" value="1.4"/>
+   <data idx="8" time="8.0" value="1.6"/>
+   <data idx="9" time="9.0" value="1.8"/>
+  </targetSignal>
+ </simulation>
+</CLSimulationResults>

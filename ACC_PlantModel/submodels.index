@@ -1,0 +1,11 @@
+./submodels
+Environment
+&ENVIRONMENT ACC_Plant
+HMI
+&HMI ACC_Plant
+Chassis
+&CHASSIS ACC_Plant
+Engine
+&ENGINE ACC_Plant
+Transmission
+&TRANSMISSION ACC_Plant

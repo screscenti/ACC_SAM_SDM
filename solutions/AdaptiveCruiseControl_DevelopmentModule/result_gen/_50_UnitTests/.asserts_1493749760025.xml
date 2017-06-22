@@ -1,0 +1,6 @@
+<result>
+<assert-failed expected="14" actual="69" nodeId="3980660603150539564" modelId="r:f599b715-12fa-44c1-a288-a72fd0bffe50(_30_Architecture)"> 69 is not equal to 0 </assert-failed>
+<assert-failed expected="20" actual="78" nodeId="3980660603150545985" modelId="r:f599b715-12fa-44c1-a288-a72fd0bffe50(_30_Architecture)"> 78 is not equal to 0 </assert-failed>
+<assert-failed expected="9" actual="113" nodeId="3980660603152320167" modelId="r:221d17b6-0d30-436d-93ec-0fdb6b1be14f(_50_UnitTests)"> 113 is not equal to 0 </assert-failed>
+<assert-failed expected="[((2) - 5)..((2) + 5)]" actual="113" nodeId="3980660603152326252" modelId="r:221d17b6-0d30-436d-93ec-0fdb6b1be14f(_50_UnitTests)"> actual value is out of range </assert-failed>
+</result>

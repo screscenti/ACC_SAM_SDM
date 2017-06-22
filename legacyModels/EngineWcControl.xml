@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<simulinkExportBlocks>
+   <simulinkExportInfo>
+      <toplevelBlock module="EngineWcControl" name="EngineWcControl"/>
+   </simulinkExportInfo>
+   <Enumeration-type model="EngineWcControl.EngineWcControl" module="Cla_SignalRouting" name="SwitchCriteria">
+      <enum-var name="U2_GREATERTHAN_OR_EQUALTO_THRESHOLD"/>
+      <enum-var name="U2_GREATERTHAN_THRESHOLD"/>
+      <enum-var name="U2_NOT_EQUALTO_ZERO"/>
+   </Enumeration-type>
+   <compositeBlock model="EngineWcControl.EngineWcControl" module="EngineWcControl" name="prevent_windup">
+      <inport name="integrator_input" type="double"/>
+      <inport name="controller_output" type="double"/>
+      <outport name="enable_integration" type="double"/>
+      <instance name="Constant" sourceModule="Cla_Sources" sourceName="Constant">
+         <init param="Value">70</init>
+      </instance>
+      <instance name="Constant2" sourceModule="Cla_Sources" sourceName="Constant">
+         <init param="Value">0</init>
+      </instance>
+      <instance name="Constant3" sourceModule="Cla_Sources" sourceName="Constant">
+         <init param="Value">0</init>
+      </instance>
+      <instance name="Constant4" sourceModule="Cla_Sources" sourceName="Constant">
+         <init param="Value">0</init>
+      </instance>
+      <instance name="Logical_Operator1" sourceModule="Cla_Operators" sourceName="LogicAND"/>
+      <instance name="Logical_Operator2" sourceModule="Cla_Operators" sourceName="LogicNOR"/>
+      <instance name="Logical_Operator3" sourceModule="Cla_Operators" sourceName="LogicAND"/>
+      <instance name="Relational_Operator1" sourceModule="Cla_Operators" sourceName="RO_GreaterThanOrEqualTo"/>
+      <instance name="Relational_Operator2" sourceModule="Cla_Operators" sourceName="RO_LessThanOrEqualTo"/>
+      <instance name="Relational_Operator3" sourceModule="Cla_Operators" sourceName="RO_LessThanOrEqualTo"/>
+      <instance name="Relational_Operator4" sourceModule="Cla_Operators" sourceName="RO_GreaterThanOrEqualTo"/>
+      <inboundConnector>
+         <source port="integrator_input"/>
+         <target instance="Relational_Operator3" port="in1"/>
+      </inboundConnector>
+      <inboundConnector>
+         <source port="integrator_input"/>
+         <target instance="Relational_Operator1" port="in1"/>
+      </inboundConnector>
+      <inboundConnector>
+         <source port="controller_output"/>
+         <target instance="Relational_Operator4" port="in1"/>
+      </inboundConnector>
+      <inboundConnector>
+         <source port="controller_output"/>
+         <target instance="Relational_Operator2" port="in1"/>
+      </inboundConnector>
+      <internalConnector>
+         <source instance="Constant" port="out1"/>
+         <target instance="Relational_Operator4" port="in2"/>
+      </internalConnector>
+      <internalConnector>
+         <source instance="Constant2" port="out1"/>
+         <target instance="Relational_Operator1" port="in2"/>
+      </internalConnector>
+      <internalConnector>
+         <source instance="Constant3" port="out1"/>
+         <target instance="Relational_Operator2" port="in2"/>
+      </internalConnector>
+      <internalConnector>
+         <source instance="Constant4" port="out1"/>
+         <target instance="Relational_Operator3" port="in2"/>
+      </internalConnector>
+      <internalConnector>
+         <source instance="Logical_Operator1" port="out1"/>
+         <target instance="Logical_Operator2" port="in"/>
+      </internalConnector>
+      <internalConnector>
+         <source instance="Logical_Operator3" port="out1"/>
+         <target instance="Logical_Operator2" port="in"/>
+      </internalConnector>
+      <internalConnector>
+         <source instance="Relational_Operator1" port="out1"/>
+         <target instance="Logical_Operator3" port="in"/>
+      </internalConnector>
+      <internalConnector>
+         <source instance="Relational_Operator2" port="out1"/>
+         <target instance="Logical_Operator1" port="in"/>
+      </internalConnector>
+      <internalConnector>
+         <source instance="Relational_Operator3" port="out1"/>
+         <target instance="Logical_Operator1" port="in"/>
+      </internalConnector>
+      <internalConnector>
+         <source instance="Relational_Operator4" port="out1"/>
+         <target instance="Logical_Operator3" port="in"/>
+      </internalConnector>
+      <outboundConnector>
+         <source instance="Logical_Operator2" port="out1"/>
+         <target port="enable_integration"/>
+      </outboundConnector>
+   </compositeBlock>
+   <compositeBlock model="EngineWcControl.EngineWcControl" module="EngineWcControl" name="Controller">
+      <inport name="Desired_rpm" type="double"/>
+      <inport name="N" type="double"/>
+      <outport name="Throttle_Ang_" type="double"/>
+      <instance name="Constant1" sourceModule="Cla_Sources" sourceName="Constant">
+         <init param="Value">0</init>
+      </instance>
+      <instance name="Discrete_Time_Integrator" sourceModule="Cla_Discrete" sourceName="IntegratorICInt">
+         <init param="gainval">1.0</init>
+         <init param="InitialCondition">8.973</init>
+      </instance>
+      <instance name="Integral_Gain" sourceModule="Cla_Operators" sourceName="Gain">
+         <init param="Gain">parameter.Ki</init>
+      </instance>
+      <instance name="Proportional_Gain" sourceModule="Cla_Operators" sourceName="Gain">
+         <init param="Gain">parameter.Kp</init>
+      </instance>
+      <instance name="Sum" sourceModule="Cla_Operators" sourceName="Sum"/>
+      <instance name="Sum1" sourceModule="Cla_Operators" sourceName="Sum"/>
+      <instance name="Switch" sourceModule="Cla_SignalRouting" sourceName="Switch">
+         <init param="Criteria">SwitchCriteria.U2_GREATERTHAN_OR_EQUALTO_THRESHOLD</init>
+         <init param="Threshold">0.5</init>
+      </instance>
+      <instance name="limit_output" sourceModule="Cla_Discontinuities" sourceName="Saturation">
+         <init param="UpperLimit">70</init>
+         <init param="LowerLimit">0</init>
+      </instance>
+      <instance name="prevent_windup" sourceModule="EngineWcControl" sourceName="prevent_windup"/>
+      <instance name="rpm_to_rad_s" sourceModule="Cla_Operators" sourceName="Gain">
+         <init param="Gain">parameter.pi_user/30</init>
+      </instance>
+      <inboundConnector>
+         <source port="Desired_rpm"/>
+         <target instance="rpm_to_rad_s" port="in1"/>
+      </inboundConnector>
+      <inboundConnector>
+         <source port="N"/>
+         <target instance="Sum" port="minus"/>
+      </inboundConnector>
+      <internalConnector>
+         <source instance="Constant1" port="out1"/>
+         <target instance="Switch" port="in3_dataPort2"/>
+      </internalConnector>
+      <internalConnector>
+         <source instance="Discrete_Time_Integrator" port="out1"/>
+         <target instance="Sum1" port="plus"/>
+      </internalConnector>
+      <internalConnector>
+         <source instance="Integral_Gain" port="out1"/>
+         <target instance="Switch" port="in1_dataPort1"/>
+      </internalConnector>
+      <internalConnector>
+         <source instance="Proportional_Gain" port="out1"/>
+         <target instance="Sum1" port="plus"/>
+      </internalConnector>
+      <internalConnector>
+         <source instance="Sum" port="out1"/>
+         <target instance="prevent_windup" port="integrator_input"/>
+      </internalConnector>
+      <internalConnector>
+         <source instance="Sum" port="out1"/>
+         <target instance="Integral_Gain" port="in1"/>
+      </internalConnector>
+      <internalConnector>
+         <source instance="Sum" port="out1"/>
+         <target instance="Proportional_Gain" port="in1"/>
+      </internalConnector>
+      <internalConnector>
+         <source instance="Sum1" port="out1"/>
+         <target instance="limit_output" port="in1"/>
+      </internalConnector>
+      <internalConnector>
+         <source instance="Switch" port="out1"/>
+         <target instance="Discrete_Time_Integrator" port="in1"/>
+      </internalConnector>
+      <internalConnector>
+         <source instance="limit_output" port="out1"/>
+         <target instance="prevent_windup" port="controller_output"/>
+      </internalConnector>
+      <internalConnector>
+         <source instance="prevent_windup" port="enable_integration"/>
+         <target instance="Switch" port="in2_controlPort"/>
+      </internalConnector>
+      <internalConnector>
+         <source instance="rpm_to_rad_s" port="out1"/>
+         <target instance="Sum" port="plus"/>
+      </internalConnector>
+      <outboundConnector>
+         <source instance="limit_output" port="out1"/>
+         <target port="Throttle_Ang_"/>
+      </outboundConnector>
+   </compositeBlock>
+   <compositeBlock model="EngineWcControl.EngineWcControl" module="EngineWcControl" name="EngineWcControl">
+      <instance name="Controller" sourceModule="EngineWcControl" sourceName="Controller"/>
+   </compositeBlock>
+   <simulink-block isUsingTime="true" model="ModelBlocks" module="Cla_Discontinuities" name="Saturation">
+      <inport name="in1" type="double /G1/"/>
+      <outport name="out1" type="double /G1/"/>
+      <parameter name="LowerLimit" type="double /G1/"/>
+      <parameter name="UpperLimit" type="double /G1/"/>
+      <simulinkBlock blockName="Saturation"/>
+      <ccode cExecuteFunctionName="Cla_Discontinuities____Saturation_execute" cFileName="Cla_Discontinuities.c" cInitFunctionName="Cla_Discontinuities____Saturation_init"/>
+      <comment>The block saturates the input signal beyond the user defined upper and lower limits</comment>
+   </simulink-block>
+   <simulink-block isUsingTime="true" model="ModelBlocks" module="Cla_Discrete" name="IntegratorICInt">
+      <flowspec outport="out1"/>
+      <inport name="in1" type="double /G1/"/>
+      <outport name="out1" type="double /G2/"/>
+      <parameter name="gainval" type="double "/>
+      <parameter name="InitialCondition" type="double /G2/"/>
+      <simulinkBlock blockName="Integrator IC Int"/>
+      <ccode cExecuteFunctionName="Cla_Discrete____IntegratorICInt_execute" cFileName="Cla_Discrete.c" cInitFunctionName="Cla_Discrete____IntegratorICInt_init" cUpdateFunctionName="Cla_Discrete____IntegratorICInt_update"/>
+   </simulink-block>
+   <simulink-block model="ModelBlocks" module="Cla_Operators" name="LogicAND">
+      <inport name="in" type="boolean "/>
+      <outport name="out1" type="boolean "/>
+      <simulinkBlock blockName="Logic AND"/>
+      <ccode cExecuteFunctionName="Cla_Operators____LogicAND_execute" cFileName="Cla_Operators.c"/>
+   </simulink-block>
+   <simulink-block model="ModelBlocks" module="Cla_Operators" name="LogicNOR">
+      <inport name="in" type="boolean "/>
+      <outport name="out1" type="boolean "/>
+      <simulinkBlock blockName="Logic NOR"/>
+      <ccode cExecuteFunctionName="Cla_Operators____LogicNOR_execute" cFileName="Cla_Operators.c"/>
+   </simulink-block>
+   <simulink-block model="ModelBlocks" module="Cla_Operators" name="RO_LessThanOrEqualTo">
+      <inport name="in1" type="double /G1/"/>
+      <inport name="in2" type="double /G1/"/>
+      <outport name="out1" type="boolean "/>
+      <simulinkBlock blockName="RO_Less Than Or Equal To"/>
+   </simulink-block>
+   <simulink-block model="ModelBlocks" module="Cla_Operators" name="RO_GreaterThanOrEqualTo">
+      <inport name="in1" type="double /G1/"/>
+      <inport name="in2" type="double /G1/"/>
+      <outport name="out1" type="boolean "/>
+      <simulinkBlock blockName="RO_Greater Than Or Equal To"/>
+   </simulink-block>
+   <simulink-block model="ModelBlocks" module="Cla_Operators" name="Sum">
+      <inport name="minus" type="double /G1/"/>
+      <inport name="plus" type="double /G1/"/>
+      <outport name="out1" type="double /G1/"/>
+      <simulinkBlock blockName="Sum"/>
+      <ccode cExecuteFunctionName="Cla_Operators____Sum_execute" cFileName="Cla_Operators.c"/>
+   </simulink-block>
+   <simulink-block model="ModelBlocks" module="Cla_Operators" name="Gain">
+      <inport name="in1" type="double /G1/"/>
+      <outport name="out1" type="double /G1 ･ G2/"/>
+      <parameter name="Gain" type="double /G2/"/>
+      <simulinkBlock blockName="Gain"/>
+      <ccode cExecuteFunctionName="Cla_Operators____Gain_execute" cFileName="Cla_Operators.c"/>
+      <comment>Multiplies the input in1 with the paramter gain and returs the output as out1</comment>
+   </simulink-block>
+   <simulink-block model="ModelBlocks" module="Cla_SignalRouting" name="Switch">
+      <inport name="in1_dataPort1" type="double /G1/"/>
+      <inport name="in2_controlPort" type="double /G2/"/>
+      <inport name="in3_dataPort2" type="double /G1/"/>
+      <outport name="out1" type="double /G1/"/>
+      <parameter name="Criteria" type="SwitchCriteria "/>
+      <parameter name="Threshold" type="double /G2/"/>
+      <simulinkBlock blockName="Switch"/>
+      <ccode cExecuteFunctionName="Cla_SignalRouting____Switch_execute" cFileName="Cla_SignalRouting.c"/>
+   </simulink-block>
+   <simulink-block model="ModelBlocks" module="Cla_Sources" name="Constant">
+      <outport name="out1" type="double /G1/"/>
+      <parameter name="Value" type="double /G1/"/>
+      <simulinkBlock blockName="Constant"/>
+      <ccode cExecuteFunctionName="Cla_Sources____Constant_execute" cFileName="Cla_Sources.c"/>
+      <comment>Output the specified constant value</comment>
+   </simulink-block>
+</simulinkExportBlocks>

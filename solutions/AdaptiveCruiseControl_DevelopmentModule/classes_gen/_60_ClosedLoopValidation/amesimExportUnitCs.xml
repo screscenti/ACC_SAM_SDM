@@ -1,0 +1,114 @@
+<amesimExportUnitCs>
+  <unit name="CommonUnits" model="_60_ClosedLoopValidation">
+    <derive name="deg" specification=""></derive>
+    <derive name="pct" specification="m^(0)"></derive>
+    <derive name="rad" specification="m.m^(-1)"></derive>
+    <derive name="mps" specification="m.s^(-1)"></derive>
+    <derive name="W" specification="J.s^(-1)"></derive>
+    <derive name="J" specification="N.m"></derive>
+    <derive name="N" specification="kg.mpss"></derive>
+    <derive name="mpss" specification="mps.s^(-1)"></derive>
+    <derive name="rpm" specification=""></derive>
+    <derive name="mpspdegC" specification="mps.degC^(-1)"></derive>
+    <derive name="degC" specification=""></derive>
+    <derive name="JpKgK" specification="J.kg^(-1).K^(-1)"></derive>
+    <derive name="rev" specification=""></derive>
+    <derive name="WpK" specification="W.K^(-1)"></derive>
+    <derive name="Nms" specification="Nm.radps^(-1)"></derive>
+    <derive name="Nm" specification="N.m"></derive>
+    <derive name="radps" specification="rad.s^(-1)"></derive>
+    <derive name="kW" specification=""></derive>
+    <derive name="radpss" specification="radps.s^(-1)"></derive>
+    <derive name="min" specification=""></derive>
+    <derive name="JpK" specification="J.K^(-1)"></derive>
+    <derive name="m3ps" specification="m^(3).s^(-1)"></derive>
+    <derive name="Wpm2K" specification="W.m^(-2).K^(-1)"></derive>
+    <derive name="m2" specification="m^(2)"></derive>
+    <derive name="kgps" specification="kg.s^(-1)"></derive>
+    <derive name="kgpm3" specification="kg.m^(-3)"></derive>
+    <derive name="m3" specification="m^(3)"></derive>
+    <derive name="kgm2" specification="kg.m^(2)"></derive>
+    <derive name="cm" specification=""></derive>
+    <derive name="km" specification="m"></derive>
+    <derive name="h" specification="s"></derive>
+    <derive name="kmph" specification="km.h^(-1)"></derive>
+  </unit>
+  <unit name="SIUnits" model="_60_ClosedLoopValidation">
+    <derive name="m" specification=""></derive>
+    <derive name="s" specification=""></derive>
+    <derive name="kg" specification=""></derive>
+    <derive name="mol" specification=""></derive>
+    <derive name="K" specification=""></derive>
+    <derive name="A" specification=""></derive>
+    <derive name="cd" specification=""></derive>
+    <derive name="nounit" specification="m.m^(-1)"></derive>
+  </unit>
+  <unit name="Cla_CommonUnits" model="_60_ClosedLoopValidation">
+    <derive name="min" specification=""></derive>
+    <derive name="radpss" specification="radps.s^(-1)"></derive>
+    <derive name="radps" specification="rad.s^(-1)"></derive>
+    <derive name="rad" specification="m.m^(-1)"></derive>
+    <derive name="W" specification="J.s^(-1)"></derive>
+    <derive name="J" specification="N.m"></derive>
+    <derive name="N" specification="kg.mpss"></derive>
+    <derive name="mpss" specification="mps.s^(-1)"></derive>
+    <derive name="mps" specification="m.s^(-1)"></derive>
+    <derive name="Nm" specification="N.m"></derive>
+    <derive name="kgpm3" specification="kg.m^(-3)"></derive>
+    <derive name="kgps" specification="kg.s^(-1)"></derive>
+    <derive name="kgm2" specification="kg.m^(2)"></derive>
+    <derive name="m2" specification="m^(2)"></derive>
+    <derive name="deg" specification=""></derive>
+    <derive name="rpm" specification=""></derive>
+    <derive name="WpK" specification="W.K^(-1)"></derive>
+    <derive name="JpK" specification="J.K^(-1)"></derive>
+    <derive name="Nms" specification="Nm.radps^(-1)"></derive>
+    <derive name="m3" specification="m^(3)"></derive>
+    <derive name="V" specification="W.A^(-1)"></derive>
+    <derive name="kW" specification=""></derive>
+    <derive name="MW" specification=""></derive>
+    <derive name="Hz" specification="s^(-1)"></derive>
+    <derive name="Wpm2K" specification="W.m^(-2).K^(-1)"></derive>
+    <derive name="mpspdegC" specification="mps.degC^(-1)"></derive>
+    <derive name="degC" specification=""></derive>
+    <derive name="JpKgK" specification="J.kg^(-1).K^(-1)"></derive>
+    <derive name="rev" specification=""></derive>
+    <derive name="m3ps" specification="m^(3).s^(-1)"></derive>
+    <derive name="Pa" specification="N.m^(-2)"></derive>
+    <derive name="kPa" specification=""></derive>
+    <derive name="MPA" specification=""></derive>
+    <derive name="ms" specification=""></derive>
+  </unit>
+  <unitConversion name="CommonUnits" model="_60_ClosedLoopValidation">
+    <convert sourceUnit="cm" targetUnit="m" formula="val / 100"></convert>
+    <convert sourceUnit="m" targetUnit="km" formula="val / 1000"></convert>
+    <convert sourceUnit="s" targetUnit="h" formula="val / 3600"></convert>
+    <convert sourceUnit="mps" targetUnit="kmph" formula="val * 5 / 36"></convert>
+  </unitConversion>
+  <unitConversion name="Cla_CommonUnits" model="_60_ClosedLoopValidation">
+    <convert sourceUnit="ms" targetUnit="s" formula="val / 1000"></convert>
+    <convert sourceUnit="s" targetUnit="ms" formula="val * 1000"></convert>
+    <convert sourceUnit="deg" targetUnit="rad" formula="val * 3.14159265358979 / 180"></convert>
+    <convert sourceUnit="rad" targetUnit="deg" formula="val * 180 / 3.14159265358979"></convert>
+    <convert sourceUnit="deg" targetUnit="rev" formula="val / 360"></convert>
+    <convert sourceUnit="rad" targetUnit="rev" formula="val / 6.28318530717959"></convert>
+    <convert sourceUnit="rev" targetUnit="deg" formula="val * 360"></convert>
+    <convert sourceUnit="rev" targetUnit="rad" formula="val * 6.28318530717959"></convert>
+    <convert sourceUnit="min" targetUnit="s" formula="val * 60"></convert>
+    <convert sourceUnit="s" targetUnit="min" formula="val / 60"></convert>
+    <convert sourceUnit="rpm" targetUnit="radps" formula="val * 3.14159265358979  / 30"></convert>
+    <convert sourceUnit="radps" targetUnit="rpm" formula="val * 30  / 3.14159265358979"></convert>
+    <convert sourceUnit="degC" targetUnit="K" formula="val * 1  / 1  + 273.15"></convert>
+    <convert sourceUnit="K" targetUnit="degC" formula="(val - 273.15 ) * 1  / 1"></convert>
+    <convert sourceUnit="W" targetUnit="kW" formula="val / 1000"></convert>
+    <convert sourceUnit="kW" targetUnit="W" formula="val * 1000"></convert>
+    <convert sourceUnit="W" targetUnit="MW" formula="val / 1000 / 1000"></convert>
+    <convert sourceUnit="MW" targetUnit="W" formula="val * 1000 * 1000"></convert>
+    <convert sourceUnit="Pa" targetUnit="kPa" formula="val / 1000"></convert>
+    <convert sourceUnit="Pa" targetUnit="MPA" formula="val / 1000 / 1000"></convert>
+    <convert sourceUnit="kPa" targetUnit="Pa" formula="val * 1000"></convert>
+    <convert sourceUnit="kPa" targetUnit="MPA" formula="val / 1000"></convert>
+    <convert sourceUnit="MPA" targetUnit="Pa" formula="val * 1000 * 1000"></convert>
+    <convert sourceUnit="MPA" targetUnit="kPa" formula="val * 1000"></convert>
+  </unitConversion>
+</amesimExportUnitCs>

@@ -1,0 +1,39 @@
+UnitTestMessages.c
+Composite_Systems.c
+Cla_PredefinedConstants.c
+Closed_Loop_Simulation_Models.c
+ACC_SpeedTracking_System.c
+Cla_Operators.c
+___BlockMessages.c
+ACC_SafeDistance_System.c
+ACC_SpeedTracking_Atomic.c
+BlockInterfaces.c
+Cla_Sources.c
+Amesim_Supercomponents.c
+Top_Level_System.c
+ACC_SafeDistance_SubSys.c
+___SimulationRuntime.c
+Cla_Discrete.c
+ACC_SafeDistance_Atomic.c
+Unittest_Helper.c
+Unittest_Helper_NonIsolated.c
+Library.c
+Generating Code...
+Compiling...
+ACC_SpeedTracking_SubSys.c
+Generating Code...
+Microsoft (R) Library Manager Version 10.00.30319.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+ACC_SpeedTracking_SubSys.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+ACC_SafeDistance_SubSys.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+Top_Level_System.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+ACC_SafeDistance_System.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+ACC_SpeedTracking_System.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+Composite_Systems.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+Closed_Loop_Simulation_Models_control.c
+Amesim_Supercomponents_HMI_input.c
+Amesim_Supercomponents_chassis_input.c
+Amesim_Supercomponents_engine_input.c
+Amesim_Supercomponents_GPS_Distance_Calculator.c
+Generating Code...

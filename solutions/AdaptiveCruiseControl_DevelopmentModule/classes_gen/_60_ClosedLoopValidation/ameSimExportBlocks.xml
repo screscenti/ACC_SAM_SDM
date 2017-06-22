@@ -1,0 +1,2997 @@
+<ameSimExportBlocks>
+  <ameSimExportInfo exportType="exportInnerBlocks" exportEntity="Block">
+    <toplevelBlock name="completeSystem" module="Closed_Loop_Simulation_Models" />
+    <simulationBlock name="completeSystem_SimulationBlock__" module="Closed_Loop_Simulation_Models"></simulationBlock>
+  </ameSimExportInfo>
+  <model name="_60_ClosedLoopValidation" path="C:\\Users\\tghx1e\\CHE-W14-005\\00_Demos\\00_ACC_withVariants\\ACC_SAM_SDM\\solutions\\AdaptiveCruiseControl_DevelopmentModule\\source_gen/_60_ClosedLoopValidation"></model>
+  <Structure-type name="a_div_t" module="" model="ClaHeaders">
+    <struct-var name="quot" type="int32 "></struct-var>
+    <struct-var name="rem" type="int32 "></struct-var>
+    <ccode cFileName="stdlib.c" cStructName="stdlib_a_div_t_t"></ccode>
+  </Structure-type>
+  <Structure-type name="a_ldiv_t" module="" model="ClaHeaders">
+    <struct-var name="quot" type="int32 "></struct-var>
+    <struct-var name="rem" type="int32 "></struct-var>
+    <ccode cFileName="stdlib.c" cStructName="stdlib_a_ldiv_t_t"></ccode>
+  </Structure-type>
+  <Structure-type name="a_lldiv_t" module="" model="ClaHeaders">
+    <struct-var name="quot" type="int32 "></struct-var>
+    <struct-var name="rem" type="int32 "></struct-var>
+    <ccode cFileName="stdlib.c" cStructName="stdlib_a_lldiv_t_t"></ccode>
+  </Structure-type>
+  <Enumeration-type name="PID_Reset" module="Cla_Discrete" model="ClaStdLib">
+    <enum-var name="RISING"></enum-var>
+    <enum-var name="FALLING"></enum-var>
+    <enum-var name="EITHER"></enum-var>
+    <enum-var name="LEVEL"></enum-var>
+    <ccode cFileName="Cla_Discrete.c"></ccode>
+  </Enumeration-type>
+  <Enumeration-type name="Integrator_Reset" module="Cla_Discrete" model="ClaStdLib">
+    <enum-var name="RISING"></enum-var>
+    <enum-var name="FALLING"></enum-var>
+    <enum-var name="EITHER"></enum-var>
+    <enum-var name="LEVEL"></enum-var>
+    <enum-var name="SAMPLED_LEVEL"></enum-var>
+    <ccode cFileName="Cla_Discrete.c"></ccode>
+  </Enumeration-type>
+  <Structure-type name="node" module="Cla_Discrete" model="ClaStdLib">
+    <struct-var name="coeff" type="double "></struct-var>
+    <struct-var name="power" type="int8 "></struct-var>
+    <ccode cFileName="Cla_Discrete.c" cStructName="Cla_Discrete_node_t"></ccode>
+  </Structure-type>
+  <Structure-type name="equation" module="Cla_Discrete" model="ClaStdLib">
+    <struct-var name="nodes" type="node [11]"></struct-var>
+    <struct-var name="size" type="uint8 "></struct-var>
+    <ccode cFileName="Cla_Discrete.c" cStructName="Cla_Discrete_equation_t"></ccode>
+  </Structure-type>
+  <Enumeration-type name="LookupMethod_Rep_Seq_Interpolated" module="Cla_Sources" model="ClaStdLib">
+    <enum-var name="INTERPOLATION_USE_END_VALUES"></enum-var>
+    <enum-var name="USE_INPUT_NEAREST"></enum-var>
+    <enum-var name="USE_INPUT_BELOW"></enum-var>
+    <enum-var name="USE_INPUT_ABOVE"></enum-var>
+    <ccode cFileName="Cla_Sources.c"></ccode>
+  </Enumeration-type>
+  <Enumeration-type name="WaveFormOptions" module="Cla_Sources" model="ClaStdLib">
+    <enum-var name="SINE"></enum-var>
+    <enum-var name="SQUARE"></enum-var>
+    <enum-var name="SAWTOOTH"></enum-var>
+    <enum-var name="RANDOM"></enum-var>
+    <ccode cFileName="Cla_Sources.c"></ccode>
+  </Enumeration-type>
+  <Enumeration-type name="SignalGenUnits" module="Cla_Sources" model="ClaStdLib">
+    <enum-var name="HERTZ"></enum-var>
+    <enum-var name="RADPS"></enum-var>
+    <ccode cFileName="Cla_Sources.c"></ccode>
+  </Enumeration-type>
+  <Enumeration-type name="variantSelector" module="ACC_SafeDistance_Atomic" model="_40_Implementation">
+    <enum-var name="Hatchback"></enum-var>
+    <enum-var name="Sedan"></enum-var>
+    <ccode cFileName="ACC_SafeDistance_Atomic.c"></ccode>
+  </Enumeration-type>
+  <ccode-block name="LogicAND" module="Cla_Operators" model="_60_ClosedLoopValidation">
+    <inport name="in" type="boolean " multiple="2..10" kind="multiple"></inport>
+    <outport name="out1" type="boolean "></outport>
+    <ccode cFileName="Cla_Operators.c" cExecuteFunctionName="Cla_Operators____LogicAND_execute"></ccode>
+  </ccode-block>
+  <ccode-block name="LogicOR" module="Cla_Operators" model="_60_ClosedLoopValidation">
+    <inport name="in" type="boolean " multiple="2..10" kind="multiple"></inport>
+    <outport name="out1" type="boolean "></outport>
+    <ccode cFileName="Cla_Operators.c" cExecuteFunctionName="Cla_Operators____LogicOR_execute"></ccode>
+  </ccode-block>
+  <ccode-block name="LogicNAND" module="Cla_Operators" model="_60_ClosedLoopValidation">
+    <inport name="in" type="boolean " multiple="2..10" kind="multiple"></inport>
+    <outport name="out1" type="boolean "></outport>
+    <ccode cFileName="Cla_Operators.c" cExecuteFunctionName="Cla_Operators____LogicNAND_execute"></ccode>
+  </ccode-block>
+  <ccode-block name="LogicNOR" module="Cla_Operators" model="_60_ClosedLoopValidation">
+    <inport name="in" type="boolean " multiple="2..10" kind="multiple"></inport>
+    <outport name="out1" type="boolean "></outport>
+    <ccode cFileName="Cla_Operators.c" cExecuteFunctionName="Cla_Operators____LogicNOR_execute"></ccode>
+  </ccode-block>
+  <ccode-block name="LogicXOR" module="Cla_Operators" model="_60_ClosedLoopValidation">
+    <inport name="in" type="boolean " multiple="2..10" kind="multiple"></inport>
+    <outport name="out1" type="boolean "></outport>
+    <ccode cFileName="Cla_Operators.c" cExecuteFunctionName="Cla_Operators____LogicXOR_execute"></ccode>
+  </ccode-block>
+  <ccode-block name="LogicXNOR" module="Cla_Operators" model="_60_ClosedLoopValidation">
+    <inport name="in" type="boolean " multiple="2..10" kind="multiple"></inport>
+    <outport name="out1" type="boolean "></outport>
+    <ccode cFileName="Cla_Operators.c" cExecuteFunctionName="Cla_Operators____LogicXNOR_execute"></ccode>
+  </ccode-block>
+  <ccode-block name="LogicNOT" module="Cla_Operators" model="_60_ClosedLoopValidation">
+    <inport name="in1" type="boolean "></inport>
+    <outport name="out1" type="boolean "></outport>
+    <ccode cFileName="Cla_Operators.c" cExecuteFunctionName="Cla_Operators____LogicNOT_execute"></ccode>
+  </ccode-block>
+  <expr-block name="RO_LessThan" module="Cla_Operators" model="_60_ClosedLoopValidation" gUnits="G1">
+    <inport name="in1" type="double /G1/"></inport>
+    <inport name="in2" type="double /G1/"></inport>
+    <outport name="out1" type="boolean "></outport>
+    <ccode cFileName="Cla_Operators.c"></ccode>
+  </expr-block>
+  <expr-block name="RO_LessThanOrEqualTo" module="Cla_Operators" model="_60_ClosedLoopValidation" gUnits="G1">
+    <inport name="in1" type="double /G1/"></inport>
+    <inport name="in2" type="double /G1/"></inport>
+    <outport name="out1" type="boolean "></outport>
+    <ccode cFileName="Cla_Operators.c"></ccode>
+  </expr-block>
+  <expr-block name="RO_EqualTo" module="Cla_Operators" model="_60_ClosedLoopValidation" gUnits="G1">
+    <inport name="in1" type="double /G1/"></inport>
+    <inport name="in2" type="double /G1/"></inport>
+    <outport name="out1" type="boolean "></outport>
+    <ccode cFileName="Cla_Operators.c"></ccode>
+  </expr-block>
+  <expr-block name="RO_NotEqualTo" module="Cla_Operators" model="_60_ClosedLoopValidation" gUnits="G1">
+    <inport name="in1" type="double /G1/"></inport>
+    <inport name="in2" type="double /G1/"></inport>
+    <outport name="out1" type="boolean "></outport>
+    <ccode cFileName="Cla_Operators.c"></ccode>
+  </expr-block>
+  <expr-block name="RO_GreaterThanOrEqualTo" module="Cla_Operators" model="_60_ClosedLoopValidation" gUnits="G1">
+    <inport name="in1" type="double /G1/"></inport>
+    <inport name="in2" type="double /G1/"></inport>
+    <outport name="out1" type="boolean "></outport>
+    <ccode cFileName="Cla_Operators.c"></ccode>
+  </expr-block>
+  <expr-block name="RO_GreaterThan" module="Cla_Operators" model="_60_ClosedLoopValidation" gUnits="G1">
+    <inport name="in1" type="double /G1/"></inport>
+    <inport name="in2" type="double /G1/"></inport>
+    <outport name="out1" type="boolean "></outport>
+    <ccode cFileName="Cla_Operators.c"></ccode>
+  </expr-block>
+  <ccode-block name="CtC_LessThan" module="Cla_Operators" model="_60_ClosedLoopValidation" gUnits="G1">
+    <inport name="in1" type="double /G1/"></inport>
+    <outport name="out1" type="boolean "></outport>
+    <parameter name="ConstantValue" type="double /G1/"></parameter>
+    <ccode cFileName="Cla_Operators.c" cStructName="Cla_Operators____CtC_LessThan_data_t" cExecuteFunctionName="Cla_Operators____CtC_LessThan_execute"></ccode>
+  </ccode-block>
+  <ccode-block name="CtC_LessThanEqualTo" module="Cla_Operators" model="_60_ClosedLoopValidation" gUnits="G1">
+    <inport name="in1" type="double /G1/"></inport>
+    <outport name="out1" type="boolean "></outport>
+    <parameter name="ConstantValue" type="double /G1/"></parameter>
+    <ccode cFileName="Cla_Operators.c" cStructName="Cla_Operators____CtC_LessThanEqualTo_data_t" cExecuteFunctionName="Cla_Operators____CtC_LessThanEqualTo_execute"></ccode>
+  </ccode-block>
+  <ccode-block name="CtC_EqualTo" module="Cla_Operators" model="_60_ClosedLoopValidation" gUnits="G1">
+    <inport name="in1" type="double /G1/"></inport>
+    <outport name="out1" type="boolean "></outport>
+    <parameter name="ConstantValue" type="double /G1/"></parameter>
+    <ccode cFileName="Cla_Operators.c" cStructName="Cla_Operators____CtC_EqualTo_data_t" cExecuteFunctionName="Cla_Operators____CtC_EqualTo_execute"></ccode>
+  </ccode-block>
+  <ccode-block name="CtC_NotEqualTo" module="Cla_Operators" model="_60_ClosedLoopValidation" gUnits="G1">
+    <inport name="in1" type="double /G1/"></inport>
+    <outport name="out1" type="boolean "></outport>
+    <parameter name="ConstantValue" type="double /G1/"></parameter>
+    <ccode cFileName="Cla_Operators.c" cStructName="Cla_Operators____CtC_NotEqualTo_data_t" cExecuteFunctionName="Cla_Operators____CtC_NotEqualTo_execute"></ccode>
+  </ccode-block>
+  <ccode-block name="CtC_GreaterThanEqualTo" module="Cla_Operators" model="_60_ClosedLoopValidation" gUnits="G1">
+    <inport name="in1" type="double /G1/"></inport>
+    <outport name="out1" type="boolean "></outport>
+    <parameter name="ConstantValue" type="double /G1/"></parameter>
+    <ccode cFileName="Cla_Operators.c" cStructName="Cla_Operators____CtC_GreaterThanEqualTo_data_t" cExecuteFunctionName="Cla_Operators____CtC_GreaterThanEqualTo_execute"></ccode>
+  </ccode-block>
+  <ccode-block name="CtC_GreaterThan" module="Cla_Operators" model="_60_ClosedLoopValidation" gUnits="G1">
+    <inport name="in1" type="double /G1/"></inport>
+    <outport name="out1" type="boolean "></outport>
+    <parameter name="ConstantValue" type="double /G1/"></parameter>
+    <ccode cFileName="Cla_Operators.c" cStructName="Cla_Operators____CtC_GreaterThan_data_t" cExecuteFunctionName="Cla_Operators____CtC_GreaterThan_execute"></ccode>
+  </ccode-block>
+  <ccode-block name="Sum" module="Cla_Operators" model="_60_ClosedLoopValidation" gUnits="G1">
+    <inport name="minus" type="double /G1/" multiple="0..10" kind="multiple"></inport>
+    <inport name="plus" type="double /G1/" multiple="0..10" kind="multiple"></inport>
+    <outport name="out1" type="double /G1/"></outport>
+    <ccode cFileName="Cla_Operators.c" cStructName="Cla_Operators____Sum_data_t" cExecuteFunctionName="Cla_Operators____Sum_execute" cInitFunctionName="Cla_Operators____Sum_init"></ccode>
+  </ccode-block>
+  <ccode-block name="Gain" module="Cla_Operators" model="_60_ClosedLoopValidation" gUnits="G1,G2">
+    <inport name="in1" type="double /G1/"></inport>
+    <outport name="out1" type="double /G1.G2/"></outport>
+    <parameter name="Gain" type="double /G2/"></parameter>
+    <ccode cFileName="Cla_Operators.c" cStructName="Cla_Operators____Gain_data_t" cExecuteFunctionName="Cla_Operators____Gain_execute"></ccode>
+    <comment><![CDATA[Multiplies the input in1 with the paramter gain and returs the output as out1]]></comment>
+  </ccode-block>
+  <ccode-block name="Product" module="Cla_Operators" model="_60_ClosedLoopValidation">
+    <inport name="divide" type="double " multiple="0..10" kind="multiple"></inport>
+    <inport name="multiply" type="double " multiple="0..10" kind="multiple"></inport>
+    <outport name="out1" type="double "></outport>
+    <ccode cFileName="Cla_Operators.c" cStructName="Cla_Operators____Product_data_t" cExecuteFunctionName="Cla_Operators____Product_execute" cInitFunctionName="Cla_Operators____Product_init"></ccode>
+  </ccode-block>
+  <ccode-block name="Bias" module="Cla_Operators" model="_60_ClosedLoopValidation" gUnits="G1">
+    <inport name="in1" type="double /G1/"></inport>
+    <outport name="out1" type="double /G1/"></outport>
+    <parameter name="Bias" type="double /G1/"></parameter>
+    <ccode cFileName="Cla_Operators.c" cStructName="Cla_Operators____Bias_data_t" cExecuteFunctionName="Cla_Operators____Bias_execute"></ccode>
+  </ccode-block>
+  <expr-block name="UnaryMinus" module="Cla_Operators" model="_60_ClosedLoopValidation" gUnits="G1">
+    <inport name="in1" type="double /G1/"></inport>
+    <outport name="out1" type="double /G1/"></outport>
+    <ccode cFileName="Cla_Operators.c"></ccode>
+  </expr-block>
+  <ccode-block name="Assignment" module="Cla_Operators" model="_60_ClosedLoopValidation" gUnits="G1">
+    <inport name="in1_Y0" type="double /G1/"></inport>
+    <inport name="in2_U" type="double /G1/"></inport>
+    <outport name="out1" type="double /G1/"></outport>
+    <ccode cFileName="Cla_Operators.c" cExecuteFunctionName="Cla_Operators____Assignment_execute"></ccode>
+    <comment><![CDATA[in1= Y0
+in2= U]]></comment>
+  </ccode-block>
+  <ccode-block name="DotProduct" module="Cla_Operators" model="_60_ClosedLoopValidation" gUnits="G1">
+    <inport name="in1" type="double /G1/"></inport>
+    <inport name="in2" type="double /G1/"></inport>
+    <outport name="out1" type="double /G1/"></outport>
+    <ccode cFileName="Cla_Operators.c" cExecuteFunctionName="Cla_Operators____DotProduct_execute"></ccode>
+  </ccode-block>
+  <ccode-block name="ProductofElements" module="Cla_Operators" model="_60_ClosedLoopValidation" gUnits="G1">
+    <inport name="in1" type="double /G1/"></inport>
+    <outport name="out1" type="double /G1/"></outport>
+    <ccode cFileName="Cla_Operators.c" cExecuteFunctionName="Cla_Operators____ProductofElements_execute"></ccode>
+  </ccode-block>
+  <ccode-block name="SliderGain" module="Cla_Operators" model="_60_ClosedLoopValidation" gUnits="G1">
+    <inport name="in1" type="double /G1/"></inport>
+    <outport name="out1" type="double /G1/"></outport>
+    <ccode cFileName="Cla_Operators.c" cExecuteFunctionName="Cla_Operators____SliderGain_execute"></ccode>
+  </ccode-block>
+  <ccode-block name="Subtract" module="Cla_Operators" model="_60_ClosedLoopValidation" gUnits="G1">
+    <inport name="in1" type="double /G1/"></inport>
+    <inport name="in2" type="double /G1/"></inport>
+    <outport name="out1" type="double /G1/"></outport>
+    <ccode cFileName="Cla_Operators.c" cExecuteFunctionName="Cla_Operators____Subtract_execute"></ccode>
+    <comment><![CDATA[in1= +
+in2= -]]></comment>
+  </ccode-block>
+  <ccode-block name="SumofElements" module="Cla_Operators" model="_60_ClosedLoopValidation" gUnits="G1">
+    <inport name="in1" type="double /G1/"></inport>
+    <outport name="out1" type="double /G1/"></outport>
+    <ccode cFileName="Cla_Operators.c" cExecuteFunctionName="Cla_Operators____SumofElements_execute"></ccode>
+  </ccode-block>
+  <compositeBlock name="acc_speed_tracking" module="ACC_SpeedTracking_System" model="_60_ClosedLoopValidation">
+    <inport name="dLead" type="double /m/"></inport>
+    <inport name="dSafe" type="double /m/"></inport>
+    <inport name="v_acc" type="double /mps/"></inport>
+    <inport name="v_set" type="double /mps/"></inport>
+    <outport name="b1" type="double /pct/"></outport>
+    <outport name="d_brake" type="double /m/"></outport>
+    <outport name="t1" type="double /pct/"></outport>
+    <instance name="st_mode_braking_distance" sourceName="st_braking_distance" sourceModule="ACC_SpeedTracking_Atomic"></instance>
+    <instance name="st_mode_compute" sourceName="st_mode_computation" sourceModule="ACC_SpeedTracking_Atomic"></instance>
+    <instance name="st_track" sourceName="st_tracking" sourceModule="ACC_SpeedTracking_Atomic"></instance>
+    <instance name="throttleMode" sourceName="throttlemode" sourceModule="ACC_SpeedTracking_SubSys"></instance>
+    <instance name="brakemode1" sourceName="brakemode" sourceModule="ACC_SpeedTracking_SubSys"></instance>
+    <internalConnector>
+      <source instance="st_mode_braking_distance" port="d_brake"></source>
+      <target instance="st_mode_compute" port="d_brake"></target>
+    </internalConnector>
+    <internalConnector>
+      <source instance="throttleMode" port="throttle"></source>
+      <target instance="st_track" port="t_throttle"></target>
+    </internalConnector>
+    <internalConnector>
+      <source instance="throttleMode" port="brake"></source>
+      <target instance="st_track" port="t_brake"></target>
+    </internalConnector>
+    <internalConnector>
+      <source instance="brakemode1" port="throttle"></source>
+      <target instance="st_track" port="b_throttle"></target>
+    </internalConnector>
+    <internalConnector>
+      <source instance="brakemode1" port="brake"></source>
+      <target instance="st_track" port="b_brake"></target>
+    </internalConnector>
+    <internalConnector>
+      <source instance="st_mode_compute" port="st_mode"></source>
+      <target instance="st_track" port="st_mode1"></target>
+    </internalConnector>
+    <inboundConnector>
+      <source port="v_acc"></source>
+      <target instance="st_mode_braking_distance" port="v_acc"></target>
+    </inboundConnector>
+    <inboundConnector>
+      <source port="dLead"></source>
+      <target instance="st_mode_compute" port="d_lead"></target>
+    </inboundConnector>
+    <inboundConnector>
+      <source port="dSafe"></source>
+      <target instance="st_mode_compute" port="d_safe_new"></target>
+    </inboundConnector>
+    <inboundConnector>
+      <source port="v_acc"></source>
+      <target instance="st_mode_compute" port="v_acc"></target>
+    </inboundConnector>
+    <inboundConnector>
+      <source port="v_set"></source>
+      <target instance="st_mode_compute" port="v_set"></target>
+    </inboundConnector>
+    <inboundConnector>
+      <source port="v_acc"></source>
+      <target instance="throttleMode" port="v_acc"></target>
+    </inboundConnector>
+    <inboundConnector>
+      <source port="v_set"></source>
+      <target instance="throttleMode" port="v_set"></target>
+    </inboundConnector>
+    <inboundConnector>
+      <source port="v_acc"></source>
+      <target instance="brakemode1" port="v_acc"></target>
+    </inboundConnector>
+    <inboundConnector>
+      <source port="v_set"></source>
+      <target instance="brakemode1" port="v_set"></target>
+    </inboundConnector>
+    <outboundConnector>
+      <source instance="st_mode_braking_distance" port="d_brake"></source>
+      <target port="d_brake"></target>
+    </outboundConnector>
+    <outboundConnector>
+      <source instance="st_track" port="throttle"></source>
+      <target port="t1"></target>
+    </outboundConnector>
+    <outboundConnector>
+      <source instance="st_track" port="brake"></source>
+      <target port="b1"></target>
+    </outboundConnector>
+    <ccode cFileName="ACC_SpeedTracking_System.c" cStructName="ACC_SpeedTracking_System____acc_speed_tracking_flattened_data_t" cExecuteFunctionName="ACC_SpeedTracking_System____acc_speed_tracking_flattened_execute" cInitFunctionName="ACC_SpeedTracking_System____acc_speed_tracking_flattened_init"></ccode>
+  </compositeBlock>
+  <compositeBlock name="acc_speed_setpoint" module="Composite_Systems" model="_60_ClosedLoopValidation" abstract="true">
+    <inport name="ACC_switch" type="uint8 "></inport>
+    <inport name="d_lead" type="double /m/"></inport>
+    <inport name="v_acc" type="double /mps/"></inport>
+    <inport name="v_lead" type="double /mps/"></inport>
+    <inport name="v_ref" type="double /mps/"></inport>
+    <outport name="d_safe_new" type="double /m/"></outport>
+    <outport name="v_set" type="double /mps/"></outport>
+    <instance name="ssd_safe_dist_compute" sourceName="ssd_safe_distance_computationInterface" sourceModule="BlockInterfaces">
+      <init param="T_SAFE">2.0 s</init>
+    </instance>
+    <instance name="ssd_mode_compute1" sourceName="ssd_mode_computeInterface" sourceModule="BlockInterfaces"></instance>
+    <instance name="ssd_setpoint_compute1" sourceName="ssd_setpoint_compute" sourceModule="Composite_Systems"></instance>
+    <internalConnector>
+      <source instance="ssd_safe_dist_compute" port="d_safe"></source>
+      <target instance="ssd_mode_compute1" port="d_safe_new"></target>
+    </internalConnector>
+    <internalConnector>
+      <source instance="ssd_safe_dist_compute" port="d_safe"></source>
+      <target instance="ssd_setpoint_compute1" port="d_safe_new"></target>
+    </internalConnector>
+    <internalConnector>
+      <source instance="ssd_mode_compute1" port="ssd_mode"></source>
+      <target instance="ssd_setpoint_compute1" port="ssd_mode"></target>
+    </internalConnector>
+    <inboundConnector>
+      <source port="v_acc"></source>
+      <target instance="ssd_safe_dist_compute" port="v_acc_demo"></target>
+    </inboundConnector>
+    <inboundConnector>
+      <source port="v_lead"></source>
+      <target instance="ssd_safe_dist_compute" port="v_lead"></target>
+    </inboundConnector>
+    <inboundConnector>
+      <source port="d_lead"></source>
+      <target instance="ssd_mode_compute1" port="d_lead"></target>
+    </inboundConnector>
+    <inboundConnector>
+      <source port="v_ref"></source>
+      <target instance="ssd_setpoint_compute1" port="v_ref"></target>
+    </inboundConnector>
+    <inboundConnector>
+      <source port="d_lead"></source>
+      <target instance="ssd_setpoint_compute1" port="d_lead"></target>
+    </inboundConnector>
+    <inboundConnector>
+      <source port="v_acc"></source>
+      <target instance="ssd_setpoint_compute1" port="v_acc"></target>
+    </inboundConnector>
+    <outboundConnector>
+      <source instance="ssd_setpoint_compute1" port="v_set"></source>
+      <target port="v_set"></target>
+    </outboundConnector>
+    <outboundConnector>
+      <source instance="ssd_safe_dist_compute" port="d_safe"></source>
+      <target port="d_safe_new"></target>
+    </outboundConnector>
+    <ccode cFileName="Composite_Systems.c" cStructName="Composite_Systems____acc_speed_setpoint_flattened_data_t" cExecuteFunctionName="Composite_Systems____acc_speed_setpoint_flattened_execute" cInitFunctionName="Composite_Systems____acc_speed_setpoint_flattened_init"></ccode>
+  </compositeBlock>
+  <compositeBlock name="ssd_distance_following_mode" module="Composite_Systems" model="_60_ClosedLoopValidation" abstract="true">
+    <inport name="d_lead" type="double /m/"></inport>
+    <inport name="d_safe_new" type="double /m/"></inport>
+    <inport name="v_acc" type="double /mps/"></inport>
+    <outport name="v_set" type="double /mps/"></outport>
+    <instance name="ctrl" sourceName="Controller" sourceModule="BlockInterfaces">
+      <init param="P">3.0</init>
+      <init param="I">0.5</init>
+      <init param="D">0.0</init>
+      <init param="N">100.0</init>
+      <init param="InitialConditionForIntegrator">0.0</init>
+      <init param="InitialConditionForFilter">0.0</init>
+    </instance>
+    <instance name="s_d_e_i" sourceName="ssd_distance_errorInterface" sourceModule="BlockInterfaces"></instance>
+    <instance name="s_u_p_i" sourceName="ssd_update_pidInterface" sourceModule="BlockInterfaces"></instance>
+    <internalConnector>
+      <source instance="s_d_e_i" port="d_error"></source>
+      <target instance="ctrl" port="in1"></target>
+    </internalConnector>
+    <internalConnector>
+      <source instance="ctrl" port="out1"></source>
+      <target instance="s_u_p_i" port="v_pid" smartConnect="(double /mps/)in"></target>
+    </internalConnector>
+    <inboundConnector>
+      <source port="d_safe_new"></source>
+      <target instance="s_d_e_i" port="d_safe_new"></target>
+    </inboundConnector>
+    <inboundConnector>
+      <source port="d_lead"></source>
+      <target instance="s_d_e_i" port="d_lead"></target>
+    </inboundConnector>
+    <inboundConnector>
+      <source port="v_acc"></source>
+      <target instance="s_u_p_i" port="v_acc"></target>
+    </inboundConnector>
+    <outboundConnector>
+      <source instance="s_u_p_i" port="v_set"></source>
+      <target port="v_set"></target>
+    </outboundConnector>
+    <ccode cFileName="Composite_Systems.c" cStructName="Composite_Systems____ssd_distance_following_mode_flattened_data_t" cExecuteFunctionName="Composite_Systems____ssd_distance_following_mode_flattened_execute" cInitFunctionName="Composite_Systems____ssd_distance_following_mode_flattened_init"></ccode>
+  </compositeBlock>
+  <compositeBlock name="ssd_setpoint_compute" module="Composite_Systems" model="_60_ClosedLoopValidation" abstract="true">
+    <inport name="d_lead" type="double /m/"></inport>
+    <inport name="d_safe_new" type="double /m/"></inport>
+    <inport name="ssd_mode" type="double "></inport>
+    <inport name="v_acc" type="double /mps/"></inport>
+    <inport name="v_ref" type="double /mps/"></inport>
+    <outport name="v_set" type="double /mps/"></outport>
+    <instance name="ssd_cruise_mode1" sourceName="ssd_cruise_modeInterface" sourceModule="BlockInterfaces"></instance>
+    <instance name="ssd_distance_mode1" sourceName="ssd_distance_following_mode" sourceModule="Composite_Systems"></instance>
+    <instance name="ssd_setpoint1" sourceName="ssd_setpointInterface" sourceModule="BlockInterfaces"></instance>
+    <internalConnector>
+      <source instance="ssd_cruise_mode1" port="v_set"></source>
+      <target instance="ssd_setpoint1" port="c_vset"></target>
+    </internalConnector>
+    <internalConnector>
+      <source instance="ssd_distance_mode1" port="v_set"></source>
+      <target instance="ssd_setpoint1" port="d_vset"></target>
+    </internalConnector>
+    <inboundConnector>
+      <source port="v_ref"></source>
+      <target instance="ssd_cruise_mode1" port="v_ref"></target>
+    </inboundConnector>
+    <inboundConnector>
+      <source port="d_lead"></source>
+      <target instance="ssd_distance_mode1" port="d_lead"></target>
+    </inboundConnector>
+    <inboundConnector>
+      <source port="d_safe_new"></source>
+      <target instance="ssd_distance_mode1" port="d_safe_new"></target>
+    </inboundConnector>
+    <inboundConnector>
+      <source port="v_acc"></source>
+      <target instance="ssd_distance_mode1" port="v_acc"></target>
+    </inboundConnector>
+    <inboundConnector>
+      <source port="ssd_mode"></source>
+      <target instance="ssd_setpoint1" port="ssd_mode"></target>
+    </inboundConnector>
+    <outboundConnector>
+      <source instance="ssd_setpoint1" port="v_set"></source>
+      <target port="v_set"></target>
+    </outboundConnector>
+    <ccode cFileName="Composite_Systems.c" cStructName="Composite_Systems____ssd_setpoint_compute_flattened_data_t" cExecuteFunctionName="Composite_Systems____ssd_setpoint_compute_flattened_execute" cInitFunctionName="Composite_Systems____ssd_setpoint_compute_flattened_init"></ccode>
+  </compositeBlock>
+  <compositeBlock name="acc_speed_tracking" module="Composite_Systems" model="_60_ClosedLoopValidation" abstract="true">
+    <inport name="dLead" type="double /m/"></inport>
+    <inport name="dSafe" type="double /m/"></inport>
+    <inport name="v_acc" type="double /mps/"></inport>
+    <inport name="v_set" type="double /mps/"></inport>
+    <outport name="b1" type="double /pct/"></outport>
+    <outport name="d_brake" type="double /m/"></outport>
+    <outport name="t1" type="double /pct/"></outport>
+    <instance name="st_mode_braking_distance" sourceName="st_braking_distanceInterface" sourceModule="BlockInterfaces"></instance>
+    <instance name="st_mode_compute" sourceName="st_mode_computationInterface" sourceModule="BlockInterfaces"></instance>
+    <instance name="st_track" sourceName="st_trackingInterface" sourceModule="BlockInterfaces"></instance>
+    <instance name="throttleMode" sourceName="throttlemodeInterface" sourceModule="BlockInterfaces"></instance>
+    <instance name="brakemode1" sourceName="brakemodeInterface" sourceModule="BlockInterfaces"></instance>
+    <internalConnector>
+      <source instance="st_mode_braking_distance" port="d_brake"></source>
+      <target instance="st_mode_compute" port="d_brake"></target>
+    </internalConnector>
+    <internalConnector>
+      <source instance="throttleMode" port="throttle"></source>
+      <target instance="st_track" port="t_throttle"></target>
+    </internalConnector>
+    <internalConnector>
+      <source instance="throttleMode" port="brake"></source>
+      <target instance="st_track" port="t_brake"></target>
+    </internalConnector>
+    <internalConnector>
+      <source instance="brakemode1" port="throttle"></source>
+      <target instance="st_track" port="b_throttle"></target>
+    </internalConnector>
+    <internalConnector>
+      <source instance="brakemode1" port="brake"></source>
+      <target instance="st_track" port="b_brake"></target>
+    </internalConnector>
+    <internalConnector>
+      <source instance="st_mode_compute" port="st_mode"></source>
+      <target instance="st_track" port="st_mode1"></target>
+    </internalConnector>
+    <inboundConnector>
+      <source port="v_acc"></source>
+      <target instance="st_mode_braking_distance" port="v_acc"></target>
+    </inboundConnector>
+    <inboundConnector>
+      <source port="dLead"></source>
+      <target instance="st_mode_compute" port="d_lead"></target>
+    </inboundConnector>
+    <inboundConnector>
+      <source port="dSafe"></source>
+      <target instance="st_mode_compute" port="d_safe_new"></target>
+    </inboundConnector>
+    <inboundConnector>
+      <source port="v_acc"></source>
+      <target instance="st_mode_compute" port="v_acc"></target>
+    </inboundConnector>
+    <inboundConnector>
+      <source port="v_set"></source>
+      <target instance="st_mode_compute" port="v_set"></target>
+    </inboundConnector>
+    <inboundConnector>
+      <source port="v_acc"></source>
+      <target instance="throttleMode" port="v_acc"></target>
+    </inboundConnector>
+    <inboundConnector>
+      <source port="v_set"></source>
+      <target instance="throttleMode" port="v_set"></target>
+    </inboundConnector>
+    <inboundConnector>
+      <source port="v_acc"></source>
+      <target instance="brakemode1" port="v_acc"></target>
+    </inboundConnector>
+    <inboundConnector>
+      <source port="v_set"></source>
+      <target instance="brakemode1" port="v_set"></target>
+    </inboundConnector>
+    <outboundConnector>
+      <source instance="st_mode_braking_distance" port="d_brake"></source>
+      <target port="d_brake"></target>
+    </outboundConnector>
+    <outboundConnector>
+      <source instance="st_track" port="throttle"></source>
+      <target port="t1"></target>
+    </outboundConnector>
+    <outboundConnector>
+      <source instance="st_track" port="brake"></source>
+      <target port="b1"></target>
+    </outboundConnector>
+    <comment><![CDATA[]]></comment>
+    <ccode cFileName="Composite_Systems.c" cStructName="Composite_Systems____acc_speed_tracking_flattened_data_t" cExecuteFunctionName="Composite_Systems____acc_speed_tracking_flattened_execute" cInitFunctionName="Composite_Systems____acc_speed_tracking_flattened_init"></ccode>
+  </compositeBlock>
+  <ccode-block name="DiscreteDifference" module="Cla_Discrete" model="_60_ClosedLoopValidation" gUnits="G1">
+    <inport name="in1" type="double /G1/"></inport>
+    <outport name="out" type="double /G1/"></outport>
+    <parameter name="vinit" type="double "></parameter>
+    <ccode cFileName="Cla_Discrete.c" cStructName="Cla_Discrete____DiscreteDifference_data_t" cExecuteFunctionName="Cla_Discrete____DiscreteDifference_execute" cInitFunctionName="Cla_Discrete____DiscreteDifference_init"></ccode>
+    <comment><![CDATA[Generates output which is equal to current input value minus previous input value. The parameter vinit substitutes for the previous value at the first iteration]]></comment>
+  </ccode-block>
+  <ccode-block name="DiscreteIIRFilter" module="Cla_Discrete" model="_60_ClosedLoopValidation" gUnits="G1">
+    <inport name="in1" type="double /G1/"></inport>
+    <outport name="out1" type="double /G1/"></outport>
+    <parameter name="Numerator" type="double [10]"></parameter>
+    <parameter name="Denominator" type="double [10]"></parameter>
+    <parameter name="InitialStates" type="double /G1/"></parameter>
+    <ccode cFileName="Cla_Discrete.c" cStructName="Cla_Discrete____DiscreteIIRFilter_data_t" cExecuteFunctionName="Cla_Discrete____DiscreteIIRFilter_execute" cInitFunctionName="Cla_Discrete____DiscreteIIRFilter_init"></ccode>
+    <comment><![CDATA[The block models an Infinite Impulse Response filter. The block uses a scalar value InitialStates to initialise all the initial filter states. The parameters Numeratorand Denominatoris used to specify the ten values deep numerator and denominator coefficients. In case of a lower number of numerator or denominator coefficients, the remaining slots in Numeratorand Denominator are to be filled by NAN for now.]]></comment>
+  </ccode-block>
+  <ccode-block name="Memory" module="Cla_Discrete" model="_60_ClosedLoopValidation" gUnits="G1">
+    <flowspec outport="out1">
+      <dependency inport="in1" delayed="true"></dependency>
+    </flowspec>
+    <inport name="in1" type="double /G1/"></inport>
+    <outport name="out1" type="double /G1/"></outport>
+    <parameter name="vinit" type="double /G1/"></parameter>
+    <ccode cFileName="Cla_Discrete.c" cStructName="Cla_Discrete____Memory_data_t" cExecuteFunctionName="Cla_Discrete____Memory_execute" cInitFunctionName="Cla_Discrete____Memory_init" cUpdateFunctionName="Cla_Discrete____Memory_update"></ccode>
+    <comment><![CDATA[The block memorises the input value of the previous time step and outputs it for the current time step. The parameter vinit specifies the input value at the previous time step for the first execution of the block.]]></comment>
+  </ccode-block>
+  <ccode-block name="UnitDelay" module="Cla_Discrete" model="_60_ClosedLoopValidation" gUnits="G1">
+    <flowspec outport="out1">
+      <dependency inport="in1" delayed="true"></dependency>
+    </flowspec>
+    <inport name="in1" type="double /G1/"></inport>
+    <outport name="out1" type="double /G1/"></outport>
+    <parameter name="X0" type="double /G1/"></parameter>
+    <ccode cFileName="Cla_Discrete.c" cStructName="Cla_Discrete____UnitDelay_data_t" cExecuteFunctionName="Cla_Discrete____UnitDelay_execute" cInitFunctionName="Cla_Discrete____UnitDelay_init" cUpdateFunctionName="Cla_Discrete____UnitDelay_update"></ccode>
+    <comment><![CDATA[This block holds and delays its input for one time step. It works same as Memory block in discrete domain. The parameter X0 is equivalent to vinit in the block Memory]]></comment>
+  </ccode-block>
+  <ccode-block name="IntegerDelay" module="Cla_Discrete" model="_60_ClosedLoopValidation" gUnits="G1">
+    <flowspec outport="out1">
+      <dependency inport="in1" delayed="true"></dependency>
+    </flowspec>
+    <inport name="in1" type="double /G1/"></inport>
+    <outport name="out1" type="double /G1/"></outport>
+    <parameter name="vinit" type="double /G1/"></parameter>
+    <parameter name="NumDelays" type="uint8 "></parameter>
+    <ccode cFileName="Cla_Discrete.c" cStructName="Cla_Discrete____IntegerDelay_data_t" cExecuteFunctionName="Cla_Discrete____IntegerDelay_execute" cInitFunctionName="Cla_Discrete____IntegerDelay_init" cUpdateFunctionName="Cla_Discrete____IntegerDelay_update"></ccode>
+    <comment><![CDATA[The block holds and delays its input for NumDelays time step(s). The number of time steps the block can delay its input ranges from 1-10 determined by the value of NumDelays. Using NumDelays value as 1 makes this block equivalent to Unit Delay.]]></comment>
+  </ccode-block>
+  <ccode-block name="DiscreteFIRfilter" module="Cla_Discrete" model="_60_ClosedLoopValidation" gUnits="G1">
+    <inport name="in1" type="double /G1/"></inport>
+    <outport name="out1" type="double /G1/"></outport>
+    <parameter name="IC" type="double /G1/"></parameter>
+    <parameter name="NumCoeffs" type="double [10]"></parameter>
+    <ccode cFileName="Cla_Discrete.c" cStructName="Cla_Discrete____DiscreteFIRfilter_data_t" cExecuteFunctionName="Cla_Discrete____DiscreteFIRfilter_execute" cInitFunctionName="Cla_Discrete____DiscreteFIRfilter_init"></ccode>
+    <comment><![CDATA[This block implements a DIRECT FORM1 FIR filter. The block uses a scalar value ICto initialise the filter delays. The parameter NumCoeffstakes in the 10 value deep numerator coefficients. In case of a lower number of numerator coefficients, the remaining slots in NumCoeffs are to be filled by NAN for now.]]></comment>
+  </ccode-block>
+  <compositeBlock name="FirstOrderHold" module="Cla_Discrete" model="_60_ClosedLoopValidation" gUnits="G1">
+    <inport name="in1" type="double /G1/"></inport>
+    <outport name="out1" type="double /G1/"></outport>
+    <parameter name="Ts" type="double /s/">2.0 s</parameter>
+    <instance name="ZeroOrderHold_" sourceName="ZeroOrderHold" sourceModule="Cla_Discrete"></instance>
+    <instance name="UnitDelay_" sourceName="UnitDelay" sourceModule="Cla_Discrete">
+      <init param="X0">0.0 G1</init>
+    </instance>
+    <instance name="Clock_" sourceName="Clock" sourceModule="Cla_Sources"></instance>
+    <instance name="DigitalClock_" sourceName="DigitalClock" sourceModule="Cla_Sources"></instance>
+    <instance name="firstSum" sourceName="Sum" sourceModule="Cla_Operators"></instance>
+    <instance name="secondSum" sourceName="Sum" sourceModule="Cla_Operators"></instance>
+    <instance name="thirdSum" sourceName="Sum" sourceModule="Cla_Operators"></instance>
+    <instance name="pdt" sourceName="Product" sourceModule="Cla_Operators"></instance>
+    <instance name="Gain_" sourceName="Gain" sourceModule="Cla_Operators">
+      <init param="Gain">1 / Ts</init>
+    </instance>
+    <internalConnector>
+      <source instance="ZeroOrderHold_" port="out1"></source>
+      <target instance="firstSum" port="plus" smartConnect="(double /G1/)in"></target>
+    </internalConnector>
+    <internalConnector>
+      <source instance="UnitDelay_" port="out1"></source>
+      <target instance="firstSum" port="minus" smartConnect="(double /G1/)in"></target>
+    </internalConnector>
+    <internalConnector>
+      <source instance="Clock_" port="out1"></source>
+      <target instance="secondSum" port="plus"></target>
+    </internalConnector>
+    <internalConnector>
+      <source instance="DigitalClock_" port="out1"></source>
+      <target instance="secondSum" port="minus"></target>
+    </internalConnector>
+    <internalConnector>
+      <source instance="secondSum" port="out1"></source>
+      <target instance="Gain_" port="in1"></target>
+    </internalConnector>
+    <internalConnector>
+      <source instance="firstSum" port="out1"></source>
+      <target instance="pdt" port="multiply" smartConnect="(double )in"></target>
+    </internalConnector>
+    <internalConnector>
+      <source instance="Gain_" port="out1"></source>
+      <target instance="pdt" port="multiply"></target>
+    </internalConnector>
+    <internalConnector>
+      <source instance="pdt" port="out1"></source>
+      <target instance="thirdSum" port="plus" smartConnect="(double /G1/)in"></target>
+    </internalConnector>
+    <internalConnector>
+      <source instance="ZeroOrderHold_" port="out1"></source>
+      <target instance="thirdSum" port="plus" smartConnect="(double /G1/)in"></target>
+    </internalConnector>
+    <inboundConnector>
+      <source port="in1"></source>
+      <target instance="ZeroOrderHold_" port="in1"></target>
+    </inboundConnector>
+    <inboundConnector>
+      <source port="in1"></source>
+      <target instance="UnitDelay_" port="in1"></target>
+    </inboundConnector>
+    <outboundConnector>
+      <source instance="thirdSum" port="out1"></source>
+      <target port="out1"></target>
+    </outboundConnector>
+    <comment><![CDATA[This block implements first-order sample-and-hold at specified sample time Ts.]]></comment>
+    <ccode cFileName="Cla_Discrete.c" cStructName="Cla_Discrete____FirstOrderHold_flattened_data_t" cExecuteFunctionName="Cla_Discrete____FirstOrderHold_flattened_execute" cInitFunctionName="Cla_Discrete____FirstOrderHold_flattened_init"></ccode>
+  </compositeBlock>
+  <compositeBlock name="DiscretePIDControllerPIDParallelICInt" module="Cla_Discrete" model="_60_ClosedLoopValidation" gUnits="G1">
+    <inport name="in1" type="double /G1/"></inport>
+    <outport name="out1" type="double /G1/"></outport>
+    <parameter name="P" type="double "></parameter>
+    <parameter name="I" type="double "></parameter>
+    <parameter name="D" type="double "></parameter>
+    <parameter name="N" type="double "></parameter>
+    <parameter name="InitialConditionForIntegrator" type="double /G1/"></parameter>
+    <parameter name="InitialConditionForFilter" type="double /G1/"></parameter>
+    <instance name="P" sourceName="Gain" sourceModule="Cla_Operators">
+      <init param="Gain">P</init>
+    </instance>
+    <instance name="I" sourceName="Gain" sourceModule="Cla_Operators">
+      <init param="Gain">I</init>
+    </instance>
+    <instance name="D" sourceName="Gain" sourceModule="Cla_Operators">
+      <init param="Gain">D</init>
+    </instance>
+    <instance name="FilterCoefficient" sourceName="Gain" sourceModule="Cla_Operators">
+      <init param="Gain">N</init>
+    </instance>
+    <instance name="Integrator_" sourceName="IntegratorICInt" sourceModule="Cla_Discrete">
+      <init param="gainval">1</init>
+      <init param="InitialCondition">InitialConditionForIntegrator</init>
+    </instance>
+    <instance name="Filter" sourceName="IntegratorICInt" sourceModule="Cla_Discrete">
+      <init param="gainval">1</init>
+      <init param="InitialCondition">InitialConditionForFilter</init>
+    </instance>
+    <instance name="SumD" sourceName="Sum" sourceModule="Cla_Operators"></instance>
+    <instance name="Sum_" sourceName="Sum" sourceModule="Cla_Operators"></instance>
+    <internalConnector>
+      <source instance="I" port="out1"></source>
+      <target instance="Integrator_" port="in1"></target>
+    </internalConnector>
+    <internalConnector>
+      <source instance="D" port="out1"></source>
+      <target instance="SumD" port="plus" smartConnect="(double /G1/)in"></target>
+    </internalConnector>
+    <internalConnector>
+      <source instance="SumD" port="out1"></source>
+      <target instance="FilterCoefficient" port="in1"></target>
+    </internalConnector>
+    <internalConnector>
+      <source instance="P" port="out1"></source>
+      <target instance="Sum_" port="plus" smartConnect="(double /G1/)in"></target>
+    </internalConnector>
+    <internalConnector>
+      <source instance="Integrator_" port="out1"></source>
+      <target instance="Sum_" port="plus"></target>
+    </internalConnector>
+    <internalConnector>
+      <source instance="FilterCoefficient" port="out1"></source>
+      <target instance="Sum_" port="plus" smartConnect="(double /G1/)in"></target>
+    </internalConnector>
+    <internalConnector>
+      <source instance="FilterCoefficient" port="out1"></source>
+      <target instance="Filter" port="in1" delay="0"></target>
+    </internalConnector>
+    <internalConnector>
+      <source instance="Filter" port="out1"></source>
+      <target instance="SumD" port="minus"></target>
+    </internalConnector>
+    <inboundConnector>
+      <source port="in1"></source>
+      <target instance="P" port="in1"></target>
+    </inboundConnector>
+    <inboundConnector>
+      <source port="in1"></source>
+      <target instance="I" port="in1"></target>
+    </inboundConnector>
+    <inboundConnector>
+      <source port="in1"></source>
+      <target instance="D" port="in1"></target>
+    </inboundConnector>
+    <outboundConnector>
+      <source instance="Sum_" port="out1"></source>
+      <target port="out1"></target>
+    </outboundConnector>
+    <comment><![CDATA[The block implements a parallel PID controller with weighted sums of porportional, integral and derivative of the input signal based on P, Iand D respectively. For this block, the Integrator's initial conditions have to specified as parameters InitialConditionForIntegrator and InitialConditionForFilter.]]></comment>
+    <ccode cFileName="Cla_Discrete.c" cStructName="Cla_Discrete____DiscretePIDControllerPIDParallelICInt_flattened_data_t" cExecuteFunctionName="Cla_Discrete____DiscretePIDControllerPIDParallelICInt_flattened_execute" cInitFunctionName="Cla_Discrete____DiscretePIDControllerPIDParallelICInt_flattened_init"></ccode>
+  </compositeBlock>
+  <compositeBlock name="DiscretePIDControllerPIDParallelICExt" module="Cla_Discrete" model="_60_ClosedLoopValidation" gUnits="G1">
+    <inport name="in1_dataInput" type="double /G1/"></inport>
+    <inport name="in2_I0" type="double /G1/"></inport>
+    <inport name="in3_D0" type="double /G1/"></inport>
+    <outport name="out1" type="double /G1/"></outport>
+    <parameter name="P" type="double "></parameter>
+    <parameter name="I" type="double "></parameter>
+    <parameter name="D" type="double "></parameter>
+    <parameter name="N" type="double "></parameter>
+    <instance name="P" sourceName="Gain" sourceModule="Cla_Operators">
+      <init param="Gain">P</init>
+    </instance>
+    <instance name="I" sourceName="Gain" sourceModule="Cla_Operators">
+      <init param="Gain">I</init>
+    </instance>
+    <instance name="D" sourceName="Gain" sourceModule="Cla_Operators">
+      <init param="Gain">D</init>
+    </instance>
+    <instance name="FilterCoefficient" sourceName="Gain" sourceModule="Cla_Operators">
+      <init param="Gain">N</init>
+    </instance>
+    <instance name="Integrator" sourceName="IntegratorICExt" sourceModule="Cla_Discrete">
+      <init param="gainval">1</init>
+    </instance>
+    <instance name="Filter" sourceName="IntegratorICExt" sourceModule="Cla_Discrete">
+      <init param="gainval">1</init>
+    </instance>
+    <instance name="SumD" sourceName="Sum" sourceModule="Cla_Operators"></instance>
+    <instance name="finalSum" sourceName="Sum" sourceModule="Cla_Operators"></instance>
+    <internalConnector>
+      <source instance="I" port="out1"></source>
+      <target instance="Integrator" port="in1_dataInput"></target>
+    </internalConnector>
+    <internalConnector>
+      <source instance="D" port="out1"></source>
+      <target instance="SumD" port="plus" smartConnect="(double /G1/)in"></target>
+    </internalConnector>
+    <internalConnector>
+      <source instance="SumD" port="out1"></source>
+      <target instance="FilterCoefficient" port="in1"></target>
+    </internalConnector>
+    <internalConnector>
+      <source instance="P" port="out1"></source>
+      <target instance="finalSum" port="plus" smartConnect="(double /G1/)in"></target>
+    </internalConnector>
+    <internalConnector>
+      <source instance="Integrator" port="out1"></source>
+      <target instance="finalSum" port="plus"></target>
+    </internalConnector>
+    <internalConnector>
+      <source instance="FilterCoefficient" port="out1"></source>
+      <target instance="finalSum" port="plus" smartConnect="(double /G1/)in"></target>
+    </internalConnector>
+    <internalConnector>
+      <source instance="FilterCoefficient" port="out1"></source>
+      <target instance="Filter" port="in1_dataInput" delay="0"></target>
+    </internalConnector>
+    <internalConnector>
+      <source instance="Filter" port="out1"></source>
+      <target instance="SumD" port="minus"></target>
+    </internalConnector>
+    <inboundConnector>
+      <source port="in1_dataInput"></source>
+      <target instance="P" port="in1"></target>
+    </inboundConnector>
+    <inboundConnector>
+      <source port="in1_dataInput"></source>
+      <target instance="I" port="in1"></target>
+    </inboundConnector>
+    <inboundConnector>
+      <source port="in1_dataInput"></source>
+      <target instance="D" port="in1"></target>
+    </inboundConnector>
+    <inboundConnector>
+      <source port="in2_I0"></source>
+      <target instance="Integrator" port="in2_x0" smartConnect="(double /G1/)in"></target>
+    </inboundConnector>
+    <inboundConnector>
+      <source port="in3_D0"></source>
+      <target instance="Filter" port="in2_x0" smartConnect="(double /G1/)in"></target>
+    </inboundConnector>
+    <outboundConnector>
+      <source instance="finalSum" port="out1"></source>
+      <target port="out1" smartConnect="(double /G1/)in"></target>
+    </outboundConnector>
+    <comment><![CDATA[The block implements a parallel PID controller with weighted sums of porportional, integral and derivative of the input signal based on P, Iand D respectively. For this block, the Integrator's initial conditions are available as input ports in2_I0 for the Integrator and in3_D0 for the filter.]]></comment>
+    <ccode cFileName="Cla_Discrete.c" cStructName="Cla_Discrete____DiscretePIDControllerPIDParallelICExt_flattened_data_t" cExecuteFunctionName="Cla_Discrete____DiscretePIDControllerPIDParallelICExt_flattened_execute" cInitFunctionName="Cla_Discrete____DiscretePIDControllerPIDParallelICExt_flattened_init"></ccode>
+  </compositeBlock>
+  <compositeBlock name="DiscretePIDControllerPIDParallelICIntReset" module="Cla_Discrete" model="_60_ClosedLoopValidation" gUnits="G1">
+    <inport name="in1_dataInput" type="double /G1/"></inport>
+    <inport name="in2_reset" type="double "></inport>
+    <outport name="out1" type="double /G1/"></outport>
+    <parameter name="P" type="double "></parameter>
+    <parameter name="I" type="double "></parameter>
+    <parameter name="D" type="double "></parameter>
+    <parameter name="N" type="double "></parameter>
+    <parameter name="InitialConditionForIntegrator" type="double /G1/"></parameter>
+    <parameter name="InitialConditionForFilter" type="double /G1/"></parameter>
+    <parameter name="ExternalReset" type="PID_Reset "></parameter>
+    <instance name="P" sourceName="Gain" sourceModule="Cla_Operators">
+      <init param="Gain">P</init>
+    </instance>
+    <instance name="I" sourceName="Gain" sourceModule="Cla_Operators">
+      <init param="Gain">I</init>
+    </instance>
+    <instance name="D" sourceName="Gain" sourceModule="Cla_Operators">
+      <init param="Gain">D</init>
+    </instance>
+    <instance name="FilterCoefficient" sourceName="Gain" sourceModule="Cla_Operators">
+      <init param="Gain">N</init>
+    </instance>
+    <instance name="Integrator" sourceName="IntegratorICIntReset" sourceModule="Cla_Discrete">
+      <init param="gainval">1</init>
+      <init param="InitialCondition">InitialConditionForIntegrator</init>
+      <init param="ExternalReset">(Integrator_Reset )ExternalReset</init>
+    </instance>
+    <instance name="Filter" sourceName="IntegratorICIntReset" sourceModule="Cla_Discrete">
+      <init param="gainval">1</init>
+      <init param="InitialCondition">InitialConditionForFilter</init>
+      <init param="ExternalReset">(Integrator_Reset )ExternalReset</init>
+    </instance>
+    <instance name="SumD" sourceName="Sum" sourceModule="Cla_Operators"></instance>
+    <instance name="finalSum" sourceName="Sum" sourceModule="Cla_Operators"></instance>
+    <internalConnector>
+      <source instance="I" port="out1"></source>
+      <target instance="Integrator" port="in1_dataInput"></target>
+    </internalConnector>
+    <internalConnector>
+      <source instance="D" port="out1"></source>
+      <target instance="SumD" port="plus" smartConnect="(double /G1/)in"></target>
+    </internalConnector>
+    <internalConnector>
+      <source instance="SumD" port="out1"></source>
+      <target instance="FilterCoefficient" port="in1"></target>
+    </internalConnector>
+    <internalConnector>
+      <source instance="P" port="out1"></source>
+      <target instance="finalSum" port="plus" smartConnect="(double /G1/)in"></target>
+    </internalConnector>
+    <internalConnector>
+      <source instance="Integrator" port="out1"></source>
+      <target instance="finalSum" port="plus"></target>
+    </internalConnector>
+    <internalConnector>
+      <source instance="FilterCoefficient" port="out1"></source>
+      <target instance="finalSum" port="plus" smartConnect="(double /G1/)in"></target>
+    </internalConnector>
+    <internalConnector>
+      <source instance="FilterCoefficient" port="out1"></source>
+      <target instance="Filter" port="in1_dataInput" delay="0"></target>
+    </internalConnector>
+    <internalConnector>
+      <source instance="Filter" port="out1"></source>
+      <target instance="SumD" port="minus"></target>
+    </internalConnector>
+    <inboundConnector>
+      <source port="in1_dataInput"></source>
+      <target instance="P" port="in1"></target>
+    </inboundConnector>
+    <inboundConnector>
+      <source port="in1_dataInput"></source>
+      <target instance="I" port="in1"></target>
+    </inboundConnector>
+    <inboundConnector>
+      <source port="in1_dataInput"></source>
+      <target instance="D" port="in1"></target>
+    </inboundConnector>
+    <inboundConnector>
+      <source port="in2_reset"></source>
+      <target instance="Integrator" port="in2_reset"></target>
+    </inboundConnector>
+    <inboundConnector>
+      <source port="in2_reset"></source>
+      <target instance="Filter" port="in2_reset"></target>
+    </inboundConnector>
+    <outboundConnector>
+      <source instance="finalSum" port="out1"></source>
+      <target port="out1"></target>
+    </outboundConnector>
+    <comment><![CDATA[The block implements a parallel PID controller with weighted sums of porportional, integral and derivative of the input signal based on P, Iand D respectively. For this block, the Integrator's initial conditions have to specified as parameters InitialConditionForIntegrator and InitialConditionForFilter. This PID controller block can be reset with the help of the input port in2_reset]]></comment>
+    <ccode cFileName="Cla_Discrete.c" cStructName="Cla_Discrete____DiscretePIDControllerPIDParallelICIntReset_flattened_data_t" cExecuteFunctionName="Cla_Discrete____DiscretePIDControllerPIDParallelICIntReset_flattened_execute" cInitFunctionName="Cla_Discrete____DiscretePIDControllerPIDParallelICIntReset_flattened_init"></ccode>
+  </compositeBlock>
+  <compositeBlock name="DiscretePIDControllerPIDParallelICExtReset" module="Cla_Discrete" model="_60_ClosedLoopValidation" gUnits="G1">
+    <inport name="in1_dataInput" type="double /G1/"></inport>
+    <inport name="in2_reset" type="double "></inport>
+    <inport name="in3_I0" type="double /G1/"></inport>
+    <inport name="in4_D0" type="double /G1/"></inport>
+    <outport name="out1" type="double /G1/"></outport>
+    <parameter name="P" type="double "></parameter>
+    <parameter name="I" type="double "></parameter>
+    <parameter name="D" type="double "></parameter>
+    <parameter name="N" type="double "></parameter>
+    <parameter name="ExternalReset" type="PID_Reset "></parameter>
+    <instance name="P" sourceName="Gain" sourceModule="Cla_Operators">
+      <init param="Gain">P</init>
+    </instance>
+    <instance name="I" sourceName="Gain" sourceModule="Cla_Operators">
+      <init param="Gain">I</init>
+    </instance>
+    <instance name="D" sourceName="Gain" sourceModule="Cla_Operators">
+      <init param="Gain">D</init>
+    </instance>
+    <instance name="FilterCoefficient" sourceName="Gain" sourceModule="Cla_Operators">
+      <init param="Gain">N</init>
+    </instance>
+    <instance name="Integrator" sourceName="IntegratorICExtReset" sourceModule="Cla_Discrete">
+      <init param="gainval">1</init>
+      <init param="ExternalReset">(Integrator_Reset )ExternalReset</init>
+    </instance>
+    <instance name="Filter" sourceName="IntegratorICExtReset" sourceModule="Cla_Discrete">
+      <init param="gainval">1</init>
+      <init param="ExternalReset">(Integrator_Reset )ExternalReset</init>
+    </instance>
+    <instance name="SumD" sourceName="Sum" sourceModule="Cla_Operators"></instance>
+    <instance name="finalSum" sourceName="Sum" sourceModule="Cla_Operators"></instance>
+    <internalConnector>
+      <source instance="I" port="out1"></source>
+      <target instance="Integrator" port="in1_dataInput"></target>
+    </internalConnector>
+    <internalConnector>
+      <source instance="D" port="out1"></source>
+      <target instance="SumD" port="plus" smartConnect="(double /G1/)in"></target>
+    </internalConnector>
+    <internalConnector>
+      <source instance="SumD" port="out1"></source>
+      <target instance="FilterCoefficient" port="in1"></target>
+    </internalConnector>
+    <internalConnector>
+      <source instance="P" port="out1"></source>
+      <target instance="finalSum" port="plus" smartConnect="(double /G1/)in"></target>
+    </internalConnector>
+    <internalConnector>
+      <source instance="Integrator" port="out1"></source>
+      <target instance="finalSum" port="plus"></target>
+    </internalConnector>
+    <internalConnector>
+      <source instance="FilterCoefficient" port="out1"></source>
+      <target instance="finalSum" port="plus" smartConnect="(double /G1/)in"></target>
+    </internalConnector>
+    <internalConnector>
+      <source instance="FilterCoefficient" port="out1"></source>
+      <target instance="Filter" port="in1_dataInput" delay="0"></target>
+    </internalConnector>
+    <internalConnector>
+      <source instance="Filter" port="out1"></source>
+      <target instance="SumD" port="minus"></target>
+    </internalConnector>
+    <inboundConnector>
+      <source port="in1_dataInput"></source>
+      <target instance="P" port="in1"></target>
+    </inboundConnector>
+    <inboundConnector>
+      <source port="in1_dataInput"></source>
+      <target instance="I" port="in1"></target>
+    </inboundConnector>
+    <inboundConnector>
+      <source port="in1_dataInput"></source>
+      <target instance="D" port="in1"></target>
+    </inboundConnector>
+    <inboundConnector>
+      <source port="in3_I0"></source>
+      <target instance="Integrator" port="in3_x0"></target>
+    </inboundConnector>
+    <inboundConnector>
+      <source port="in2_reset"></source>
+      <target instance="Integrator" port="in2_reset"></target>
+    </inboundConnector>
+    <inboundConnector>
+      <source port="in2_reset"></source>
+      <target instance="Filter" port="in2_reset"></target>
+    </inboundConnector>
+    <inboundConnector>
+      <source port="in4_D0"></source>
+      <target instance="Filter" port="in3_x0"></target>
+    </inboundConnector>
+    <outboundConnector>
+      <source instance="finalSum" port="out1"></source>
+      <target port="out1"></target>
+    </outboundConnector>
+    <comment><![CDATA[The block implements a parallel PID controller with weighted sums of porportional, integral and derivative of the input signal based on P, Iand D respectively. For this block, the Integrator's initial conditions are available as input ports in3_I0 for the Integrator and in4_D0 for the filter. This PID controller block can be reset with the help of the input port in2_reset]]></comment>
+    <ccode cFileName="Cla_Discrete.c" cStructName="Cla_Discrete____DiscretePIDControllerPIDParallelICExtReset_flattened_data_t" cExecuteFunctionName="Cla_Discrete____DiscretePIDControllerPIDParallelICExtReset_flattened_execute" cInitFunctionName="Cla_Discrete____DiscretePIDControllerPIDParallelICExtReset_flattened_init"></ccode>
+  </compositeBlock>
+  <compositeBlock name="DiscretePIDController2DOFICInt" module="Cla_Discrete" model="_60_ClosedLoopValidation" gUnits="G1">
+    <inport name="in1_ref" type="double /G1/"></inport>
+    <inport name="in2_dataInput" type="double /G1/"></inport>
+    <outport name="out1" type="double /G1/"></outport>
+    <parameter name="P" type="double "></parameter>
+    <parameter name="I" type="double "></parameter>
+    <parameter name="D" type="double "></parameter>
+    <parameter name="N" type="double "></parameter>
+    <parameter name="b" type="double "></parameter>
+    <parameter name="c" type="double "></parameter>
+    <parameter name="InitialConditionForIntegrator" type="double /G1/"></parameter>
+    <parameter name="InitialConditionForFilter" type="double /G1/"></parameter>
+    <instance name="SetpointWeightingProportional" sourceName="Gain" sourceModule="Cla_Operators">
+      <init param="Gain">b</init>
+    </instance>
+    <instance name="SetpointWeightingDerivative" sourceName="Gain" sourceModule="Cla_Operators">
+      <init param="Gain">c</init>
+    </instance>
+    <instance name="Sum1" sourceName="Sum" sourceModule="Cla_Operators"></instance>
+    <instance name="Sum2" sourceName="Sum" sourceModule="Cla_Operators"></instance>
+    <instance name="Sum3" sourceName="Sum" sourceModule="Cla_Operators"></instance>
+    <instance name="Sum" sourceName="Sum" sourceModule="Cla_Operators"></instance>
+    <instance name="SumD" sourceName="Sum" sourceModule="Cla_Operators"></instance>
+    <instance name="ProportionalGain" sourceName="Gain" sourceModule="Cla_Operators">
+      <init param="Gain">P</init>
+    </instance>
+    <instance name="IntegralGain" sourceName="Gain" sourceModule="Cla_Operators">
+      <init param="Gain">I</init>
+    </instance>
+    <instance name="DerivativeGain" sourceName="Gain" sourceModule="Cla_Operators">
+      <init param="Gain">D</init>
+    </instance>
+    <instance name="FilterCoefficient" sourceName="Gain" sourceModule="Cla_Operators">
+      <init param="Gain">N</init>
+    </instance>
+    <instance name="Integrator" sourceName="IntegratorICInt" sourceModule="Cla_Discrete">
+      <init param="gainval">1</init>
+      <init param="InitialCondition">InitialConditionForIntegrator</init>
+    </instance>
+    <instance name="Filter" sourceName="IntegratorICInt" sourceModule="Cla_Discrete">
+      <init param="gainval">1</init>
+      <init param="InitialCondition">InitialConditionForFilter</init>
+    </instance>
+    <internalConnector>
+      <source instance="SetpointWeightingProportional" port="out1"></source>
+      <target instance="Sum1" port="plus" smartConnect="(double /G1/)in"></target>
+    </internalConnector>
+    <internalConnector>
+      <source instance="SetpointWeightingDerivative" port="out1"></source>
+      <target instance="Sum3" port="plus" smartConnect="(double /G1/)in"></target>
+    </internalConnector>
+    <internalConnector>
+      <source instance="Sum1" port="out1"></source>
+      <target instance="ProportionalGain" port="in1"></target>
+    </internalConnector>
+    <internalConnector>
+      <source instance="Sum2" port="out1"></source>
+      <target instance="IntegralGain" port="in1"></target>
+    </internalConnector>
+    <internalConnector>
+      <source instance="Sum3" port="out1"></source>
+      <target instance="DerivativeGain" port="in1"></target>
+    </internalConnector>
+    <internalConnector>
+      <source instance="DerivativeGain" port="out1"></source>
+      <target instance="SumD" port="plus" smartConnect="(double /G1/)in"></target>
+    </internalConnector>
+    <internalConnector>
+      <source instance="SumD" port="out1"></source>
+      <target instance="FilterCoefficient" port="in1"></target>
+    </internalConnector>
+    <internalConnector>
+      <source instance="FilterCoefficient" port="out1"></source>
+      <target instance="Filter" port="in1" delay="0"></target>
+    </internalConnector>
+    <internalConnector>
+      <source instance="Filter" port="out1"></source>
+      <target instance="SumD" port="minus"></target>
+    </internalConnector>
+    <internalConnector>
+      <source instance="IntegralGain" port="out1"></source>
+      <target instance="Integrator" port="in1"></target>
+    </internalConnector>
+    <internalConnector>
+      <source instance="ProportionalGain" port="out1"></source>
+      <target instance="Sum" port="plus" smartConnect="(double /G1/)in"></target>
+    </internalConnector>
+    <internalConnector>
+      <source instance="Integrator" port="out1"></source>
+      <target instance="Sum" port="plus"></target>
+    </internalConnector>
+    <internalConnector>
+      <source instance="FilterCoefficient" port="out1"></source>
+      <target instance="Sum" port="plus" smartConnect="(double /G1/)in"></target>
+    </internalConnector>
+    <inboundConnector>
+      <source port="in1_ref"></source>
+      <target instance="SetpointWeightingProportional" port="in1" smartConnect="(double /G1/)in"></target>
+    </inboundConnector>
+    <inboundConnector>
+      <source port="in1_ref"></source>
+      <target instance="Sum2" port="plus" smartConnect="(double /G1/)in"></target>
+    </inboundConnector>
+    <inboundConnector>
+      <source port="in1_ref"></source>
+      <target instance="SetpointWeightingDerivative" port="in1" smartConnect="(double /G1/)in"></target>
+    </inboundConnector>
+    <inboundConnector>
+      <source port="in2_dataInput"></source>
+      <target instance="Sum2" port="minus" smartConnect="(double /G1/)in"></target>
+    </inboundConnector>
+    <inboundConnector>
+      <source port="in2_dataInput"></source>
+      <target instance="Sum3" port="minus" smartConnect="(double /G1/)in"></target>
+    </inboundConnector>
+    <inboundConnector>
+      <source port="in2_dataInput"></source>
+      <target instance="Sum1" port="minus" smartConnect="(double /G1/)in"></target>
+    </inboundConnector>
+    <outboundConnector>
+      <source instance="Sum" port="out1"></source>
+      <target port="out1" smartConnect="(double /G1/)in"></target>
+    </outboundConnector>
+    <comment><![CDATA[The block implements a parallel PID controller with two degrees of freedom and weighted sums of porportional, integral and derivative of the input signal based on P, Iand D respectively. The output is based on the diffirence between the reference signal in1_ref and fed input in2_dataInput. Setpoint weighting parameters b for Proportional and c for Derivative are available in this block. For this block, the Integrator's initial conditions have to specified as parameters InitialConditionForIntegrator and InitialConditionForFilter.]]></comment>
+    <ccode cFileName="Cla_Discrete.c" cStructName="Cla_Discrete____DiscretePIDController2DOFICInt_flattened_data_t" cExecuteFunctionName="Cla_Discrete____DiscretePIDController2DOFICInt_flattened_execute" cInitFunctionName="Cla_Discrete____DiscretePIDController2DOFICInt_flattened_init"></ccode>
+  </compositeBlock>
+  <compositeBlock name="DiscretePIDController2DOFICExt" module="Cla_Discrete" model="_60_ClosedLoopValidation" gUnits="G1">
+    <inport name="in1_ref" type="double /G1/"></inport>
+    <inport name="in2_dataInput" type="double /G1/"></inport>
+    <inport name="in3_I0" type="double /G1/"></inport>
+    <inport name="in4_D0" type="double /G1/"></inport>
+    <outport name="out1" type="double /G1/"></outport>
+    <parameter name="P" type="double "></parameter>
+    <parameter name="I" type="double "></parameter>
+    <parameter name="D" type="double "></parameter>
+    <parameter name="N" type="double "></parameter>
+    <parameter name="b" type="double "></parameter>
+    <parameter name="c" type="double "></parameter>
+    <instance name="SetpointWeightingProportional" sourceName="Gain" sourceModule="Cla_Operators">
+      <init param="Gain">b</init>
+    </instance>
+    <instance name="SetpointWeightingDerivative" sourceName="Gain" sourceModule="Cla_Operators">
+      <init param="Gain">c</init>
+    </instance>
+    <instance name="Sum1" sourceName="Sum" sourceModule="Cla_Operators"></instance>
+    <instance name="Sum2" sourceName="Sum" sourceModule="Cla_Operators"></instance>
+    <instance name="Sum3" sourceName="Sum" sourceModule="Cla_Operators"></instance>
+    <instance name="Sum" sourceName="Sum" sourceModule="Cla_Operators"></instance>
+    <instance name="SumD" sourceName="Sum" sourceModule="Cla_Operators"></instance>
+    <instance name="ProportionalGain" sourceName="Gain" sourceModule="Cla_Operators">
+      <init param="Gain">P</init>
+    </instance>
+    <instance name="IntegralGain" sourceName="Gain" sourceModule="Cla_Operators">
+      <init param="Gain">I</init>
+    </instance>
+    <instance name="DerivativeGain" sourceName="Gain" sourceModule="Cla_Operators">
+      <init param="Gain">D</init>
+    </instance>
+    <instance name="FilterCoefficient" sourceName="Gain" sourceModule="Cla_Operators">
+      <init param="Gain">N</init>
+    </instance>
+    <instance name="Integrator" sourceName="IntegratorICExt" sourceModule="Cla_Discrete">
+      <init param="gainval">1</init>
+    </instance>
+    <instance name="Filter" sourceName="IntegratorICExt" sourceModule="Cla_Discrete">
+      <init param="gainval">1</init>
+    </instance>
+    <internalConnector>
+      <source instance="SetpointWeightingProportional" port="out1"></source>
+      <target instance="Sum1" port="plus" smartConnect="(double /G1/)in"></target>
+    </internalConnector>
+    <internalConnector>
+      <source instance="SetpointWeightingDerivative" port="out1"></source>
+      <target instance="Sum3" port="plus" smartConnect="(double /G1/)in"></target>
+    </internalConnector>
+    <internalConnector>
+      <source instance="Sum1" port="out1"></source>
+      <target instance="ProportionalGain" port="in1"></target>
+    </internalConnector>
+    <internalConnector>
+      <source instance="Sum2" port="out1"></source>
+      <target instance="IntegralGain" port="in1"></target>
+    </internalConnector>
+    <internalConnector>
+      <source instance="Sum3" port="out1"></source>
+      <target instance="DerivativeGain" port="in1"></target>
+    </internalConnector>
+    <internalConnector>
+      <source instance="DerivativeGain" port="out1"></source>
+      <target instance="SumD" port="plus" smartConnect="(double /G1/)in"></target>
+    </internalConnector>
+    <internalConnector>
+      <source instance="SumD" port="out1"></source>
+      <target instance="FilterCoefficient" port="in1"></target>
+    </internalConnector>
+    <internalConnector>
+      <source instance="FilterCoefficient" port="out1"></source>
+      <target instance="Filter" port="in1_dataInput" delay="0"></target>
+    </internalConnector>
+    <internalConnector>
+      <source instance="Filter" port="out1"></source>
+      <target instance="SumD" port="minus"></target>
+    </internalConnector>
+    <internalConnector>
+      <source instance="IntegralGain" port="out1"></source>
+      <target instance="Integrator" port="in1_dataInput"></target>
+    </internalConnector>
+    <internalConnector>
+      <source instance="ProportionalGain" port="out1"></source>
+      <target instance="Sum" port="plus" smartConnect="(double /G1/)in"></target>
+    </internalConnector>
+    <internalConnector>
+      <source instance="Integrator" port="out1"></source>
+      <target instance="Sum" port="plus"></target>
+    </internalConnector>
+    <internalConnector>
+      <source instance="FilterCoefficient" port="out1"></source>
+      <target instance="Sum" port="plus" smartConnect="(double /G1/)in"></target>
+    </internalConnector>
+    <inboundConnector>
+      <source port="in1_ref"></source>
+      <target instance="SetpointWeightingProportional" port="in1" smartConnect="(double /G1/)in"></target>
+    </inboundConnector>
+    <inboundConnector>
+      <source port="in1_ref"></source>
+      <target instance="Sum2" port="plus" smartConnect="(double /G1/)in"></target>
+    </inboundConnector>
+    <inboundConnector>
+      <source port="in1_ref"></source>
+      <target instance="SetpointWeightingDerivative" port="in1" smartConnect="(double /G1/)in"></target>
+    </inboundConnector>
+    <inboundConnector>
+      <source port="in2_dataInput"></source>
+      <target instance="Sum2" port="minus" smartConnect="(double /G1/)in"></target>
+    </inboundConnector>
+    <inboundConnector>
+      <source port="in2_dataInput"></source>
+      <target instance="Sum3" port="minus" smartConnect="(double /G1/)in"></target>
+    </inboundConnector>
+    <inboundConnector>
+      <source port="in2_dataInput"></source>
+      <target instance="Sum1" port="minus" smartConnect="(double /G1/)in"></target>
+    </inboundConnector>
+    <inboundConnector>
+      <source port="in4_D0"></source>
+      <target instance="Filter" port="in2_x0" smartConnect="(double /G1/)in"></target>
+    </inboundConnector>
+    <inboundConnector>
+      <source port="in3_I0"></source>
+      <target instance="Integrator" port="in2_x0" smartConnect="(double /G1/)in"></target>
+    </inboundConnector>
+    <outboundConnector>
+      <source instance="Sum" port="out1"></source>
+      <target port="out1" smartConnect="(double /G1/)in"></target>
+    </outboundConnector>
+    <comment><![CDATA[The block implements a parallel PID controller with two degrees of freedom and weighted sums of porportional, integral and derivative of the input signal based on P, Iand D respectively. The output is based on the diffirence between the reference signal in1_ref and fed input in2_dataInput. Setpoint weighting parameters b for Proportional and c for Derivative are available in this block. For this block, the Integrator's initial conditions are available as input ports in3_I0 for the Integrator and in4_D0 for the filter.]]></comment>
+    <ccode cFileName="Cla_Discrete.c" cStructName="Cla_Discrete____DiscretePIDController2DOFICExt_flattened_data_t" cExecuteFunctionName="Cla_Discrete____DiscretePIDController2DOFICExt_flattened_execute" cInitFunctionName="Cla_Discrete____DiscretePIDController2DOFICExt_flattened_init"></ccode>
+  </compositeBlock>
+  <compositeBlock name="DiscretePIDController2DOFICIntReset" module="Cla_Discrete" model="_60_ClosedLoopValidation" gUnits="G1">
+    <inport name="in1_ref" type="double /G1/"></inport>
+    <inport name="in2_dataInput" type="double /G1/"></inport>
+    <inport name="in3_reset" type="double "></inport>
+    <outport name="out1" type="double /G1/"></outport>
+    <parameter name="P" type="double "></parameter>
+    <parameter name="I" type="double "></parameter>
+    <parameter name="D" type="double "></parameter>
+    <parameter name="N" type="double "></parameter>
+    <parameter name="b" type="double "></parameter>
+    <parameter name="c" type="double "></parameter>
+    <parameter name="InitialConditionForIntegrator" type="double /G1/"></parameter>
+    <parameter name="InitialConditionForFilter" type="double /G1/"></parameter>
+    <parameter name="ExternalReset" type="PID_Reset "></parameter>
+    <instance name="SetpointWeightingProportional" sourceName="Gain" sourceModule="Cla_Operators">
+      <init param="Gain">b</init>
+    </instance>
+    <instance name="SetpointWeightingDerivative" sourceName="Gain" sourceModule="Cla_Operators">
+      <init param="Gain">c</init>
+    </instance>
+    <instance name="Sum1" sourceName="Sum" sourceModule="Cla_Operators"></instance>
+    <instance name="Sum2" sourceName="Sum" sourceModule="Cla_Operators"></instance>
+    <instance name="Sum3" sourceName="Sum" sourceModule="Cla_Operators"></instance>
+    <instance name="Sum" sourceName="Sum" sourceModule="Cla_Operators"></instance>
+    <instance name="SumD" sourceName="Sum" sourceModule="Cla_Operators"></instance>
+    <instance name="ProportionalGain" sourceName="Gain" sourceModule="Cla_Operators">
+      <init param="Gain">P</init>
+    </instance>
+    <instance name="IntegralGain" sourceName="Gain" sourceModule="Cla_Operators">
+      <init param="Gain">I</init>
+    </instance>
+    <instance name="DerivativeGain" sourceName="Gain" sourceModule="Cla_Operators">
+      <init param="Gain">D</init>
+    </instance>
+    <instance name="FilterCoefficient" sourceName="Gain" sourceModule="Cla_Operators">
+      <init param="Gain">N</init>
+    </instance>
+    <instance name="Integrator" sourceName="IntegratorICIntReset" sourceModule="Cla_Discrete">
+      <init param="gainval">1</init>
+      <init param="InitialCondition">InitialConditionForIntegrator</init>
+      <init param="ExternalReset">(Integrator_Reset )ExternalReset</init>
+    </instance>
+    <instance name="Filter" sourceName="IntegratorICIntReset" sourceModule="Cla_Discrete">
+      <init param="gainval">1</init>
+      <init param="InitialCondition">InitialConditionForFilter</init>
+      <init param="ExternalReset">(Integrator_Reset )ExternalReset</init>
+    </instance>
+    <internalConnector>
+      <source instance="SetpointWeightingProportional" port="out1"></source>
+      <target instance="Sum1" port="plus" smartConnect="(double /G1/)in"></target>
+    </internalConnector>
+    <internalConnector>
+      <source instance="SetpointWeightingDerivative" port="out1"></source>
+      <target instance="Sum3" port="plus" smartConnect="(double /G1/)in"></target>
+    </internalConnector>
+    <internalConnector>
+      <source instance="Sum1" port="out1"></source>
+      <target instance="ProportionalGain" port="in1"></target>
+    </internalConnector>
+    <internalConnector>
+      <source instance="Sum2" port="out1"></source>
+      <target instance="IntegralGain" port="in1"></target>
+    </internalConnector>
+    <internalConnector>
+      <source instance="Sum3" port="out1"></source>
+      <target instance="DerivativeGain" port="in1"></target>
+    </internalConnector>
+    <internalConnector>
+      <source instance="DerivativeGain" port="out1"></source>
+      <target instance="SumD" port="plus" smartConnect="(double /G1/)in"></target>
+    </internalConnector>
+    <internalConnector>
+      <source instance="SumD" port="out1"></source>
+      <target instance="FilterCoefficient" port="in1"></target>
+    </internalConnector>
+    <internalConnector>
+      <source instance="FilterCoefficient" port="out1"></source>
+      <target instance="Filter" port="in1_dataInput" delay="0"></target>
+    </internalConnector>
+    <internalConnector>
+      <source instance="Filter" port="out1"></source>
+      <target instance="SumD" port="minus"></target>
+    </internalConnector>
+    <internalConnector>
+      <source instance="IntegralGain" port="out1"></source>
+      <target instance="Integrator" port="in1_dataInput"></target>
+    </internalConnector>
+    <internalConnector>
+      <source instance="ProportionalGain" port="out1"></source>
+      <target instance="Sum" port="plus" smartConnect="(double /G1/)in"></target>
+    </internalConnector>
+    <internalConnector>
+      <source instance="Integrator" port="out1"></source>
+      <target instance="Sum" port="plus"></target>
+    </internalConnector>
+    <internalConnector>
+      <source instance="FilterCoefficient" port="out1"></source>
+      <target instance="Sum" port="plus" smartConnect="(double /G1/)in"></target>
+    </internalConnector>
+    <inboundConnector>
+      <source port="in1_ref"></source>
+      <target instance="SetpointWeightingProportional" port="in1"></target>
+    </inboundConnector>
+    <inboundConnector>
+      <source port="in1_ref"></source>
+      <target instance="Sum2" port="plus"></target>
+    </inboundConnector>
+    <inboundConnector>
+      <source port="in1_ref"></source>
+      <target instance="SetpointWeightingDerivative" port="in1"></target>
+    </inboundConnector>
+    <inboundConnector>
+      <source port="in2_dataInput"></source>
+      <target instance="Sum2" port="minus"></target>
+    </inboundConnector>
+    <inboundConnector>
+      <source port="in2_dataInput"></source>
+      <target instance="Sum3" port="minus"></target>
+    </inboundConnector>
+    <inboundConnector>
+      <source port="in2_dataInput"></source>
+      <target instance="Sum1" port="minus"></target>
+    </inboundConnector>
+    <inboundConnector>
+      <source port="in3_reset"></source>
+      <target instance="Integrator" port="in2_reset"></target>
+    </inboundConnector>
+    <inboundConnector>
+      <source port="in3_reset"></source>
+      <target instance="Filter" port="in2_reset"></target>
+    </inboundConnector>
+    <outboundConnector>
+      <source instance="Sum" port="out1"></source>
+      <target port="out1" smartConnect="(double /G1/)in"></target>
+    </outboundConnector>
+    <comment><![CDATA[The block implements a parallel PID controller with two degrees of freedom and weighted sums of porportional, integral and derivative of the input signal based on @child(P), @child(I)and @child(D) respectively. The output is based on the diffirence between the reference signal @child(in1_ref) and fed input @child(in2_dataInput). Setpoint weighting parameters @child(b) for Proportional and @child(c) for Derivative are available in this block. For this block, the Integrator's initial conditions have to specified as parameters @child(InitialConditionForIntegrator) and @child(InitialConditionForFilter). This PID controller block can be reset with the help of the input port in3_reset]]></comment>
+    <ccode cFileName="Cla_Discrete.c" cStructName="Cla_Discrete____DiscretePIDController2DOFICIntReset_flattened_data_t" cExecuteFunctionName="Cla_Discrete____DiscretePIDController2DOFICIntReset_flattened_execute" cInitFunctionName="Cla_Discrete____DiscretePIDController2DOFICIntReset_flattened_init"></ccode>
+  </compositeBlock>
+  <compositeBlock name="DiscretePIDController2DOFICExtReset" module="Cla_Discrete" model="_60_ClosedLoopValidation" gUnits="G1">
+    <inport name="in1_ref" type="double /G1/"></inport>
+    <inport name="in2_dataInput" type="double /G1/"></inport>
+    <inport name="in3_reset" type="double "></inport>
+    <inport name="in4_I0" type="double /G1/"></inport>
+    <inport name="in5_D0" type="double /G1/"></inport>
+    <outport name="out1" type="double /G1/"></outport>
+    <parameter name="P" type="double "></parameter>
+    <parameter name="I" type="double "></parameter>
+    <parameter name="D" type="double "></parameter>
+    <parameter name="N" type="double "></parameter>
+    <parameter name="b" type="double "></parameter>
+    <parameter name="c" type="double "></parameter>
+    <parameter name="ExternalReset" type="PID_Reset "></parameter>
+    <instance name="SetpointWeightingProportional" sourceName="Gain" sourceModule="Cla_Operators">
+      <init param="Gain">b</init>
+    </instance>
+    <instance name="SetpointWeightingDerivative" sourceName="Gain" sourceModule="Cla_Operators">
+      <init param="Gain">c</init>
+    </instance>
+    <instance name="Sum1" sourceName="Sum" sourceModule="Cla_Operators"></instance>
+    <instance name="Sum2" sourceName="Sum" sourceModule="Cla_Operators"></instance>
+    <instance name="Sum3" sourceName="Sum" sourceModule="Cla_Operators"></instance>
+    <instance name="Sum" sourceName="Sum" sourceModule="Cla_Operators"></instance>
+    <instance name="SumD" sourceName="Sum" sourceModule="Cla_Operators"></instance>
+    <instance name="ProportionalGain" sourceName="Gain" sourceModule="Cla_Operators">
+      <init param="Gain">P</init>
+    </instance>
+    <instance name="IntegralGain" sourceName="Gain" sourceModule="Cla_Operators">
+      <init param="Gain">I</init>
+    </instance>
+    <instance name="DerivativeGain" sourceName="Gain" sourceModule="Cla_Operators">
+      <init param="Gain">D</init>
+    </instance>
+    <instance name="FilterCoefficient" sourceName="Gain" sourceModule="Cla_Operators">
+      <init param="Gain">N</init>
+    </instance>
+    <instance name="Integrator" sourceName="IntegratorICExtReset" sourceModule="Cla_Discrete">
+      <init param="gainval">1</init>
+      <init param="ExternalReset">(Integrator_Reset )ExternalReset</init>
+    </instance>
+    <instance name="Filter" sourceName="IntegratorICExtReset" sourceModule="Cla_Discrete">
+      <init param="gainval">1</init>
+      <init param="ExternalReset">(Integrator_Reset )ExternalReset</init>
+    </instance>
+    <internalConnector>
+      <source instance="SetpointWeightingProportional" port="out1"></source>
+      <target instance="Sum1" port="plus" smartConnect="(double /G1/)in"></target>
+    </internalConnector>
+    <internalConnector>
+      <source instance="SetpointWeightingDerivative" port="out1"></source>
+      <target instance="Sum3" port="plus" smartConnect="(double /G1/)in"></target>
+    </internalConnector>
+    <internalConnector>
+      <source instance="Sum1" port="out1"></source>
+      <target instance="ProportionalGain" port="in1"></target>
+    </internalConnector>
+    <internalConnector>
+      <source instance="Sum2" port="out1"></source>
+      <target instance="IntegralGain" port="in1"></target>
+    </internalConnector>
+    <internalConnector>
+      <source instance="Sum3" port="out1"></source>
+      <target instance="DerivativeGain" port="in1"></target>
+    </internalConnector>
+    <internalConnector>
+      <source instance="DerivativeGain" port="out1"></source>
+      <target instance="SumD" port="plus" smartConnect="(double /G1/)in"></target>
+    </internalConnector>
+    <internalConnector>
+      <source instance="SumD" port="out1"></source>
+      <target instance="FilterCoefficient" port="in1"></target>
+    </internalConnector>
+    <internalConnector>
+      <source instance="FilterCoefficient" port="out1"></source>
+      <target instance="Filter" port="in1_dataInput" delay="0"></target>
+    </internalConnector>
+    <internalConnector>
+      <source instance="Filter" port="out1"></source>
+      <target instance="SumD" port="minus"></target>
+    </internalConnector>
+    <internalConnector>
+      <source instance="IntegralGain" port="out1"></source>
+      <target instance="Integrator" port="in1_dataInput"></target>
+    </internalConnector>
+    <internalConnector>
+      <source instance="ProportionalGain" port="out1"></source>
+      <target instance="Sum" port="plus" smartConnect="(double /G1/)in"></target>
+    </internalConnector>
+    <internalConnector>
+      <source instance="Integrator" port="out1"></source>
+      <target instance="Sum" port="plus"></target>
+    </internalConnector>
+    <internalConnector>
+      <source instance="FilterCoefficient" port="out1"></source>
+      <target instance="Sum" port="plus" smartConnect="(double /G1/)in"></target>
+    </internalConnector>
+    <inboundConnector>
+      <source port="in1_ref"></source>
+      <target instance="SetpointWeightingProportional" port="in1"></target>
+    </inboundConnector>
+    <inboundConnector>
+      <source port="in1_ref"></source>
+      <target instance="Sum2" port="plus"></target>
+    </inboundConnector>
+    <inboundConnector>
+      <source port="in1_ref"></source>
+      <target instance="SetpointWeightingDerivative" port="in1"></target>
+    </inboundConnector>
+    <inboundConnector>
+      <source port="in2_dataInput"></source>
+      <target instance="Sum2" port="minus"></target>
+    </inboundConnector>
+    <inboundConnector>
+      <source port="in2_dataInput"></source>
+      <target instance="Sum3" port="minus"></target>
+    </inboundConnector>
+    <inboundConnector>
+      <source port="in2_dataInput"></source>
+      <target instance="Sum1" port="minus"></target>
+    </inboundConnector>
+    <inboundConnector>
+      <source port="in3_reset"></source>
+      <target instance="Integrator" port="in2_reset"></target>
+    </inboundConnector>
+    <inboundConnector>
+      <source port="in3_reset"></source>
+      <target instance="Filter" port="in2_reset"></target>
+    </inboundConnector>
+    <inboundConnector>
+      <source port="in5_D0"></source>
+      <target instance="Filter" port="in3_x0"></target>
+    </inboundConnector>
+    <inboundConnector>
+      <source port="in4_I0"></source>
+      <target instance="Integrator" port="in3_x0"></target>
+    </inboundConnector>
+    <outboundConnector>
+      <source instance="Sum" port="out1"></source>
+      <target port="out1" smartConnect="(double /G1/)in"></target>
+    </outboundConnector>
+    <comment><![CDATA[The block implements a parallel PID controller with two degrees of freedom and weighted sums of porportional, integral and derivative of the input signal based on P, Iand D respectively. The output is based on the diffirence between the reference signal in1_ref and fed input in2_dataInput. Setpoint weighting parameters b for Proportional and c for Derivative are available in this block. For this block, the Integrator's initial conditions are available as input ports in4_I0 for the Integrator and in5_D0 for the filter. This PID controller block can be reset with the help of the input port in3_reset]]></comment>
+    <ccode cFileName="Cla_Discrete.c" cStructName="Cla_Discrete____DiscretePIDController2DOFICExtReset_flattened_data_t" cExecuteFunctionName="Cla_Discrete____DiscretePIDController2DOFICExtReset_flattened_execute" cInitFunctionName="Cla_Discrete____DiscretePIDController2DOFICExtReset_flattened_init"></ccode>
+  </compositeBlock>
+  <ccode-block name="TransferFcnFirstOrder" module="Cla_Discrete" model="_60_ClosedLoopValidation" gUnits="G1">
+    <inport name="in1" type="double /G1/"></inport>
+    <outport name="out1" type="double /G1/"></outport>
+    <parameter name="PoleZ" type="double "></parameter>
+    <parameter name="ICPrevOutput" type="double /G1/"></parameter>
+    <ccode cFileName="Cla_Discrete.c" cStructName="Cla_Discrete____TransferFcnFirstOrder_data_t" cExecuteFunctionName="Cla_Discrete____TransferFcnFirstOrder_execute" cInitFunctionName="Cla_Discrete____TransferFcnFirstOrder_init"></ccode>
+    <comment><![CDATA[The block computes the first order transfer function of the input. Pole in the Z-plane PoleZand initial condition for previous output ICPrevOutput has to be specified.]]></comment>
+  </ccode-block>
+  <ccode-block name="TransferFcnRealZero" module="Cla_Discrete" model="_60_ClosedLoopValidation" gUnits="G1">
+    <inport name="in1" type="double /G1/"></inport>
+    <outport name="out1" type="double /G1/"></outport>
+    <parameter name="ZeroZ" type="double "></parameter>
+    <parameter name="ICPrevInput" type="double /G1/"></parameter>
+    <ccode cFileName="Cla_Discrete.c" cStructName="Cla_Discrete____TransferFcnRealZero_data_t" cExecuteFunctionName="Cla_Discrete____TransferFcnRealZero_execute" cInitFunctionName="Cla_Discrete____TransferFcnRealZero_init"></ccode>
+    <comment><![CDATA[The block computes the transfer function of the input that has a real zero and effectively no pole. The zero in z-plane ZeroZ and initial condition for previous input ICPrevInput has to be specified]]></comment>
+  </ccode-block>
+  <ccode-block name="TransferFcnLeadorLag" module="Cla_Discrete" model="_60_ClosedLoopValidation" gUnits="G1">
+    <inport name="in1" type="double /G1/"></inport>
+    <outport name="out1" type="double /G1/"></outport>
+    <parameter name="PoleZ" type="double "></parameter>
+    <parameter name="ZeroZ" type="double "></parameter>
+    <parameter name="ICPrevInput" type="double /G1/"></parameter>
+    <parameter name="ICPrevOutput" type="double /G1/"></parameter>
+    <ccode cFileName="Cla_Discrete.c" cStructName="Cla_Discrete____TransferFcnLeadorLag_data_t" cExecuteFunctionName="Cla_Discrete____TransferFcnLeadorLag_execute" cInitFunctionName="Cla_Discrete____TransferFcnLeadorLag_init"></ccode>
+    <comment><![CDATA[The block computes the lead or lag compensation of the input. The compensator acts as a lead compensator when 0< ZeroZ< PoleZ< 1 and acts as a lag compensator when 0< PoleZ< ZeroZ< 1]]></comment>
+  </ccode-block>
+  <ccode-block name="DiscreteTransferFcn" module="Cla_Discrete" model="_60_ClosedLoopValidation" gUnits="G1">
+    <inport name="in1" type="double /G1/"></inport>
+    <outport name="out1" type="double /G1/"></outport>
+    <parameter name="Numerator" type="double [10]"></parameter>
+    <parameter name="Denominator" type="double [10]"></parameter>
+    <parameter name="InitialStates" type="double /G1/"></parameter>
+    <ccode cFileName="Cla_Discrete.c" cStructName="Cla_Discrete____DiscreteTransferFcn_data_t" cExecuteFunctionName="Cla_Discrete____DiscreteTransferFcn_execute" cInitFunctionName="Cla_Discrete____DiscreteTransferFcn_init"></ccode>
+    <comment><![CDATA[This block implements a discrete transfer function of the input. 
+Maximum no of Numerator and Denominator coefficients is limited to 10.]]></comment>
+  </ccode-block>
+  <ccode-block name="DiscreteZeroPole" module="Cla_Discrete" model="_60_ClosedLoopValidation" gUnits="G1">
+    <inport name="in1" type="double /G1/"></inport>
+    <outport name="out1" type="double /G1/"></outport>
+    <parameter name="Zeros" type="double [10]"></parameter>
+    <parameter name="Poles" type="double [10]"></parameter>
+    <parameter name="Gain" type="double "></parameter>
+    <ccode cFileName="Cla_Discrete.c" cStructName="Cla_Discrete____DiscreteZeroPole_data_t" cExecuteFunctionName="Cla_Discrete____DiscreteZeroPole_execute" cInitFunctionName="Cla_Discrete____DiscreteZeroPole_init"></ccode>
+    <comment><![CDATA[This block assumes transfer function is of the form H(z)=Y(z)/X(z)=(Gain*(z-zeros[0])*(z-zeros[1]....(z-zeros[9])/((z-poles[0])*(z-poles[1])...(z-poles[9])) and implemets the transfer function of the input. it also generates chennai]]></comment>
+  </ccode-block>
+  <ccode-block name="IntegratorICInt" module="Cla_Discrete" model="_60_ClosedLoopValidation" gUnits="G1,G2">
+    <flowspec outport="out1">
+      <dependency inport="in1" delayed="true"></dependency>
+    </flowspec>
+    <inport name="in1" type="double /G1/"></inport>
+    <outport name="out1" type="double /G2/"></outport>
+    <parameter name="gainval" type="double "></parameter>
+    <parameter name="InitialCondition" type="double /G2/"></parameter>
+    <ccode cFileName="Cla_Discrete.c" cStructName="Cla_Discrete____IntegratorICInt_data_t" cExecuteFunctionName="Cla_Discrete____IntegratorICInt_execute" cInitFunctionName="Cla_Discrete____IntegratorICInt_init" cUpdateFunctionName="Cla_Discrete____IntegratorICInt_update"></ccode>
+  </ccode-block>
+  <ccode-block name="IntegratorICExt" module="Cla_Discrete" model="_60_ClosedLoopValidation" gUnits="G1,G2">
+    <inport name="in1_dataInput" type="double /G1/"></inport>
+    <inport name="in2_x0" type="double /G2/"></inport>
+    <outport name="out1" type="double /G2/"></outport>
+    <parameter name="gainval" type="double "></parameter>
+    <ccode cFileName="Cla_Discrete.c" cStructName="Cla_Discrete____IntegratorICExt_data_t" cExecuteFunctionName="Cla_Discrete____IntegratorICExt_execute" cInitFunctionName="Cla_Discrete____IntegratorICExt_init"></ccode>
+    <comment><![CDATA[in1= Input
+x0 External InitialCondition]]></comment>
+  </ccode-block>
+  <ccode-block name="IntegratorICIntReset" module="Cla_Discrete" model="_60_ClosedLoopValidation" gUnits="G1,G2">
+    <flowspec outport="out1">
+      <dependency inport="in1_dataInput"></dependency>
+      <dependency inport="in2_reset"></dependency>
+    </flowspec>
+    <inport name="in1_dataInput" type="double /G1/"></inport>
+    <inport name="in2_reset" type="double "></inport>
+    <outport name="out1" type="double /G2/"></outport>
+    <parameter name="gainval" type="double "></parameter>
+    <parameter name="InitialCondition" type="double /G2/"></parameter>
+    <parameter name="ExternalReset" type="Integrator_Reset "></parameter>
+    <ccode cFileName="Cla_Discrete.c" cStructName="Cla_Discrete____IntegratorICIntReset_data_t" cExecuteFunctionName="Cla_Discrete____IntegratorICIntReset_execute" cInitFunctionName="Cla_Discrete____IntegratorICIntReset_init"></ccode>
+    <comment><![CDATA[in1= Input
+in2= Reset Signal]]></comment>
+  </ccode-block>
+  <ccode-block name="IntegratorICExtReset" module="Cla_Discrete" model="_60_ClosedLoopValidation" gUnits="G1,G2">
+    <flowspec outport="out1">
+      <dependency inport="in1_dataInput"></dependency>
+      <dependency inport="in2_reset"></dependency>
+      <dependency inport="in3_x0"></dependency>
+    </flowspec>
+    <inport name="in1_dataInput" type="double /G1/"></inport>
+    <inport name="in2_reset" type="double "></inport>
+    <inport name="in3_x0" type="double /G2/"></inport>
+    <outport name="out1" type="double /G2/"></outport>
+    <parameter name="gainval" type="double "></parameter>
+    <parameter name="ExternalReset" type="Integrator_Reset "></parameter>
+    <ccode cFileName="Cla_Discrete.c" cStructName="Cla_Discrete____IntegratorICExtReset_data_t" cExecuteFunctionName="Cla_Discrete____IntegratorICExtReset_execute" cInitFunctionName="Cla_Discrete____IntegratorICExtReset_init"></ccode>
+    <comment><![CDATA[in1= Input
+in2= Reset
+x0 External InitialCondition]]></comment>
+  </ccode-block>
+  <ccode-block name="IntegratorLimICInt" module="Cla_Discrete" model="_60_ClosedLoopValidation" gUnits="G1,G2">
+    <flowspec outport="out1">
+      <dependency inport="in1" delayed="true"></dependency>
+    </flowspec>
+    <inport name="in1" type="double /G1/"></inport>
+    <outport name="out1" type="double /G2/"></outport>
+    <parameter name="gainval" type="double "></parameter>
+    <parameter name="InitialCondition" type="double /G2/"></parameter>
+    <parameter name="UpperSaturationLimit" type="double /G2/"></parameter>
+    <parameter name="LowerSaturationLimit" type="double /G2/"></parameter>
+    <ccode cFileName="Cla_Discrete.c" cStructName="Cla_Discrete____IntegratorLimICInt_data_t" cExecuteFunctionName="Cla_Discrete____IntegratorLimICInt_execute" cInitFunctionName="Cla_Discrete____IntegratorLimICInt_init" cUpdateFunctionName="Cla_Discrete____IntegratorLimICInt_update"></ccode>
+  </ccode-block>
+  <ccode-block name="IntegratorLimICExt" module="Cla_Discrete" model="_60_ClosedLoopValidation" gUnits="G1,G2">
+    <inport name="in1_dataInput" type="double /G1/"></inport>
+    <inport name="in2_x0" type="double /G2/"></inport>
+    <outport name="out1" type="double /G2/"></outport>
+    <parameter name="gainval" type="double "></parameter>
+    <parameter name="UpperSaturationLimit" type="double /G2/"></parameter>
+    <parameter name="LowerSaturationLimit" type="double /G2/"></parameter>
+    <ccode cFileName="Cla_Discrete.c" cStructName="Cla_Discrete____IntegratorLimICExt_data_t" cExecuteFunctionName="Cla_Discrete____IntegratorLimICExt_execute" cInitFunctionName="Cla_Discrete____IntegratorLimICExt_init"></ccode>
+    <comment><![CDATA[in1= Input
+x0 External InitialCondition]]></comment>
+  </ccode-block>
+  <ccode-block name="IntegratorLimICIntReset" module="Cla_Discrete" model="_60_ClosedLoopValidation" gUnits="G1,G2">
+    <flowspec outport="out1">
+      <dependency inport="in1_dataInput"></dependency>
+      <dependency inport="in2_reset"></dependency>
+    </flowspec>
+    <inport name="in1_dataInput" type="double /G1/"></inport>
+    <inport name="in2_reset" type="double "></inport>
+    <outport name="out1" type="double /G2/"></outport>
+    <parameter name="gainval" type="double "></parameter>
+    <parameter name="InitialCondition" type="double /G2/"></parameter>
+    <parameter name="UpperSaturationLimit" type="double /G2/"></parameter>
+    <parameter name="LowerSaturationLimit" type="double /G2/"></parameter>
+    <parameter name="ExternalReset" type="Integrator_Reset "></parameter>
+    <ccode cFileName="Cla_Discrete.c" cStructName="Cla_Discrete____IntegratorLimICIntReset_data_t" cExecuteFunctionName="Cla_Discrete____IntegratorLimICIntReset_execute" cInitFunctionName="Cla_Discrete____IntegratorLimICIntReset_init"></ccode>
+    <comment><![CDATA[in1= Input
+in2= Reset Signal]]></comment>
+  </ccode-block>
+  <ccode-block name="IntegratorLimICExtReset" module="Cla_Discrete" model="_60_ClosedLoopValidation" gUnits="G1,G2">
+    <flowspec outport="out1">
+      <dependency inport="in1_dataInput"></dependency>
+      <dependency inport="in2_reset"></dependency>
+      <dependency inport="in3_x0"></dependency>
+    </flowspec>
+    <inport name="in1_dataInput" type="double /G1/"></inport>
+    <inport name="in2_reset" type="double "></inport>
+    <inport name="in3_x0" type="double /G2/"></inport>
+    <outport name="out1" type="double /G2/"></outport>
+    <parameter name="gainval" type="double "></parameter>
+    <parameter name="UpperSaturationLimit" type="double /G2/"></parameter>
+    <parameter name="LowerSaturationLimit" type="double /G2/"></parameter>
+    <parameter name="ExternalReset" type="Integrator_Reset "></parameter>
+    <ccode cFileName="Cla_Discrete.c" cStructName="Cla_Discrete____IntegratorLimICExtReset_data_t" cExecuteFunctionName="Cla_Discrete____IntegratorLimICExtReset_execute" cInitFunctionName="Cla_Discrete____IntegratorLimICExtReset_init"></ccode>
+    <comment><![CDATA[in1= Input
+in2= Reset
+x0 External InitialCondition]]></comment>
+  </ccode-block>
+  <ccode-block name="Derivative" module="Cla_Discrete" model="_60_ClosedLoopValidation" gUnits="G1">
+    <inport name="in1" type="double /G1/"></inport>
+    <outport name="out1" type="double /G1.s^(-1)/"></outport>
+    <parameter name="IC" type="double /G1/"></parameter>
+    <ccode cFileName="Cla_Discrete.c" cStructName="Cla_Discrete____Derivative_data_t" cExecuteFunctionName="Cla_Discrete____Derivative_execute" cInitFunctionName="Cla_Discrete____Derivative_init"></ccode>
+    <comment><![CDATA[Discrete derivative: out1 = (in1[k]-in1[k-1])/DeltaT with the initial
+output being zero]]></comment>
+  </ccode-block>
+  <ccode-block name="ZeroOrderHold" module="Cla_Discrete" model="_60_ClosedLoopValidation" gUnits="G1">
+    <inport name="in1" type="double /G1/"></inport>
+    <outport name="out1" type="double /G1/"></outport>
+    <ccode cFileName="Cla_Discrete.c" cExecuteFunctionName="Cla_Discrete____ZeroOrderHold_execute"></ccode>
+    <comment><![CDATA[Zero-order hold block holds the input for the sampleTime specified.]]></comment>
+  </ccode-block>
+  <ccode-block name="TappedDelay" module="Cla_Discrete" model="_60_ClosedLoopValidation" gUnits="G1">
+    <inport name="in1" type="double /G1/"></inport>
+    <outport name="out1" type="double /G1/"></outport>
+    <parameter name="vinit" type="double /G1/"></parameter>
+    <parameter name="NumDelays" type="double "></parameter>
+    <ccode cFileName="Cla_Discrete.c" cStructName="Cla_Discrete____TappedDelay_data_t" cExecuteFunctionName="Cla_Discrete____TappedDelay_execute"></ccode>
+  </ccode-block>
+  <ccode-block name="DiscreteStateSpace" module="Cla_Discrete" model="_60_ClosedLoopValidation" gUnits="G1">
+    <inport name="in1" type="double "></inport>
+    <outport name="out1" type="double /G1/"></outport>
+    <parameter name="A" type="double "></parameter>
+    <parameter name="B" type="double "></parameter>
+    <parameter name="C" type="double "></parameter>
+    <parameter name="D" type="double "></parameter>
+    <parameter name="X0" type="double "></parameter>
+    <ccode cFileName="Cla_Discrete.c" cStructName="Cla_Discrete____DiscreteStateSpace_data_t" cExecuteFunctionName="Cla_Discrete____DiscreteStateSpace_execute"></ccode>
+  </ccode-block>
+  <ccode-block name="Gain" module="Library" model="_60_ClosedLoopValidation" gUnits="G1,G2">
+    <inport name="in1" type="double /G1/"></inport>
+    <outport name="out1" type="double /G1.G2/"></outport>
+    <parameter name="Gain" type="double /G2/"></parameter>
+    <ccode cFileName="Library.c" cStructName="Library____Gain_data_t" cExecuteFunctionName="Library____Gain_execute"></ccode>
+    <comment><![CDATA[Multiplies the input in1 with the paramter gain and returs the output as out1]]></comment>
+  </ccode-block>
+  <ccode-block name="Sum" module="Library" model="_60_ClosedLoopValidation" gUnits="G1">
+    <inport name="minus" type="double /G1/" multiple="0..10" kind="multiple"></inport>
+    <inport name="plus" type="double /G1/" multiple="0..10" kind="multiple"></inport>
+    <outport name="out1" type="double /G1/"></outport>
+    <ccode cFileName="Library.c" cStructName="Library____Sum_data_t" cExecuteFunctionName="Library____Sum_execute" cInitFunctionName="Library____Sum_init"></ccode>
+  </ccode-block>
+  <ccode-block name="IntegratorICInt" module="Library" model="_60_ClosedLoopValidation" gUnits="G1,G2">
+    <flowspec outport="out1">
+      <dependency inport="in1" delayed="true"></dependency>
+    </flowspec>
+    <inport name="in1" type="double /G1/"></inport>
+    <outport name="out1" type="double /G2/"></outport>
+    <parameter name="gainval" type="double "></parameter>
+    <parameter name="InitialCondition" type="double /G2/"></parameter>
+    <ccode cFileName="Library.c" cStructName="Library____IntegratorICInt_data_t" cExecuteFunctionName="Library____IntegratorICInt_execute" cInitFunctionName="Library____IntegratorICInt_init" cUpdateFunctionName="Library____IntegratorICInt_update"></ccode>
+  </ccode-block>
+  <compositeBlock name="DiscretePIDControllerPIDParallelICInt" module="Library" model="_60_ClosedLoopValidation" gUnits="G1,G1">
+    <inport name="in1" type="double /G1/"></inport>
+    <outport name="out1" type="double /G1/"></outport>
+    <parameter name="P" type="double "></parameter>
+    <parameter name="I" type="double "></parameter>
+    <parameter name="D" type="double "></parameter>
+    <parameter name="N" type="double "></parameter>
+    <parameter name="InitialConditionForIntegrator" type="double /G1/"></parameter>
+    <parameter name="InitialConditionForFilter" type="double /G1/"></parameter>
+    <instance name="P" sourceName="Gain" sourceModule="Library">
+      <init param="Gain">P</init>
+    </instance>
+    <instance name="I" sourceName="Gain" sourceModule="Library">
+      <init param="Gain">I</init>
+    </instance>
+    <instance name="Integrator_" sourceName="IntegratorICInt" sourceModule="Library">
+      <init param="gainval">1</init>
+      <init param="InitialCondition">InitialConditionForIntegrator</init>
+    </instance>
+    <instance name="Sum_" sourceName="Sum" sourceModule="Library"></instance>
+    <internalConnector>
+      <source instance="I" port="out1"></source>
+      <target instance="Integrator_" port="in1"></target>
+    </internalConnector>
+    <internalConnector>
+      <source instance="P" port="out1"></source>
+      <target instance="Sum_" port="plus" smartConnect="(double /G1/)in"></target>
+    </internalConnector>
+    <internalConnector>
+      <source instance="Integrator_" port="out1"></source>
+      <target instance="Sum_" port="plus"></target>
+    </internalConnector>
+    <inboundConnector>
+      <source port="in1"></source>
+      <target instance="P" port="in1"></target>
+    </inboundConnector>
+    <inboundConnector>
+      <source port="in1"></source>
+      <target instance="I" port="in1"></target>
+    </inboundConnector>
+    <outboundConnector>
+      <source instance="Sum_" port="out1"></source>
+      <target port="out1"></target>
+    </outboundConnector>
+    <comment><![CDATA[The block implements a parallel PID controller with weighted sums of porportional, integral and derivative of the input signal based on P, Iand  respectively. For this block, the Integrator's initial conditions have to specified as parameters.]]></comment>
+    <ccode cFileName="Library.c" cStructName="Library____DiscretePIDControllerPIDParallelICInt_flattened_data_t" cExecuteFunctionName="Library____DiscretePIDControllerPIDParallelICInt_flattened_execute" cInitFunctionName="Library____DiscretePIDControllerPIDParallelICInt_flattened_init"></ccode>
+  </compositeBlock>
+  <ccode-block name="Clock" module="Cla_Sources" model="_60_ClosedLoopValidation" gUnits="G1">
+    <outport name="out1" type="double /s/"></outport>
+    <ccode cFileName="Cla_Sources.c" cExecuteFunctionName="Cla_Sources____Clock_execute"></ccode>
+    <comment><![CDATA[Output simulation time]]></comment>
+  </ccode-block>
+  <ccode-block name="Constant" module="Cla_Sources" model="_60_ClosedLoopValidation" gUnits="G1">
+    <outport name="out1" type="double /G1/"></outport>
+    <parameter name="Value" type="double /G1/"></parameter>
+    <ccode cFileName="Cla_Sources.c" cStructName="Cla_Sources____Constant_data_t" cExecuteFunctionName="Cla_Sources____Constant_execute"></ccode>
+    <comment><![CDATA[Output the specified constant value]]></comment>
+  </ccode-block>
+  <ccode-block name="DigitalClock" module="Cla_Sources" model="_60_ClosedLoopValidation" gUnits="G1">
+    <outport name="out1" type="double /s/"></outport>
+    <ccode cFileName="Cla_Sources.c" cExecuteFunctionName="Cla_Sources____DigitalClock_execute"></ccode>
+  </ccode-block>
+  <ccode-block name="Ground" module="Cla_Sources" model="_60_ClosedLoopValidation" gUnits="G1">
+    <outport name="out1" type="double /G1/"></outport>
+    <ccode cFileName="Cla_Sources.c" cExecuteFunctionName="Cla_Sources____Ground_execute"></ccode>
+  </ccode-block>
+  <ccode-block name="PulseGeneratorTimeInternal" module="Cla_Sources" model="_60_ClosedLoopValidation" gUnits="G1">
+    <outport name="out1" type="double /G1/"></outport>
+    <parameter name="Amplitude" type="double /G1/"></parameter>
+    <parameter name="Period" type="double /s/"></parameter>
+    <parameter name="PulseWidth" type="double "></parameter>
+    <parameter name="PhaseDelay" type="double /s/"></parameter>
+    <ccode cFileName="Cla_Sources.c" cStructName="Cla_Sources____PulseGeneratorTimeInternal_data_t" cExecuteFunctionName="Cla_Sources____PulseGeneratorTimeInternal_execute" cInitFunctionName="Cla_Sources____PulseGeneratorTimeInternal_init"></ccode>
+    <comment><![CDATA[Pulse Width in %
+Period in Seconds
+Phase Delay in Seconds]]></comment>
+  </ccode-block>
+  <ccode-block name="PulseGeneratorTimeExternal" module="Cla_Sources" model="_60_ClosedLoopValidation" gUnits="G1">
+    <inport name="in1_extTime" type="double /s/"></inport>
+    <outport name="out1" type="double /G1/"></outport>
+    <parameter name="Amplitude" type="double /G1/"></parameter>
+    <parameter name="Period" type="double /s/"></parameter>
+    <parameter name="PulseWidth" type="double "></parameter>
+    <parameter name="PhaseDelay" type="double /s/"></parameter>
+    <ccode cFileName="Cla_Sources.c" cStructName="Cla_Sources____PulseGeneratorTimeExternal_data_t" cExecuteFunctionName="Cla_Sources____PulseGeneratorTimeExternal_execute" cInitFunctionName="Cla_Sources____PulseGeneratorTimeExternal_init"></ccode>
+    <comment><![CDATA[Pulse Width in %
+Period in Seconds
+Phase Delay in Seconds]]></comment>
+  </ccode-block>
+  <ccode-block name="PulseGeneratorSampleInternal" module="Cla_Sources" model="_60_ClosedLoopValidation" gUnits="G1,G2">
+    <outport name="out1" type="double /G1/"></outport>
+    <parameter name="Amplitude" type="double /G1/"></parameter>
+    <parameter name="Period" type="uint32 /G2/"></parameter>
+    <parameter name="PulseWidth" type="uint32 /G2/"></parameter>
+    <parameter name="PhaseDelay" type="uint32 /G2/"></parameter>
+    <ccode cFileName="Cla_Sources.c" cStructName="Cla_Sources____PulseGeneratorSampleInternal_data_t" cExecuteFunctionName="Cla_Sources____PulseGeneratorSampleInternal_execute" cInitFunctionName="Cla_Sources____PulseGeneratorSampleInternal_init"></ccode>
+    <comment><![CDATA[Pulse Width in number of Samples
+Period in number of Samples
+Phase Delay in number of Samples]]></comment>
+  </ccode-block>
+  <ccode-block name="SinTimeExternal" module="Cla_Sources" model="_60_ClosedLoopValidation" gUnits="G1">
+    <inport name="in1_extTime" type="double /s/"></inport>
+    <outport name="out1" type="double /G1/"></outport>
+    <parameter name="Amplitude" type="double /G1/"></parameter>
+    <parameter name="Bias" type="double /G1/"></parameter>
+    <parameter name="Frequency" type="double /s^(-1)/"></parameter>
+    <parameter name="Phase" type="double "></parameter>
+    <ccode cFileName="Cla_Sources.c" cStructName="Cla_Sources____SinTimeExternal_data_t" cExecuteFunctionName="Cla_Sources____SinTimeExternal_execute" cInitFunctionName="Cla_Sources____SinTimeExternal_init"></ccode>
+    <comment><![CDATA[Generates sine-wave - input signal is the time
+out1 = Amplitude * sin(frequency*in1 + Phase) + Bias]]></comment>
+  </ccode-block>
+  <ccode-block name="SinTimeInternal" module="Cla_Sources" model="_60_ClosedLoopValidation" gUnits="G1">
+    <outport name="out1" type="double /G1/"></outport>
+    <parameter name="Amplitude" type="double /G1/"></parameter>
+    <parameter name="Bias" type="double /G1/"></parameter>
+    <parameter name="Frequency" type="double /s^(-1)/"></parameter>
+    <parameter name="Phase" type="double "></parameter>
+    <ccode cFileName="Cla_Sources.c" cStructName="Cla_Sources____SinTimeInternal_data_t" cExecuteFunctionName="Cla_Sources____SinTimeInternal_execute" cInitFunctionName="Cla_Sources____SinTimeInternal_init"></ccode>
+    <comment><![CDATA[Generates sine-wave - uses simulation time for computing the sine
+out1 = Amplitude * sin(frequency*simTime + Phase) + Bias
+if sample time is 0 or -1, out1 is updated at each time instance
+if sample time > 0, it has to be an integral multiple of simTimeIncrs, and out1 is updated only once this mulitple number of instances]]></comment>
+  </ccode-block>
+  <ccode-block name="SinSampleInternal" module="Cla_Sources" model="_60_ClosedLoopValidation" gUnits="G1,G2">
+    <outport name="out1" type="double /G1/"></outport>
+    <parameter name="Amplitude" type="double /G1/"></parameter>
+    <parameter name="Bias" type="double /G1/"></parameter>
+    <parameter name="Samples" type="uint16 /G2/"></parameter>
+    <parameter name="Offset" type="uint16 /G2/"></parameter>
+    <ccode cFileName="Cla_Sources.c" cStructName="Cla_Sources____SinSampleInternal_data_t" cExecuteFunctionName="Cla_Sources____SinSampleInternal_execute" cInitFunctionName="Cla_Sources____SinSampleInternal_init"></ccode>
+    <comment><![CDATA[Generates sine-wave - input signal is the time 
+out1 = Amplitude * sin((Counter + Offset)*2*pi/Samples) + Bias
+or out1 = Amplitude * sin(2*pi*(simTime/(Samples*SampleTime)+Offset/Samples))
+sample time must be > 0, it has to be an integral multiple of simTimeIncrs, and out1 is updated only once this mulitple number of instances]]></comment>
+  </ccode-block>
+  <ccode-block name="Step" module="Cla_Sources" model="_60_ClosedLoopValidation" gUnits="G1">
+    <outport name="out1" type="double /G1/"></outport>
+    <parameter name="Time" type="double /s/"></parameter>
+    <parameter name="Before" type="double /G1/"></parameter>
+    <parameter name="After" type="double /G1/"></parameter>
+    <ccode cFileName="Cla_Sources.c" cStructName="Cla_Sources____Step_data_t" cExecuteFunctionName="Cla_Sources____Step_execute"></ccode>
+  </ccode-block>
+  <ccode-block name="SignalGeneratorTimeInternal" module="Cla_Sources" model="_60_ClosedLoopValidation" gUnits="G1">
+    <outport name="out1" type="double /G1/"></outport>
+    <parameter name="WaveForm" type="WaveFormOptions "></parameter>
+    <parameter name="Amplitude" type="double /G1/"></parameter>
+    <parameter name="Frequency" type="double /s^(-1)/"></parameter>
+    <parameter name="Units" type="SignalGenUnits "></parameter>
+    <ccode cFileName="Cla_Sources.c" cStructName="Cla_Sources____SignalGeneratorTimeInternal_data_t" cExecuteFunctionName="Cla_Sources____SignalGeneratorTimeInternal_execute" cInitFunctionName="Cla_Sources____SignalGeneratorTimeInternal_init"></ccode>
+    <comment><![CDATA[Generates sine, saw tooth, square wave or random wave
+Time source is irrelevant for random wave]]></comment>
+  </ccode-block>
+  <ccode-block name="SignalGeneratorTimeExternal" module="Cla_Sources" model="_60_ClosedLoopValidation" gUnits="G1">
+    <inport name="in1_extTime" type="double /s/"></inport>
+    <outport name="out1" type="double /G1/"></outport>
+    <parameter name="WaveForm" type="WaveFormOptions "></parameter>
+    <parameter name="Amplitude" type="double /G1/"></parameter>
+    <parameter name="Frequency" type="double /s^(-1)/"></parameter>
+    <parameter name="Units" type="SignalGenUnits "></parameter>
+    <ccode cFileName="Cla_Sources.c" cStructName="Cla_Sources____SignalGeneratorTimeExternal_data_t" cExecuteFunctionName="Cla_Sources____SignalGeneratorTimeExternal_execute" cInitFunctionName="Cla_Sources____SignalGeneratorTimeExternal_init"></ccode>
+  </ccode-block>
+  <compositeBlock name="Ramp" module="Cla_Sources" model="_60_ClosedLoopValidation" gUnits="G1,G2">
+    <outport name="out1" type="double /G1/"></outport>
+    <parameter name="slope" type="double /G2/"></parameter>
+    <parameter name="start" type="double /s/"></parameter>
+    <parameter name="X0" type="double /G1/"></parameter>
+    <instance name="step1" sourceName="Step" sourceModule="Cla_Sources">
+      <init param="Time">start</init>
+      <init param="Before">0.0</init>
+      <init param="After">slope</init>
+    </instance>
+    <instance name="clock" sourceName="Clock" sourceModule="Cla_Sources"></instance>
+    <instance name="sum1" sourceName="Sum" sourceModule="Cla_Operators"></instance>
+    <instance name="product1" sourceName="Product" sourceModule="Cla_Operators"></instance>
+    <instance name="sum2" sourceName="Sum" sourceModule="Cla_Operators"></instance>
+    <instance name="Constant" sourceName="Constant" sourceModule="Cla_Sources">
+      <init param="Value">start</init>
+    </instance>
+    <instance name="Constant1" sourceName="Constant" sourceModule="Cla_Sources">
+      <init param="Value">X0</init>
+    </instance>
+    <internalConnector>
+      <source instance="clock" port="out1"></source>
+      <target instance="sum1" port="plus"></target>
+    </internalConnector>
+    <internalConnector>
+      <source instance="Constant" port="out1"></source>
+      <target instance="sum1" port="minus"></target>
+    </internalConnector>
+    <internalConnector>
+      <source instance="sum1" port="out1"></source>
+      <target instance="product1" port="multiply" smartConnect="(double )in"></target>
+    </internalConnector>
+    <internalConnector>
+      <source instance="step1" port="out1"></source>
+      <target instance="product1" port="multiply" smartConnect="(double )in"></target>
+    </internalConnector>
+    <internalConnector>
+      <source instance="product1" port="out1"></source>
+      <target instance="sum2" port="plus" smartConnect="(double /G1/)in"></target>
+    </internalConnector>
+    <internalConnector>
+      <source instance="Constant1" port="out1"></source>
+      <target instance="sum2" port="plus"></target>
+    </internalConnector>
+    <outboundConnector>
+      <source instance="sum2" port="out1"></source>
+      <target port="out1"></target>
+    </outboundConnector>
+    <comment><![CDATA[Generates a ramp signal starting from X0)]]></comment>
+    <ccode cFileName="Cla_Sources.c" cStructName="Cla_Sources____Ramp_flattened_data_t" cExecuteFunctionName="Cla_Sources____Ramp_flattened_execute" cInitFunctionName="Cla_Sources____Ramp_flattened_init"></ccode>
+  </compositeBlock>
+  <ccode-block name="ChirpSignal" module="Cla_Sources" model="_60_ClosedLoopValidation" gUnits="G1">
+    <outport name="out1" type="double /G1/"></outport>
+    <parameter name="f1" type="double /s^(-1)/"></parameter>
+    <parameter name="T" type="double /s/"></parameter>
+    <parameter name="f2" type="double /s^(-1)/"></parameter>
+    <ccode cFileName="Cla_Sources.c" cStructName="Cla_Sources____ChirpSignal_data_t" cExecuteFunctionName="Cla_Sources____ChirpSignal_execute"></ccode>
+    <comment><![CDATA[Outputs a sine wave whose frequency varies with time]]></comment>
+  </ccode-block>
+  <ccode-block name="UniformRandomNumber" module="Cla_Sources" model="_60_ClosedLoopValidation" gUnits="G1">
+    <outport name="out1" type="double /G1/"></outport>
+    <parameter name="Minimum" type="double /G1/"></parameter>
+    <parameter name="Maximum" type="double /G1/"></parameter>
+    <parameter name="Seed" type="int32 "></parameter>
+    <ccode cFileName="Cla_Sources.c" cStructName="Cla_Sources____UniformRandomNumber_data_t" cExecuteFunctionName="Cla_Sources____UniformRandomNumber_execute" cInitFunctionName="Cla_Sources____UniformRandomNumber_init"></ccode>
+    <comment><![CDATA[Generates random numbers having uniform probability]]></comment>
+  </ccode-block>
+  <compositeBlock name="RandomNumber" module="Cla_Sources" model="_60_ClosedLoopValidation" gUnits="G1">
+    <outport name="res" type="double /G1/"></outport>
+    <parameter name="Mean" type="double /G1/"></parameter>
+    <parameter name="Variance" type="double "></parameter>
+    <parameter name="Seed" type="int32 "></parameter>
+    <instance name="UFRR" sourceName="UniformRandomNumber" sourceModule="Cla_Sources">
+      <init param="Minimum">-1.0</init>
+      <init param="Maximum">1.0</init>
+      <init param="Seed">Seed</init>
+    </instance>
+    <instance name="RandomNo" sourceName="RandomNumbercal" sourceModule="Cla_Sources">
+      <init param="Mean">Mean</init>
+      <init param="Variance">Variance</init>
+      <init param="Seed">Seed</init>
+    </instance>
+    <internalConnector>
+      <source instance="UFRR" port="out1"></source>
+      <target instance="RandomNo" port="in1" smartConnect="(double /G1/)in"></target>
+    </internalConnector>
+    <outboundConnector>
+      <source instance="RandomNo" port="out1"></source>
+      <target port="res"></target>
+    </outboundConnector>
+    <comment><![CDATA[generates Normally distributed random numbers having specified mean and variance]]></comment>
+    <ccode cFileName="Cla_Sources.c" cStructName="Cla_Sources____RandomNumber_flattened_data_t" cExecuteFunctionName="Cla_Sources____RandomNumber_flattened_execute" cInitFunctionName="Cla_Sources____RandomNumber_flattened_init"></ccode>
+  </compositeBlock>
+  <compositeBlock name="BandLimitedWhiteNoise" module="Cla_Sources" model="_60_ClosedLoopValidation" gUnits="G1">
+    <outport name="out1" type="double /G1^(2)/"></outport>
+    <parameter name="Cov" type="double /G1/"></parameter>
+    <parameter name="Ts" type="double /s/"></parameter>
+    <parameter name="seed" type="int32 "></parameter>
+    <instance name="WhiteNoise" sourceName="RandomNumber" sourceModule="Cla_Sources">
+      <init param="Mean">0.0 G1</init>
+      <init param="Variance">1</init>
+      <init param="Seed">seed</init>
+    </instance>
+    <instance name="k" sourceName="Gain" sourceModule="Cla_Operators">
+      <init param="Gain">sqrt(Cov / Ts)</init>
+    </instance>
+    <internalConnector>
+      <source instance="WhiteNoise" port="res"></source>
+      <target instance="k" port="in1" smartConnect="(double /G1/)in"></target>
+    </internalConnector>
+    <outboundConnector>
+      <source instance="k" port="out1"></source>
+      <target port="out1"></target>
+    </outboundConnector>
+    <comment><![CDATA[Generates normally distributed random numbers that are suitable for use in continuous and hybrid systems.]]></comment>
+    <ccode cFileName="Cla_Sources.c" cStructName="Cla_Sources____BandLimitedWhiteNoise_flattened_data_t" cExecuteFunctionName="Cla_Sources____BandLimitedWhiteNoise_flattened_execute" cInitFunctionName="Cla_Sources____BandLimitedWhiteNoise_flattened_init"></ccode>
+  </compositeBlock>
+  <ccode-block name="RepeatingSequence" module="Cla_Sources" model="_60_ClosedLoopValidation" gUnits="G1">
+    <outport name="out1" type="double /G1/"></outport>
+    <parameter name="rep_seq_t" type="double /G1/[10]"></parameter>
+    <parameter name="rep_seq_y" type="double /G1/[10]"></parameter>
+    <ccode cFileName="Cla_Sources.c" cStructName="Cla_Sources____RepeatingSequence_data_t" cExecuteFunctionName="Cla_Sources____RepeatingSequence_execute"></ccode>
+    <comment><![CDATA[Generates a periodic piecewise linear signal]]></comment>
+  </ccode-block>
+  <ccode-block name="CounterFreeRunning" module="Cla_Sources" model="_60_ClosedLoopValidation" gUnits="G1">
+    <outport name="out1" type="uint64 /G1/"></outport>
+    <parameter name="NumBits" type="uint32 "></parameter>
+    <ccode cFileName="Cla_Sources.c" cStructName="Cla_Sources____CounterFreeRunning_data_t" cExecuteFunctionName="Cla_Sources____CounterFreeRunning_execute" cInitFunctionName="Cla_Sources____CounterFreeRunning_init"></ccode>
+    <comment><![CDATA[works as a counter and overflows back to zero after reaching maximum value.
+Maximum value is specified as 2^Numbits-1.]]></comment>
+  </ccode-block>
+  <ccode-block name="CounterLimited" module="Cla_Sources" model="_60_ClosedLoopValidation" gUnits="G1">
+    <outport name="out1" type="uint64 /G1/"></outport>
+    <parameter name="uplimit" type="double /G1/"></parameter>
+    <ccode cFileName="Cla_Sources.c" cStructName="Cla_Sources____CounterLimited_data_t" cExecuteFunctionName="Cla_Sources____CounterLimited_execute" cInitFunctionName="Cla_Sources____CounterLimited_init"></ccode>
+    <comment><![CDATA[works as a counter and becomes zero after reaching uplimit.]]></comment>
+  </ccode-block>
+  <ccode-block name="RepeatingSequenceStair" module="Cla_Sources" model="_60_ClosedLoopValidation" gUnits="G1">
+    <outport name="out1" type="double /G1/"></outport>
+    <parameter name="OutValues" type="double [10]"></parameter>
+    <ccode cFileName="Cla_Sources.c" cStructName="Cla_Sources____RepeatingSequenceStair_data_t" cExecuteFunctionName="Cla_Sources____RepeatingSequenceStair_execute" cInitFunctionName="Cla_Sources____RepeatingSequenceStair_init"></ccode>
+  </ccode-block>
+  <ccode-block name="RepeatingSequenceInterpolated" module="Cla_Sources" model="_60_ClosedLoopValidation" gUnits="G1">
+    <outport name="out1" type="double /G1/"></outport>
+    <parameter name="OutValues" type="double /G1/[10]"></parameter>
+    <parameter name="TimeValues" type="double [10]"></parameter>
+    <parameter name="LookupMeth" type="LookupMethod_Rep_Seq_Interpolated "></parameter>
+    <ccode cFileName="Cla_Sources.c" cStructName="Cla_Sources____RepeatingSequenceInterpolated_data_t" cExecuteFunctionName="Cla_Sources____RepeatingSequenceInterpolated_execute" cInitFunctionName="Cla_Sources____RepeatingSequenceInterpolated_init"></ccode>
+    <comment><![CDATA[Applies when simtimeIncr==sampletime]]></comment>
+  </ccode-block>
+  <ccode-block name="FromWorkspace" module="Cla_Sources" model="_60_ClosedLoopValidation" gUnits="G1">
+    <outport name="out1" type="double /G1/"></outport>
+    <parameter name="Data" type="string "></parameter>
+    <ccode cFileName="Cla_Sources.c" cStructName="Cla_Sources____FromWorkspace_data_t" cExecuteFunctionName="Cla_Sources____FromWorkspace_execute"></ccode>
+  </ccode-block>
+  <ccode-block name="In1" module="Cla_Sources" model="_60_ClosedLoopValidation" gUnits="G1">
+    <outport name="out1" type="double /G1/"></outport>
+    <ccode cFileName="Cla_Sources.c" cExecuteFunctionName="Cla_Sources____In1_execute"></ccode>
+  </ccode-block>
+  <ccode-block name="SignalBuilder" module="Cla_Sources" model="_60_ClosedLoopValidation" gUnits="G1">
+    <outport name="out1" type="double /G1/"></outport>
+    <ccode cFileName="Cla_Sources.c" cExecuteFunctionName="Cla_Sources____SignalBuilder_execute"></ccode>
+  </ccode-block>
+  <ccode-block name="RandomNumbercal" module="Cla_Sources" model="_60_ClosedLoopValidation" gUnits="G1">
+    <inport name="in1" type="double /G1/"></inport>
+    <outport name="out1" type="double /G1/"></outport>
+    <parameter name="Mean" type="double /G1/"></parameter>
+    <parameter name="Variance" type="double "></parameter>
+    <parameter name="Seed" type="int32 "></parameter>
+    <ccode cFileName="Cla_Sources.c" cStructName="Cla_Sources____RandomNumbercal_data_t" cExecuteFunctionName="Cla_Sources____RandomNumbercal_execute" cInitFunctionName="Cla_Sources____RandomNumbercal_init"></ccode>
+  </ccode-block>
+  <ccode-block name="ssd_safe_distance_computation" module="ACC_SafeDistance_Atomic" model="_60_ClosedLoopValidation">
+    <inport name="v_acc_demo" type="double /mps/"></inport>
+    <inport name="v_lead" type="double /mps/"></inport>
+    <outport name="d_safe" type="double /m/"></outport>
+    <parameter name="T_SAFE" type="double /s/">10 s</parameter>
+    <ccode cFileName="ACC_SafeDistance_Atomic.c" cStructName="ACC_SafeDistance_Atomic____ssd_safe_distance_computation_data_t" cExecuteFunctionName="ACC_SafeDistance_Atomic____ssd_safe_distance_computation_execute" cInitFunctionName="ACC_SafeDistance_Atomic____ssd_safe_distance_computation_init"></ccode>
+  </ccode-block>
+  <ccode-block name="ssd_distance_error" module="ACC_SafeDistance_Atomic" model="_60_ClosedLoopValidation">
+    <inport name="d_lead" type="double /m/"></inport>
+    <inport name="d_safe_new" type="double /m/"></inport>
+    <outport name="d_error" type="double "></outport>
+    <ccode cFileName="ACC_SafeDistance_Atomic.c" cStructName="ACC_SafeDistance_Atomic____ssd_distance_error_data_t" cExecuteFunctionName="ACC_SafeDistance_Atomic____ssd_distance_error_execute" cInitFunctionName="ACC_SafeDistance_Atomic____ssd_distance_error_init"></ccode>
+  </ccode-block>
+  <ccode-block name="ssd_mode_compute" module="ACC_SafeDistance_Atomic" model="_60_ClosedLoopValidation">
+    <inport name="d_lead" type="double /m/"></inport>
+    <inport name="d_safe_new" type="double /m/"></inport>
+    <outport name="ssd_mode" type="double "></outport>
+    <ccode cFileName="ACC_SafeDistance_Atomic.c" cExecuteFunctionName="ACC_SafeDistance_Atomic____ssd_mode_compute_execute"></ccode>
+  </ccode-block>
+  <ccode-block name="ssd_cruise_mode" module="ACC_SafeDistance_Atomic" model="_60_ClosedLoopValidation">
+    <inport name="v_ref" type="double /mps/"></inport>
+    <outport name="v_set" type="double /mps/"></outport>
+    <ccode cFileName="ACC_SafeDistance_Atomic.c" cExecuteFunctionName="ACC_SafeDistance_Atomic____ssd_cruise_mode_execute"></ccode>
+  </ccode-block>
+  <ccode-block name="ssd_setpoint" module="ACC_SafeDistance_Atomic" model="_60_ClosedLoopValidation">
+    <inport name="c_vset" type="double /mps/"></inport>
+    <inport name="d_vset" type="double /mps/"></inport>
+    <inport name="ssd_mode" type="double "></inport>
+    <outport name="v_set" type="double /mps/"></outport>
+    <ccode cFileName="ACC_SafeDistance_Atomic.c" cExecuteFunctionName="ACC_SafeDistance_Atomic____ssd_setpoint_execute"></ccode>
+  </ccode-block>
+  <ccode-block name="ssd_update_pid" module="ACC_SafeDistance_Atomic" model="_60_ClosedLoopValidation">
+    <inport name="v_acc" type="double /mps/"></inport>
+    <inport name="v_pid" type="double /mps/"></inport>
+    <outport name="v_set" type="double /mps/"></outport>
+    <ccode cFileName="ACC_SafeDistance_Atomic.c" cStructName="ACC_SafeDistance_Atomic____ssd_update_pid_data_t" cExecuteFunctionName="ACC_SafeDistance_Atomic____ssd_update_pid_execute" cInitFunctionName="ACC_SafeDistance_Atomic____ssd_update_pid_init"></ccode>
+  </ccode-block>
+  <ccode-block name="acc_variant_selector" module="ACC_SafeDistance_Atomic" model="_60_ClosedLoopValidation">
+    <inport name="brake_hbk" type="double /pct/"></inport>
+    <inport name="brake_sedan" type="double /pct/"></inport>
+    <inport name="d_brake_hbk" type="double /m/"></inport>
+    <inport name="d_brake_sedan" type="double /m/"></inport>
+    <inport name="throttle_hbk" type="double /pct/"></inport>
+    <inport name="throttle_sedan" type="double /pct/"></inport>
+    <outport name="brake" type="double /pct/"></outport>
+    <outport name="d_brake" type="double /m/"></outport>
+    <outport name="throttle" type="double /pct/"></outport>
+    <parameter name="variant" type="variantSelector ">Hatchback</parameter>
+    <ccode cFileName="ACC_SafeDistance_Atomic.c" cStructName="ACC_SafeDistance_Atomic____acc_variant_selector_data_t" cExecuteFunctionName="ACC_SafeDistance_Atomic____acc_variant_selector_execute"></ccode>
+  </ccode-block>
+  <block-interface name="ssd_safe_distance_computationInterface" module="BlockInterfaces" model="_60_ClosedLoopValidation">
+    <inport name="v_acc_demo" type="double /mps/"></inport>
+    <inport name="v_lead" type="double /mps/"></inport>
+    <outport name="d_safe" type="double /m/"></outport>
+    <parameter name="T_SAFE" type="double /s/">10 s</parameter>
+    <ccode cFileName="BlockInterfaces.c"></ccode>
+  </block-interface>
+  <block-interface name="ssd_mode_computeInterface" module="BlockInterfaces" model="_60_ClosedLoopValidation">
+    <inport name="d_lead" type="double /m/"></inport>
+    <inport name="d_safe_new" type="double /m/"></inport>
+    <outport name="ssd_mode" type="double "></outport>
+    <ccode cFileName="BlockInterfaces.c"></ccode>
+  </block-interface>
+  <block-interface name="ssd_distance_errorInterface" module="BlockInterfaces" model="_60_ClosedLoopValidation">
+    <inport name="d_lead" type="double /m/"></inport>
+    <inport name="d_safe_new" type="double /m/"></inport>
+    <outport name="d_error" type="double "></outport>
+    <ccode cFileName="BlockInterfaces.c"></ccode>
+  </block-interface>
+  <block-interface name="ssd_cruise_modeInterface" module="BlockInterfaces" model="_60_ClosedLoopValidation">
+    <inport name="v_ref" type="double /mps/"></inport>
+    <outport name="v_set" type="double /mps/"></outport>
+    <ccode cFileName="BlockInterfaces.c"></ccode>
+  </block-interface>
+  <block-interface name="ssd_setpointInterface" module="BlockInterfaces" model="_60_ClosedLoopValidation">
+    <inport name="c_vset" type="double /mps/"></inport>
+    <inport name="d_vset" type="double /mps/"></inport>
+    <inport name="ssd_mode" type="double "></inport>
+    <outport name="v_set" type="double /mps/"></outport>
+    <ccode cFileName="BlockInterfaces.c"></ccode>
+  </block-interface>
+  <block-interface name="ssd_update_pidInterface" module="BlockInterfaces" model="_60_ClosedLoopValidation">
+    <inport name="v_acc" type="double /mps/"></inport>
+    <inport name="v_pid" type="double /mps/"></inport>
+    <outport name="v_set" type="double /mps/"></outport>
+    <ccode cFileName="BlockInterfaces.c"></ccode>
+  </block-interface>
+  <block-interface name="ssd_distance_following_modeInterface" module="BlockInterfaces" model="_60_ClosedLoopValidation">
+    <inport name="d_lead" type="double /m/"></inport>
+    <inport name="d_safe_new" type="double /m/"></inport>
+    <inport name="v_acc" type="double /mps/"></inport>
+    <outport name="v_set" type="double /mps/"></outport>
+    <ccode cFileName="BlockInterfaces.c"></ccode>
+  </block-interface>
+  <block-interface name="ssd_setpoint_computeInterface" module="BlockInterfaces" model="_60_ClosedLoopValidation">
+    <inport name="d_lead" type="double /m/"></inport>
+    <inport name="d_safe_new" type="double /m/"></inport>
+    <inport name="ssd_mode" type="double "></inport>
+    <inport name="v_acc" type="double /mps/"></inport>
+    <inport name="v_ref" type="double /mps/"></inport>
+    <outport name="v_set" type="double /mps/"></outport>
+    <ccode cFileName="BlockInterfaces.c"></ccode>
+  </block-interface>
+  <block-interface name="acc_speed_setpointInterface" module="BlockInterfaces" model="_60_ClosedLoopValidation">
+    <inport name="ACC_switch" type="uint8 "></inport>
+    <inport name="d_lead" type="double /m/"></inport>
+    <inport name="v_acc" type="double /mps/"></inport>
+    <inport name="v_lead" type="double /mps/"></inport>
+    <inport name="v_ref" type="double /mps/"></inport>
+    <outport name="d_safe_new" type="double /m/"></outport>
+    <outport name="v_set" type="double /mps/"></outport>
+    <ccode cFileName="BlockInterfaces.c"></ccode>
+  </block-interface>
+  <block-interface name="brakemode_errorInterface" module="BlockInterfaces" model="_60_ClosedLoopValidation">
+    <inport name="v_acc" type="double /mps/"></inport>
+    <inport name="v_set" type="double /mps/"></inport>
+    <outport name="v_error" type="double "></outport>
+    <ccode cFileName="BlockInterfaces.c"></ccode>
+  </block-interface>
+  <block-interface name="throttlemode_brakeInterface" module="BlockInterfaces" model="_60_ClosedLoopValidation">
+    <inport name="throttle1" type="double "></inport>
+    <outport name="brake1" type="double "></outport>
+    <ccode cFileName="BlockInterfaces.c"></ccode>
+  </block-interface>
+  <block-interface name="throttlemode_errorInterface" module="BlockInterfaces" model="_60_ClosedLoopValidation">
+    <inport name="v_acc" type="double /mps/"></inport>
+    <inport name="v_set" type="double /mps/"></inport>
+    <outport name="v_error" type="double "></outport>
+    <ccode cFileName="BlockInterfaces.c"></ccode>
+  </block-interface>
+  <block-interface name="st_mode_computationInterface" module="BlockInterfaces" model="_60_ClosedLoopValidation">
+    <inport name="d_brake" type="double /m/"></inport>
+    <inport name="d_lead" type="double /m/"></inport>
+    <inport name="d_safe_new" type="double /m/"></inport>
+    <inport name="v_acc" type="double /mps/"></inport>
+    <inport name="v_set" type="double /mps/"></inport>
+    <outport name="st_mode" type="double "></outport>
+    <ccode cFileName="BlockInterfaces.c"></ccode>
+  </block-interface>
+  <block-interface name="brakemode_throttleInterface" module="BlockInterfaces" model="_60_ClosedLoopValidation">
+    <inport name="brake1" type="double "></inport>
+    <outport name="throttle1" type="double "></outport>
+    <ccode cFileName="BlockInterfaces.c"></ccode>
+  </block-interface>
+  <block-interface name="st_braking_distanceInterface" module="BlockInterfaces" model="_60_ClosedLoopValidation">
+    <inport name="v_acc" type="double /mps/"></inport>
+    <outport name="d_brake" type="double /m/"></outport>
+    <ccode cFileName="BlockInterfaces.c"></ccode>
+  </block-interface>
+  <block-interface name="st_trackingInterface" module="BlockInterfaces" model="_60_ClosedLoopValidation">
+    <inport name="b_brake" type="double /pct/"></inport>
+    <inport name="b_throttle" type="double /pct/"></inport>
+    <inport name="st_mode1" type="double "></inport>
+    <inport name="t_brake" type="double /pct/"></inport>
+    <inport name="t_throttle" type="double /pct/"></inport>
+    <outport name="brake" type="double /pct/"></outport>
+    <outport name="throttle" type="double /pct/"></outport>
+    <ccode cFileName="BlockInterfaces.c"></ccode>
+  </block-interface>
+  <block-interface name="brakemodeInterface" module="BlockInterfaces" model="_60_ClosedLoopValidation">
+    <inport name="v_acc" type="double /mps/"></inport>
+    <inport name="v_set" type="double /mps/"></inport>
+    <outport name="brake" type="double /pct/"></outport>
+    <outport name="throttle" type="double /pct/"></outport>
+    <ccode cFileName="BlockInterfaces.c"></ccode>
+  </block-interface>
+  <block-interface name="throttlemodeInterface" module="BlockInterfaces" model="_60_ClosedLoopValidation">
+    <inport name="v_acc" type="double /mps/"></inport>
+    <inport name="v_set" type="double /mps/"></inport>
+    <outport name="brake" type="double /pct/"></outport>
+    <outport name="throttle" type="double /pct/"></outport>
+    <ccode cFileName="BlockInterfaces.c"></ccode>
+  </block-interface>
+  <block-interface name="acc_speed_trackingInterface" module="BlockInterfaces" model="_60_ClosedLoopValidation">
+    <inport name="dLead" type="double /m/"></inport>
+    <inport name="dSafe" type="double /m/"></inport>
+    <inport name="v_acc" type="double /mps/"></inport>
+    <inport name="v_set" type="double /mps/"></inport>
+    <outport name="b1" type="double /pct/"></outport>
+    <outport name="d_brake" type="double /m/"></outport>
+    <outport name="t1" type="double /pct/"></outport>
+    <ccode cFileName="BlockInterfaces.c"></ccode>
+  </block-interface>
+  <block-interface name="acc_speed_trackingInterface_Sedan" module="BlockInterfaces" model="_60_ClosedLoopValidation">
+    <inport name="dLead" type="double /m/"></inport>
+    <inport name="dSafe" type="double /m/"></inport>
+    <inport name="v_acc" type="double /mps/"></inport>
+    <inport name="v_set" type="double /mps/"></inport>
+    <outport name="b1" type="double /pct/"></outport>
+    <outport name="d_brake" type="double /m/"></outport>
+    <outport name="t1" type="double /pct/"></outport>
+    <ccode cFileName="BlockInterfaces.c"></ccode>
+  </block-interface>
+  <block-interface name="Controller" module="BlockInterfaces" model="_60_ClosedLoopValidation" gUnits="G1">
+    <inport name="in1" type="double /G1/"></inport>
+    <outport name="out1" type="double /G1/"></outport>
+    <parameter name="P" type="double "></parameter>
+    <parameter name="I" type="double "></parameter>
+    <parameter name="D" type="double "></parameter>
+    <parameter name="N" type="double "></parameter>
+    <parameter name="InitialConditionForIntegrator" type="double /G1/"></parameter>
+    <parameter name="InitialConditionForFilter" type="double /G1/"></parameter>
+    <ccode cFileName="BlockInterfaces.c"></ccode>
+  </block-interface>
+  <block-interface name="acc_controlInterface_new" module="BlockInterfaces" model="_60_ClosedLoopValidation">
+    <inport name="ACC_switch" type="uint8 "></inport>
+    <inport name="d_lead" type="double /m/"></inport>
+    <inport name="v_acc" type="double /mps/"></inport>
+    <inport name="v_lead" type="double /mps/"></inport>
+    <inport name="v_ref" type="double /mps/"></inport>
+    <outport name="brake" type="double /pct/"></outport>
+    <outport name="d_brake" type="double /m/"></outport>
+    <outport name="d_safe_new" type="double /m/"></outport>
+    <outport name="throttle" type="double /pct/"></outport>
+    <ccode cFileName="BlockInterfaces.c"></ccode>
+  </block-interface>
+  <block-interface name="prevent_windupInterface" module="BlockInterfaces" model="_60_ClosedLoopValidation">
+    <inport name="controller_output" type="double "></inport>
+    <inport name="integrator_input" type="double "></inport>
+    <outport name="enable_integration" type="double "></outport>
+    <ccode cFileName="BlockInterfaces.c"></ccode>
+  </block-interface>
+  <compositeBlock name="ssd_distance_following_mode" module="ACC_SafeDistance_SubSys" model="_60_ClosedLoopValidation">
+    <inport name="d_lead" type="double /m/"></inport>
+    <inport name="d_safe_new" type="double /m/"></inport>
+    <inport name="v_acc" type="double /mps/"></inport>
+    <outport name="v_set" type="double /mps/"></outport>
+    <instance name="ssd_pid" sourceName="DiscretePIDControllerPIDParallelICInt" sourceModule="Cla_Discrete">
+      <init param="P">3.0</init>
+      <init param="I">0.5</init>
+      <init param="D">0.0</init>
+      <init param="N">100.0</init>
+      <init param="InitialConditionForIntegrator">0.0</init>
+      <init param="InitialConditionForFilter">0.0</init>
+    </instance>
+    <instance name="ssd_dist_error" sourceName="ssd_distance_error" sourceModule="ACC_SafeDistance_Atomic"></instance>
+    <instance name="ssd_upd_pid" sourceName="ssd_update_pid" sourceModule="ACC_SafeDistance_Atomic"></instance>
+    <internalConnector>
+      <source instance="ssd_dist_error" port="d_error"></source>
+      <target instance="ssd_pid" port="in1"></target>
+    </internalConnector>
+    <internalConnector>
+      <source instance="ssd_pid" port="out1"></source>
+      <target instance="ssd_upd_pid" port="v_pid" smartConnect="(double /mps/)in"></target>
+    </internalConnector>
+    <inboundConnector>
+      <source port="d_safe_new"></source>
+      <target instance="ssd_dist_error" port="d_safe_new"></target>
+    </inboundConnector>
+    <inboundConnector>
+      <source port="d_lead"></source>
+      <target instance="ssd_dist_error" port="d_lead"></target>
+    </inboundConnector>
+    <inboundConnector>
+      <source port="v_acc"></source>
+      <target instance="ssd_upd_pid" port="v_acc"></target>
+    </inboundConnector>
+    <outboundConnector>
+      <source instance="ssd_upd_pid" port="v_set"></source>
+      <target port="v_set"></target>
+    </outboundConnector>
+    <ccode cFileName="ACC_SafeDistance_SubSys.c" cStructName="ACC_SafeDistance_SubSys____ssd_distance_following_mode_flattened_data_t" cExecuteFunctionName="ACC_SafeDistance_SubSys____ssd_distance_following_mode_flattened_execute" cInitFunctionName="ACC_SafeDistance_SubSys____ssd_distance_following_mode_flattened_init"></ccode>
+  </compositeBlock>
+  <compositeBlock name="ssd_setpoint_compute" module="ACC_SafeDistance_SubSys" model="_60_ClosedLoopValidation">
+    <inport name="d_lead" type="double /m/"></inport>
+    <inport name="d_safe_new" type="double /m/"></inport>
+    <inport name="ssd_mode" type="double "></inport>
+    <inport name="v_acc" type="double /mps/"></inport>
+    <inport name="v_ref" type="double /mps/"></inport>
+    <outport name="v_set" type="double /mps/"></outport>
+    <instance name="ssd_cruise_mode1" sourceName="ssd_cruise_mode" sourceModule="ACC_SafeDistance_Atomic"></instance>
+    <instance name="ssd_distance_mode1" sourceName="ssd_distance_following_mode" sourceModule="ACC_SafeDistance_SubSys"></instance>
+    <instance name="ssd_setpoint1" sourceName="ssd_setpoint" sourceModule="ACC_SafeDistance_Atomic"></instance>
+    <internalConnector>
+      <source instance="ssd_cruise_mode1" port="v_set"></source>
+      <target instance="ssd_setpoint1" port="c_vset"></target>
+    </internalConnector>
+    <internalConnector>
+      <source instance="ssd_distance_mode1" port="v_set"></source>
+      <target instance="ssd_setpoint1" port="d_vset"></target>
+    </internalConnector>
+    <inboundConnector>
+      <source port="v_ref"></source>
+      <target instance="ssd_cruise_mode1" port="v_ref"></target>
+    </inboundConnector>
+    <inboundConnector>
+      <source port="d_lead"></source>
+      <target instance="ssd_distance_mode1" port="d_lead"></target>
+    </inboundConnector>
+    <inboundConnector>
+      <source port="d_safe_new"></source>
+      <target instance="ssd_distance_mode1" port="d_safe_new"></target>
+    </inboundConnector>
+    <inboundConnector>
+      <source port="v_acc"></source>
+      <target instance="ssd_distance_mode1" port="v_acc"></target>
+    </inboundConnector>
+    <inboundConnector>
+      <source port="ssd_mode"></source>
+      <target instance="ssd_setpoint1" port="ssd_mode"></target>
+    </inboundConnector>
+    <outboundConnector>
+      <source instance="ssd_setpoint1" port="v_set"></source>
+      <target port="v_set"></target>
+    </outboundConnector>
+    <ccode cFileName="ACC_SafeDistance_SubSys.c" cStructName="ACC_SafeDistance_SubSys____ssd_setpoint_compute_flattened_data_t" cExecuteFunctionName="ACC_SafeDistance_SubSys____ssd_setpoint_compute_flattened_execute" cInitFunctionName="ACC_SafeDistance_SubSys____ssd_setpoint_compute_flattened_init"></ccode>
+  </compositeBlock>
+  <ccode-block name="st_mode_computation" module="ACC_SpeedTracking_Atomic" model="_60_ClosedLoopValidation">
+    <inport name="d_brake" type="double /m/"></inport>
+    <inport name="d_lead" type="double /m/"></inport>
+    <inport name="d_safe_new" type="double /m/"></inport>
+    <inport name="v_acc" type="double /mps/"></inport>
+    <inport name="v_set" type="double /mps/"></inport>
+    <outport name="st_mode" type="double "></outport>
+    <ccode cFileName="ACC_SpeedTracking_Atomic.c" cExecuteFunctionName="ACC_SpeedTracking_Atomic____st_mode_computation_execute"></ccode>
+    <comment><![CDATA[st_mode_computation computes the speed tracking mode]]></comment>
+  </ccode-block>
+  <ccode-block name="st_braking_distance" module="ACC_SpeedTracking_Atomic" model="_60_ClosedLoopValidation">
+    <inport name="v_acc" type="double /mps/"></inport>
+    <outport name="d_brake" type="double /m/"></outport>
+    <ccode cFileName="ACC_SpeedTracking_Atomic.c" cExecuteFunctionName="ACC_SpeedTracking_Atomic____st_braking_distance_execute"></ccode>
+  </ccode-block>
+  <ccode-block name="throttlemode_error" module="ACC_SpeedTracking_Atomic" model="_60_ClosedLoopValidation">
+    <inport name="v_acc" type="double /mps/"></inport>
+    <inport name="v_set" type="double /mps/"></inport>
+    <outport name="v_error" type="double "></outport>
+    <ccode cFileName="ACC_SpeedTracking_Atomic.c" cExecuteFunctionName="ACC_SpeedTracking_Atomic____throttlemode_error_execute"></ccode>
+  </ccode-block>
+  <ccode-block name="brakemode_error" module="ACC_SpeedTracking_Atomic" model="_60_ClosedLoopValidation">
+    <inport name="v_acc" type="double /mps/"></inport>
+    <inport name="v_set" type="double /mps/"></inport>
+    <outport name="v_error" type="double "></outport>
+    <ccode cFileName="ACC_SpeedTracking_Atomic.c" cExecuteFunctionName="ACC_SpeedTracking_Atomic____brakemode_error_execute"></ccode>
+  </ccode-block>
+  <ccode-block name="throttlemode_brake" module="ACC_SpeedTracking_Atomic" model="_60_ClosedLoopValidation">
+    <inport name="throttle1" type="double "></inport>
+    <outport name="brake1" type="double "></outport>
+    <ccode cFileName="ACC_SpeedTracking_Atomic.c" cExecuteFunctionName="ACC_SpeedTracking_Atomic____throttlemode_brake_execute"></ccode>
+  </ccode-block>
+  <ccode-block name="brakemode_throttle" module="ACC_SpeedTracking_Atomic" model="_60_ClosedLoopValidation">
+    <inport name="brake1" type="double "></inport>
+    <outport name="throttle1" type="double "></outport>
+    <ccode cFileName="ACC_SpeedTracking_Atomic.c" cExecuteFunctionName="ACC_SpeedTracking_Atomic____brakemode_throttle_execute"></ccode>
+  </ccode-block>
+  <ccode-block name="st_tracking" module="ACC_SpeedTracking_Atomic" model="_60_ClosedLoopValidation">
+    <inport name="b_brake" type="double /pct/"></inport>
+    <inport name="b_throttle" type="double /pct/"></inport>
+    <inport name="st_mode1" type="double "></inport>
+    <inport name="t_brake" type="double /pct/"></inport>
+    <inport name="t_throttle" type="double /pct/"></inport>
+    <outport name="brake" type="double /pct/"></outport>
+    <outport name="throttle" type="double /pct/"></outport>
+    <ccode cFileName="ACC_SpeedTracking_Atomic.c" cExecuteFunctionName="ACC_SpeedTracking_Atomic____st_tracking_execute"></ccode>
+  </ccode-block>
+  <block-interface name="acc_variant_selectorInterface" module="Top_Level_System" model="_60_ClosedLoopValidation">
+    <inport name="brake_hbk" type="double /pct/"></inport>
+    <inport name="brake_sedan" type="double /pct/"></inport>
+    <inport name="d_brake_hbk" type="double /m/"></inport>
+    <inport name="d_brake_sedan" type="double /m/"></inport>
+    <inport name="throttle_hbk" type="double /pct/"></inport>
+    <inport name="throttle_sedan" type="double /pct/"></inport>
+    <outport name="brake" type="double /pct/"></outport>
+    <outport name="d_brake" type="double /m/"></outport>
+    <outport name="throttle" type="double /pct/"></outport>
+    <ccode cFileName="Top_Level_System.c"></ccode>
+  </block-interface>
+  <compositeBlock name="acc_control" module="Top_Level_System" model="_60_ClosedLoopValidation" abstract="true">
+    <inport name="ACC_switch" type="uint8 "></inport>
+    <inport name="d_lead" type="double /m/"></inport>
+    <inport name="v_acc" type="double /mps/"></inport>
+    <inport name="v_lead" type="double /mps/"></inport>
+    <inport name="v_ref" type="double /mps/"></inport>
+    <outport name="brake" type="double /pct/"></outport>
+    <outport name="d_brake" type="double /m/"></outport>
+    <outport name="d_safe_new" type="double /m/"></outport>
+    <outport name="throttle" type="double /pct/"></outport>
+    <instance name="speed_setpoint" sourceName="acc_speed_setpointInterface" sourceModule="BlockInterfaces"></instance>
+    <instance name="speed_tracking" sourceName="acc_speed_trackingInterface" sourceModule="BlockInterfaces"></instance>
+    <internalConnector>
+      <source instance="speed_setpoint" port="d_safe_new"></source>
+      <target instance="speed_tracking" port="dSafe"></target>
+    </internalConnector>
+    <internalConnector>
+      <source instance="speed_setpoint" port="v_set"></source>
+      <target instance="speed_tracking" port="v_set"></target>
+    </internalConnector>
+    <inboundConnector>
+      <source port="ACC_switch"></source>
+      <target instance="speed_setpoint" port="ACC_switch"></target>
+    </inboundConnector>
+    <inboundConnector>
+      <source port="v_acc"></source>
+      <target instance="speed_setpoint" port="v_acc"></target>
+    </inboundConnector>
+    <inboundConnector>
+      <source port="v_lead"></source>
+      <target instance="speed_setpoint" port="v_lead"></target>
+    </inboundConnector>
+    <inboundConnector>
+      <source port="v_ref"></source>
+      <target instance="speed_setpoint" port="v_ref"></target>
+    </inboundConnector>
+    <inboundConnector>
+      <source port="d_lead"></source>
+      <target instance="speed_setpoint" port="d_lead"></target>
+    </inboundConnector>
+    <inboundConnector>
+      <source port="d_lead"></source>
+      <target instance="speed_tracking" port="dLead"></target>
+    </inboundConnector>
+    <inboundConnector>
+      <source port="v_acc"></source>
+      <target instance="speed_tracking" port="v_acc"></target>
+    </inboundConnector>
+    <outboundConnector>
+      <source instance="speed_setpoint" port="d_safe_new"></source>
+      <target port="d_safe_new"></target>
+    </outboundConnector>
+    <outboundConnector>
+      <source instance="speed_tracking" port="b1"></source>
+      <target port="brake"></target>
+    </outboundConnector>
+    <outboundConnector>
+      <source instance="speed_tracking" port="d_brake"></source>
+      <target port="d_brake"></target>
+    </outboundConnector>
+    <outboundConnector>
+      <source instance="speed_tracking" port="t1"></source>
+      <target port="throttle"></target>
+    </outboundConnector>
+    <comment><![CDATA[Contrrol algorithm developed in ESD for Adaptive cruise control - Computes the brake and throttle possition
+based oin the driver i/p and sensor inputs]]></comment>
+    <ccode cFileName="Top_Level_System.c" cStructName="Top_Level_System____acc_control_flattened_data_t" cExecuteFunctionName="Top_Level_System____acc_control_flattened_execute" cInitFunctionName="Top_Level_System____acc_control_flattened_init"></ccode>
+  </compositeBlock>
+  <compositeBlock name="acc_control_with_variants" module="Top_Level_System" model="_60_ClosedLoopValidation" abstract="true">
+    <inport name="ACC_switch" type="uint8 "></inport>
+    <inport name="d_lead" type="double /m/"></inport>
+    <inport name="v_acc" type="double /mps/"></inport>
+    <inport name="v_lead" type="double /mps/"></inport>
+    <inport name="v_ref" type="double /mps/"></inport>
+    <outport name="brake" type="double /pct/"></outport>
+    <outport name="d_brake" type="double /m/"></outport>
+    <outport name="d_safe_new" type="double /m/"></outport>
+    <outport name="throttle" type="double /pct/"></outport>
+    <instance name="speed_setpoint" sourceName="acc_speed_setpointInterface" sourceModule="BlockInterfaces"></instance>
+    <instance name="speed_tracking" sourceName="acc_speed_trackingInterface" sourceModule="BlockInterfaces"></instance>
+    <instance name="variant_signal" sourceName="acc_variant_selectorInterface" sourceModule="Top_Level_System"></instance>
+    <internalConnector>
+      <source instance="speed_setpoint" port="d_safe_new"></source>
+      <target instance="speed_tracking" port="dSafe"></target>
+    </internalConnector>
+    <internalConnector>
+      <source instance="speed_setpoint" port="v_set"></source>
+      <target instance="speed_tracking" port="v_set"></target>
+    </internalConnector>
+    <internalConnector>
+      <source instance="speed_tracking" port="b1"></source>
+      <target instance="variant_signal" port="brake_hbk"></target>
+    </internalConnector>
+    <internalConnector>
+      <source instance="speed_tracking" port="d_brake"></source>
+      <target instance="variant_signal" port="d_brake_hbk"></target>
+    </internalConnector>
+    <internalConnector>
+      <source instance="speed_tracking" port="t1"></source>
+      <target instance="variant_signal" port="throttle_hbk"></target>
+    </internalConnector>
+    <inboundConnector>
+      <source port="ACC_switch"></source>
+      <target instance="speed_setpoint" port="ACC_switch"></target>
+    </inboundConnector>
+    <inboundConnector>
+      <source port="v_acc"></source>
+      <target instance="speed_setpoint" port="v_acc"></target>
+    </inboundConnector>
+    <inboundConnector>
+      <source port="v_lead"></source>
+      <target instance="speed_setpoint" port="v_lead"></target>
+    </inboundConnector>
+    <inboundConnector>
+      <source port="v_ref"></source>
+      <target instance="speed_setpoint" port="v_ref"></target>
+    </inboundConnector>
+    <inboundConnector>
+      <source port="d_lead"></source>
+      <target instance="speed_setpoint" port="d_lead"></target>
+    </inboundConnector>
+    <inboundConnector>
+      <source port="d_lead"></source>
+      <target instance="speed_tracking" port="dLead"></target>
+    </inboundConnector>
+    <inboundConnector>
+      <source port="v_acc"></source>
+      <target instance="speed_tracking" port="v_acc"></target>
+    </inboundConnector>
+    <outboundConnector>
+      <source instance="speed_setpoint" port="d_safe_new"></source>
+      <target port="d_safe_new"></target>
+    </outboundConnector>
+    <outboundConnector>
+      <source instance="variant_signal" port="d_brake"></source>
+      <target port="d_brake"></target>
+    </outboundConnector>
+    <outboundConnector>
+      <source instance="variant_signal" port="throttle"></source>
+      <target port="throttle"></target>
+    </outboundConnector>
+    <outboundConnector>
+      <source instance="variant_signal" port="brake"></source>
+      <target port="brake"></target>
+    </outboundConnector>
+    <comment><![CDATA[Contrrol algorithm developed in ESD for Adaptive cruise control - Computes the brake and throttle possition
+based oin the driver i/p and sensor inputs - 
+1. Interface continuity
+2. Use of units and centralized data dictionary
+3. Behavioral specification in the form of contracts and tempral logic
+4. Variant aware architecture - can be selected at runtime for test and simulation run
+5. Can be extended for algorithm implementation]]></comment>
+    <ccode cFileName="Top_Level_System.c" cStructName="Top_Level_System____acc_control_with_variants_flattened_data_t" cExecuteFunctionName="Top_Level_System____acc_control_with_variants_flattened_execute" cInitFunctionName="Top_Level_System____acc_control_with_variants_flattened_init"></ccode>
+  </compositeBlock>
+  <compositeBlock name="acc_speed_setpoint" module="ACC_SafeDistance_System" model="_60_ClosedLoopValidation">
+    <inport name="ACC_switch" type="uint8 "></inport>
+    <inport name="d_lead" type="double /m/"></inport>
+    <inport name="v_acc" type="double /mps/"></inport>
+    <inport name="v_lead" type="double /mps/"></inport>
+    <inport name="v_ref" type="double /mps/"></inport>
+    <outport name="d_safe_new" type="double /m/"></outport>
+    <outport name="v_set" type="double /mps/"></outport>
+    <instance name="ssd_safe_dist_compute" sourceName="ssd_safe_distance_computation" sourceModule="ACC_SafeDistance_Atomic">
+      <init param="T_SAFE">2.0 s</init>
+    </instance>
+    <instance name="ssd_mode_compute1" sourceName="ssd_mode_compute" sourceModule="ACC_SafeDistance_Atomic"></instance>
+    <instance name="ssd_setpoint_compute1" sourceName="ssd_setpoint_compute" sourceModule="ACC_SafeDistance_SubSys"></instance>
+    <internalConnector>
+      <source instance="ssd_safe_dist_compute" port="d_safe"></source>
+      <target instance="ssd_mode_compute1" port="d_safe_new"></target>
+    </internalConnector>
+    <internalConnector>
+      <source instance="ssd_safe_dist_compute" port="d_safe"></source>
+      <target instance="ssd_setpoint_compute1" port="d_safe_new"></target>
+    </internalConnector>
+    <internalConnector>
+      <source instance="ssd_mode_compute1" port="ssd_mode"></source>
+      <target instance="ssd_setpoint_compute1" port="ssd_mode"></target>
+    </internalConnector>
+    <inboundConnector>
+      <source port="v_acc"></source>
+      <target instance="ssd_safe_dist_compute" port="v_acc_demo"></target>
+    </inboundConnector>
+    <inboundConnector>
+      <source port="v_lead"></source>
+      <target instance="ssd_safe_dist_compute" port="v_lead"></target>
+    </inboundConnector>
+    <inboundConnector>
+      <source port="d_lead"></source>
+      <target instance="ssd_mode_compute1" port="d_lead"></target>
+    </inboundConnector>
+    <inboundConnector>
+      <source port="v_ref"></source>
+      <target instance="ssd_setpoint_compute1" port="v_ref"></target>
+    </inboundConnector>
+    <inboundConnector>
+      <source port="d_lead"></source>
+      <target instance="ssd_setpoint_compute1" port="d_lead"></target>
+    </inboundConnector>
+    <inboundConnector>
+      <source port="v_acc"></source>
+      <target instance="ssd_setpoint_compute1" port="v_acc"></target>
+    </inboundConnector>
+    <outboundConnector>
+      <source instance="ssd_setpoint_compute1" port="v_set"></source>
+      <target port="v_set"></target>
+    </outboundConnector>
+    <outboundConnector>
+      <source instance="ssd_safe_dist_compute" port="d_safe"></source>
+      <target port="d_safe_new"></target>
+    </outboundConnector>
+    <ccode cFileName="ACC_SafeDistance_System.c" cStructName="ACC_SafeDistance_System____acc_speed_setpoint_flattened_data_t" cExecuteFunctionName="ACC_SafeDistance_System____acc_speed_setpoint_flattened_execute" cInitFunctionName="ACC_SafeDistance_System____acc_speed_setpoint_flattened_init"></ccode>
+  </compositeBlock>
+  <amesim-block name="Environment" module="Amesim_Supercomponents" model="_60_ClosedLoopValidation">
+    <outport name="Air_Density" type="double "></outport>
+    <outport name="Ambient_Temperature" type="double "></outport>
+    <outport name="Desired_Vehicle_Speed" type="double "></outport>
+    <outport name="Road_Slope" type="double "></outport>
+    <outport name="leadingVehPos" type="double "></outport>
+    <outport name="leadingVehSpeed" type="double "></outport>
+    <ccode cFileName="Amesim_Supercomponents.c" cExecuteFunctionName="Amesim_Supercomponents____Environment_execute"></ccode>
+    <amesimBlock blockName="Environment"><![CDATA[C:\Users\tghx1e\CHE-W14-005\00_BzDev\01_Presentations_ESD\20170124_EMEA_PfD\ACC_SAM_SDM\ACC_PlantModel]]></amesimBlock>
+  </amesim-block>
+  <amesim-block name="HMI" module="Amesim_Supercomponents" model="_60_ClosedLoopValidation">
+    <inport name="DesiredVehicleSpeed" type="double "></inport>
+    <inport name="Vehicle_speed" type="double "></inport>
+    <outport name="ACCSwitchPos" type="double "></outport>
+    <outport name="Acceleration_xmd" type="double "></outport>
+    <outport name="Brake_Command" type="double "></outport>
+    <ccode cFileName="Amesim_Supercomponents.c" cExecuteFunctionName="Amesim_Supercomponents____HMI_execute"></ccode>
+    <amesimBlock blockName="HMI"><![CDATA[C:\Users\tghx1e\CHE-W14-005\00_BzDev\01_Presentations_ESD\20170124_EMEA_PfD\ACC_SAM_SDM\ACC_PlantModel]]></amesimBlock>
+  </amesim-block>
+  <amesim-block name="Chassis" module="Amesim_Supercomponents" model="_60_ClosedLoopValidation">
+    <inport name="brake" type="double "></inport>
+    <inport name="dvng" type="double "></inport>
+    <inport name="road" type="double "></inport>
+    <outport name="Wheel" type="double "></outport>
+    <outport name="acc" type="double "></outport>
+    <outport name="vehiclePos" type="double "></outport>
+    <outport name="vehicleSpd" type="double "></outport>
+    <ccode cFileName="Amesim_Supercomponents.c" cExecuteFunctionName="Amesim_Supercomponents____Chassis_execute"></ccode>
+    <amesimBlock blockName="Chassis"><![CDATA[C:\Users\tghx1e\CHE-W14-005\00_BzDev\01_Presentations_ESD\20170124_EMEA_PfD\ACC_SAM_SDM\ACC_PlantModel]]></amesimBlock>
+  </amesim-block>
+  <amesim-block name="Engine" module="Amesim_Supercomponents" model="_60_ClosedLoopValidation">
+    <inport name="accCmd" type="double "></inport>
+    <inport name="load" type="double "></inport>
+    <inport name="speed" type="double "></inport>
+    <outport name="friction" type="double "></outport>
+    <outport name="fuel" type="double "></outport>
+    <outport name="loadCmd" type="double "></outport>
+    <outport name="torque" type="double "></outport>
+    <ccode cFileName="Amesim_Supercomponents.c" cExecuteFunctionName="Amesim_Supercomponents____Engine_execute"></ccode>
+    <amesimBlock blockName="Engine"><![CDATA[C:\Users\tghx1e\CHE-W14-005\00_BzDev\01_Presentations_ESD\20170124_EMEA_PfD\ACC_SAM_SDM\ACC_PlantModel]]></amesimBlock>
+  </amesim-block>
+  <compositeBlock name="HMI_input" module="Amesim_Supercomponents" model="_60_ClosedLoopValidation">
+    <outport name="desVehSpeed" type="double "></outport>
+    <outport name="vehicle_speed" type="double "></outport>
+    <outboundConnector>
+      <sourceExpr><![CDATA[6]]></sourceExpr>
+      <target port="desVehSpeed"></target>
+    </outboundConnector>
+    <outboundConnector>
+      <sourceExpr><![CDATA[5]]></sourceExpr>
+      <target port="vehicle_speed"></target>
+    </outboundConnector>
+    <ccode cFileName="Amesim_Supercomponents.c" cStructName="Amesim_Supercomponents____HMI_input_flattened_data_t" cExecuteFunctionName="Amesim_Supercomponents____HMI_input_flattened_execute"></ccode>
+  </compositeBlock>
+  <compositeBlock name="chassis_input" module="Amesim_Supercomponents" model="_60_ClosedLoopValidation">
+    <outport name="driving" type="double "></outport>
+    <outport name="roadProfile" type="double "></outport>
+    <outboundConnector>
+      <sourceExpr><![CDATA[3]]></sourceExpr>
+      <target port="driving"></target>
+    </outboundConnector>
+    <outboundConnector>
+      <sourceExpr><![CDATA[2]]></sourceExpr>
+      <target port="roadProfile"></target>
+    </outboundConnector>
+    <ccode cFileName="Amesim_Supercomponents.c" cStructName="Amesim_Supercomponents____chassis_input_flattened_data_t" cExecuteFunctionName="Amesim_Supercomponents____chassis_input_flattened_execute"></ccode>
+  </compositeBlock>
+  <compositeBlock name="engine_input" module="Amesim_Supercomponents" model="_60_ClosedLoopValidation">
+    <outport name="load" type="double "></outport>
+    <outport name="speed" type="double "></outport>
+    <outboundConnector>
+      <sourceExpr><![CDATA[3]]></sourceExpr>
+      <target port="load"></target>
+    </outboundConnector>
+    <outboundConnector>
+      <sourceExpr><![CDATA[4]]></sourceExpr>
+      <target port="speed"></target>
+    </outboundConnector>
+    <ccode cFileName="Amesim_Supercomponents.c" cStructName="Amesim_Supercomponents____engine_input_flattened_data_t" cExecuteFunctionName="Amesim_Supercomponents____engine_input_flattened_execute"></ccode>
+  </compositeBlock>
+  <compositeBlock name="GPS_Distance_Calculator" module="Amesim_Supercomponents" model="_60_ClosedLoopValidation">
+    <outport name="leadingVehicleDist" type="double /m/"></outport>
+    <outboundConnector>
+      <sourceExpr><![CDATA[2 m]]></sourceExpr>
+      <target port="leadingVehicleDist"></target>
+    </outboundConnector>
+    <ccode cFileName="Amesim_Supercomponents.c" cStructName="Amesim_Supercomponents____GPS_Distance_Calculator_flattened_data_t" cExecuteFunctionName="Amesim_Supercomponents____GPS_Distance_Calculator_flattened_execute"></ccode>
+  </compositeBlock>
+  <compositeBlock name="throttlemode" module="ACC_SpeedTracking_SubSys" model="_60_ClosedLoopValidation">
+    <inport name="v_acc" type="double /mps/"></inport>
+    <inport name="v_set" type="double /mps/"></inport>
+    <outport name="brake" type="double /pct/"></outport>
+    <outport name="throttle" type="double /pct/"></outport>
+    <instance name="tm_error" sourceName="throttlemode_error" sourceModule="ACC_SpeedTracking_Atomic"></instance>
+    <instance name="st_pid" sourceName="DiscretePIDControllerPIDParallelICInt" sourceModule="Library">
+      <init param="P">0.5</init>
+      <init param="I">0.0</init>
+      <init param="D">0.0</init>
+      <init param="N">100.0</init>
+      <init param="InitialConditionForIntegrator">0.0</init>
+      <init param="InitialConditionForFilter">0.0</init>
+    </instance>
+    <instance name="thmode_brake_comp" sourceName="throttlemode_brake" sourceModule="ACC_SpeedTracking_Atomic"></instance>
+    <internalConnector>
+      <source instance="tm_error" port="v_error"></source>
+      <target instance="st_pid" port="in1"></target>
+    </internalConnector>
+    <internalConnector>
+      <source instance="st_pid" port="out1"></source>
+      <target instance="thmode_brake_comp" port="throttle1"></target>
+    </internalConnector>
+    <inboundConnector>
+      <source port="v_acc"></source>
+      <target instance="tm_error" port="v_acc"></target>
+    </inboundConnector>
+    <inboundConnector>
+      <source port="v_set"></source>
+      <target instance="tm_error" port="v_set"></target>
+    </inboundConnector>
+    <outboundConnector>
+      <source instance="st_pid" port="out1"></source>
+      <target port="throttle"></target>
+    </outboundConnector>
+    <outboundConnector>
+      <source instance="thmode_brake_comp" port="brake1"></source>
+      <target port="brake"></target>
+    </outboundConnector>
+    <ccode cFileName="ACC_SpeedTracking_SubSys.c" cStructName="ACC_SpeedTracking_SubSys____throttlemode_flattened_data_t" cExecuteFunctionName="ACC_SpeedTracking_SubSys____throttlemode_flattened_execute" cInitFunctionName="ACC_SpeedTracking_SubSys____throttlemode_flattened_init"></ccode>
+  </compositeBlock>
+  <compositeBlock name="brakemode" module="ACC_SpeedTracking_SubSys" model="_60_ClosedLoopValidation">
+    <inport name="v_acc" type="double /mps/"></inport>
+    <inport name="v_set" type="double /mps/"></inport>
+    <outport name="brake" type="double /pct/"></outport>
+    <outport name="throttle" type="double /pct/"></outport>
+    <instance name="bm_error" sourceName="brakemode_error" sourceModule="ACC_SpeedTracking_Atomic"></instance>
+    <instance name="st_pid" sourceName="DiscretePIDControllerPIDParallelICInt" sourceModule="Library">
+      <init param="P">0.5</init>
+      <init param="I">0.0</init>
+      <init param="D">0.1</init>
+      <init param="N">100.0</init>
+      <init param="InitialConditionForIntegrator">0.0</init>
+      <init param="InitialConditionForFilter">0.0</init>
+    </instance>
+    <instance name="brmode_throt_comp" sourceName="brakemode_throttle" sourceModule="ACC_SpeedTracking_Atomic"></instance>
+    <internalConnector>
+      <source instance="bm_error" port="v_error"></source>
+      <target instance="st_pid" port="in1"></target>
+    </internalConnector>
+    <internalConnector>
+      <source instance="st_pid" port="out1"></source>
+      <target instance="brmode_throt_comp" port="brake1"></target>
+    </internalConnector>
+    <inboundConnector>
+      <source port="v_acc"></source>
+      <target instance="bm_error" port="v_acc"></target>
+    </inboundConnector>
+    <inboundConnector>
+      <source port="v_set"></source>
+      <target instance="bm_error" port="v_set"></target>
+    </inboundConnector>
+    <outboundConnector>
+      <source instance="st_pid" port="out1"></source>
+      <target port="brake"></target>
+    </outboundConnector>
+    <outboundConnector>
+      <source instance="brmode_throt_comp" port="throttle1"></source>
+      <target port="throttle"></target>
+    </outboundConnector>
+    <ccode cFileName="ACC_SpeedTracking_SubSys.c" cStructName="ACC_SpeedTracking_SubSys____brakemode_flattened_data_t" cExecuteFunctionName="ACC_SpeedTracking_SubSys____brakemode_flattened_execute" cInitFunctionName="ACC_SpeedTracking_SubSys____brakemode_flattened_init"></ccode>
+  </compositeBlock>
+  <compositeBlock name="control" module="Closed_Loop_Simulation_Models" model="_60_ClosedLoopValidation" extends="acc_control">
+    <inport name="ACC_switch" type="uint8 "></inport>
+    <inport name="d_lead" type="double /m/"></inport>
+    <inport name="v_acc" type="double /mps/"></inport>
+    <inport name="v_lead" type="double /mps/"></inport>
+    <inport name="v_ref" type="double /mps/"></inport>
+    <outport name="brake" type="double /pct/"></outport>
+    <outport name="d_brake" type="double /m/"></outport>
+    <outport name="d_safe_new" type="double /m/"></outport>
+    <outport name="throttle" type="double /pct/"></outport>
+    <mapping sourceBlock="speed_setpoint" targetBlock="acc_speed_setpoint" module="ACC_SafeDistance_System"></mapping>
+    <mapping sourceBlock="speed_tracking" targetBlock="acc_speed_tracking" module="ACC_SpeedTracking_System"></mapping>
+    <ccode cFileName="Closed_Loop_Simulation_Models.c" cStructName="Closed_Loop_Simulation_Models____control_flattened_data_t" cExecuteFunctionName="Closed_Loop_Simulation_Models____control_flattened_execute" cInitFunctionName="Closed_Loop_Simulation_Models____control_flattened_init"></ccode>
+  </compositeBlock>
+  <compositeBlock name="completeSystem" module="Closed_Loop_Simulation_Models" model="_60_ClosedLoopValidation">
+    <outport name="brakeCmd" type="double "></outport>
+    <outport name="throttleCmd" type="double "></outport>
+    <instance name="aEnvironment" sourceName="Environment" sourceModule="Amesim_Supercomponents"></instance>
+    <instance name="HMI_Supercomponent" sourceName="HMI" sourceModule="Amesim_Supercomponents"></instance>
+    <instance name="Chassis_Supercomponent" sourceName="Chassis" sourceModule="Amesim_Supercomponents"></instance>
+    <instance name="Engine_Supercomponent" sourceName="Engine" sourceModule="Amesim_Supercomponents"></instance>
+    <instance name="Acc_control_algorithm" sourceName="control" sourceModule="Closed_Loop_Simulation_Models"></instance>
+    <instance name="readHMIInput" sourceName="HMI_input" sourceModule="Amesim_Supercomponents"></instance>
+    <instance name="ChassisInput" sourceName="chassis_input" sourceModule="Amesim_Supercomponents"></instance>
+    <instance name="EngineInput" sourceName="engine_input" sourceModule="Amesim_Supercomponents"></instance>
+    <instance name="LeadingVehDistance" sourceName="GPS_Distance_Calculator" sourceModule="Amesim_Supercomponents"></instance>
+    <internalConnector>
+      <source instance="readHMIInput" port="desVehSpeed"></source>
+      <target instance="HMI_Supercomponent" port="DesiredVehicleSpeed"></target>
+    </internalConnector>
+    <internalConnector>
+      <source instance="readHMIInput" port="vehicle_speed"></source>
+      <target instance="HMI_Supercomponent" port="Vehicle_speed"></target>
+    </internalConnector>
+    <internalConnector>
+      <source instance="ChassisInput" port="driving"></source>
+      <target instance="Chassis_Supercomponent" port="dvng"></target>
+    </internalConnector>
+    <internalConnector>
+      <source instance="ChassisInput" port="roadProfile"></source>
+      <target instance="Chassis_Supercomponent" port="road"></target>
+    </internalConnector>
+    <internalConnector>
+      <source instance="HMI_Supercomponent" port="ACCSwitchPos"></source>
+      <target instance="Acc_control_algorithm" port="ACC_switch" smartConnect="(uint8 )in"></target>
+    </internalConnector>
+    <internalConnector>
+      <source instance="LeadingVehDistance" port="leadingVehicleDist"></source>
+      <target instance="Acc_control_algorithm" port="d_lead"></target>
+    </internalConnector>
+    <internalConnector>
+      <source instance="Chassis_Supercomponent" port="vehicleSpd"></source>
+      <target instance="Acc_control_algorithm" port="v_acc" smartConnect="(double /mps/)in"></target>
+    </internalConnector>
+    <internalConnector>
+      <source instance="aEnvironment" port="leadingVehSpeed"></source>
+      <target instance="Acc_control_algorithm" port="v_lead" smartConnect="(double /mps/)in"></target>
+    </internalConnector>
+    <internalConnector>
+      <source instance="aEnvironment" port="Desired_Vehicle_Speed"></source>
+      <target instance="Acc_control_algorithm" port="v_ref" smartConnect="(double /mps/)in"></target>
+    </internalConnector>
+    <internalConnector>
+      <source instance="Acc_control_algorithm" port="d_brake"></source>
+      <target instance="Engine_Supercomponent" port="accCmd" smartConnect="(double )in"></target>
+    </internalConnector>
+    <internalConnector>
+      <source instance="Acc_control_algorithm" port="d_safe_new"></source>
+      <target instance="Chassis_Supercomponent" port="brake" delay="10" smartConnect="(double )in"></target>
+    </internalConnector>
+    <internalConnector>
+      <source instance="EngineInput" port="load"></source>
+      <target instance="Engine_Supercomponent" port="load"></target>
+    </internalConnector>
+    <internalConnector>
+      <source instance="EngineInput" port="speed"></source>
+      <target instance="Engine_Supercomponent" port="speed"></target>
+    </internalConnector>
+    <outboundConnector>
+      <source instance="Acc_control_algorithm" port="brake"></source>
+      <target port="brakeCmd"></target>
+    </outboundConnector>
+    <outboundConnector>
+      <source instance="Acc_control_algorithm" port="throttle"></source>
+      <target port="throttleCmd"></target>
+    </outboundConnector>
+    <ccode cFileName="Closed_Loop_Simulation_Models.c" cStructName="Closed_Loop_Simulation_Models____completeSystem_flattened_data_t" cExecuteFunctionName="Closed_Loop_Simulation_Models____completeSystem_flattened_execute" cInitFunctionName="Closed_Loop_Simulation_Models____completeSystem_flattened_init"></ccode>
+  </compositeBlock>
+  <simulationBlockInfo name="completeSystem_SimulationBlock__">
+    <simulation startTime="0.0 s" terminateCondition="simTime >= 10 s" incr="1.0 s">
+      <targetSignal name="brakeCmd" instance=""></targetSignal>
+      <targetSignal name="throttleCmd" instance=""></targetSignal>
+    </simulation>
+  </simulationBlockInfo>
+  <cfile>
+    <file name="Closed_Loop_Simulation_Models"></file>
+    <file name="ACC_SpeedTracking_SubSys"></file>
+    <file name="Cla_PredefinedConstants"></file>
+    <file name="Composite_Systems"></file>
+    <file name="BlockInterfaces"></file>
+    <file name="Cla_Sources"></file>
+    <file name="Cla_Discrete"></file>
+    <file name="Top_Level_System"></file>
+    <file name="Library"></file>
+    <file name="ACC_SpeedTracking_Atomic"></file>
+    <file name="ACC_SpeedTracking_System"></file>
+    <file name="ACC_SafeDistance_Atomic"></file>
+    <file name="ACC_SafeDistance_System"></file>
+    <file name="ACC_SafeDistance_SubSys"></file>
+    <file name="Amesim_Supercomponents"></file>
+    <file name="Cla_Operators"></file>
+    <file name="___SimulationRuntime"></file>
+    <file name="Ame_Simulink_Result_Parser"></file>
+    <file name="Unittest_Helper"></file>
+    <file name="Unittest_Helper_NonIsolated"></file>
+  </cfile>
+</ameSimExportBlocks>

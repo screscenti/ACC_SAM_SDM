@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<simulinkExportBlocks>
+   <simulinkExportInfo>
+      <toplevelBlock module="top_level_architecture" name="top_level_architecture"/>
+   </simulinkExportInfo>
+   <compositeBlock model="top_level_architecture.top_level_architecture" module="top_level_architecture" name="acc_speed_tracking">
+      <inport name="v_acc" type="double"/>
+      <inport name="v_set" type="double"/>
+      <inport name="dSafe" type="double"/>
+      <inport name="dLead" type="double"/>
+      <outport name="t1" type="double"/>
+      <outport name="b1" type="double"/>
+      <outport name="d_brake" type="double"/>
+   </compositeBlock>
+   <compositeBlock model="top_level_architecture.top_level_architecture" module="top_level_architecture" name="acc_speed_setpoint">
+      <inport name="v_acc" type="double"/>
+      <inport name="ACC_switch" type="double"/>
+      <inport name="v_lead" type="double"/>
+      <inport name="v_ref" type="double"/>
+      <inport name="d_lead" type="double"/>
+      <outport name="v_set" type="double"/>
+      <outport name="d_safe" type="double"/>
+   </compositeBlock>
+   <compositeBlock model="top_level_architecture.top_level_architecture" module="top_level_architecture" name="acc_control">
+      <inport name="v_acc" type="double"/>
+      <inport name="ACC_switch" type="double"/>
+      <inport name="v_lead" type="double"/>
+      <inport name="v_ref" type="double"/>
+      <inport name="d_lead" type="double"/>
+      <outport name="throttle" type="double"/>
+      <outport name="brake" type="double"/>
+      <outport name="d_brake" type="double"/>
+      <outport name="d_safe" type="double"/>
+      <instance name="acc_speed_setpoint" sourceModule="top_level_architecture" sourceName="acc_speed_setpoint"/>
+      <instance name="acc_speed_tracking" sourceModule="top_level_architecture" sourceName="acc_speed_tracking"/>
+      <inboundConnector>
+         <source port="v_acc"/>
+         <target instance="acc_speed_setpoint" port="v_acc"/>
+      </inboundConnector>
+      <inboundConnector>
+         <source port="v_acc"/>
+         <target instance="acc_speed_tracking" port="v_acc"/>
+      </inboundConnector>
+      <inboundConnector>
+         <source port="ACC_switch"/>
+         <target instance="acc_speed_setpoint" port="ACC_switch"/>
+      </inboundConnector>
+      <inboundConnector>
+         <source port="v_lead"/>
+         <target instance="acc_speed_setpoint" port="v_lead"/>
+      </inboundConnector>
+      <inboundConnector>
+         <source port="v_ref"/>
+         <target instance="acc_speed_setpoint" port="v_ref"/>
+      </inboundConnector>
+      <inboundConnector>
+         <source port="d_lead"/>
+         <target instance="acc_speed_setpoint" port="d_lead"/>
+      </inboundConnector>
+      <inboundConnector>
+         <source port="d_lead"/>
+         <target instance="acc_speed_tracking" port="dLead"/>
+      </inboundConnector>
+      <internalConnector>
+         <source instance="acc_speed_setpoint" port="v_set"/>
+         <target instance="acc_speed_tracking" port="v_set"/>
+      </internalConnector>
+      <internalConnector>
+         <source instance="acc_speed_setpoint" port="d_safe"/>
+         <target instance="acc_speed_tracking" port="dSafe"/>
+      </internalConnector>
+      <outboundConnector>
+         <source instance="acc_speed_setpoint" port="d_safe"/>
+         <target port="d_safe"/>
+      </outboundConnector>
+      <outboundConnector>
+         <source instance="acc_speed_tracking" port="t1"/>
+         <target port="throttle"/>
+      </outboundConnector>
+      <outboundConnector>
+         <source instance="acc_speed_tracking" port="b1"/>
+         <target port="brake"/>
+      </outboundConnector>
+      <outboundConnector>
+         <source instance="acc_speed_tracking" port="d_brake"/>
+         <target port="d_brake"/>
+      </outboundConnector>
+   </compositeBlock>
+   <compositeBlock model="top_level_architecture.top_level_architecture" module="top_level_architecture" name="top_level_architecture">
+      <instance name="acc_control" sourceModule="top_level_architecture" sourceName="acc_control"/>
+   </compositeBlock>
+</simulinkExportBlocks>

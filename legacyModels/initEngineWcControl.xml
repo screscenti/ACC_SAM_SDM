@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<simulinkExportCGs>
+   <constantgroup name="parameter">
+      <entry name="Ki" type="double ">
+         <default>0.0723</default>
+      </entry>
+      <entry name="Kp" type="double ">
+         <default>0.0614</default>
+      </entry>
+      <entry name="pi_user" type="double ">
+         <default>3.1416</default>
+      </entry>
+   </constantgroup>
+</simulinkExportCGs>

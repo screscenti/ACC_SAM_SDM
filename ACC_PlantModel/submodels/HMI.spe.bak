@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE SPE>
+<SPE DOC_VERSION="2" AME_VERSION="14.0.0 -  42489-40390 2015">
+
+ <SUBMODEL>
+  <SUB_TYPE>1</SUB_TYPE>
+  <DEFAULT_ICON>HMI</DEFAULT_ICON>
+  <SUB_LABEL>hmi</SUB_LABEL>
+  <SUB_UNIT>0</SUB_UNIT>
+  <OUTPUT_TYPE>0</OUTPUT_TYPE>
+  <EVARS_LIST>
+   <PORT>
+    <EVAR>
+     <SUB_ID>1</SUB_ID>
+     <TITLE>input at (-ve) port 1</TITLE>
+     <VARNAME>input1</VARNAME>
+     <VISIBILITY>True</VISIBILITY>
+     <TYPE>0</TYPE>
+     <DIMENSION>1</DIMENSION>
+     <IO>1</IO>
+     <UNITS>null</UNITS>
+    </EVAR>
+   </PORT>
+   <PORT>
+    <EVAR>
+     <SUB_ID>4</SUB_ID>
+     <TITLE>output</TITLE>
+     <VARNAME>out</VARNAME>
+     <VISIBILITY>True</VISIBILITY>
+     <TYPE>7</TYPE>
+     <UNITS>null</UNITS>
+     <EXPRESS2>r1</EXPRESS2>
+    </EVAR>
+   </PORT>
+   <PORT>
+    <EVAR>
+     <SUB_ID>1</SUB_ID>
+     <TITLE>output</TITLE>
+     <VARNAME>tetout</VARNAME>
+     <VISIBILITY>True</VISIBILITY>
+     <TYPE>0</TYPE>
+     <DIMENSION>1</DIMENSION>
+     <IO>2</IO>
+     <UNITS>null</UNITS>
+    </EVAR>
+   </PORT>
+   <PORT>
+    <EVAR>
+     <SUB_ID>1</SUB_ID>
+     <TITLE>output from saturation element</TITLE>
+     <VARNAME>output</VARNAME>
+     <VISIBILITY>True</VISIBILITY>
+     <TYPE>0</TYPE>
+     <DIMENSION>1</DIMENSION>
+     <IO>2</IO>
+     <UNITS>null</UNITS>
+    </EVAR>
+   </PORT>
+   <PORT>
+    <EVAR>
+     <SUB_ID>3</SUB_ID>
+     <TITLE>input at (+ve) port 3</TITLE>
+     <VARNAME>input3</VARNAME>
+     <VISIBILITY>True</VISIBILITY>
+     <TYPE>0</TYPE>
+     <DIMENSION>1</DIMENSION>
+     <IO>1</IO>
+     <UNITS>null</UNITS>
+    </EVAR>
+   </PORT>
+  </EVARS_LIST>
+ </SUBMODEL>
+</SPE>

@@ -1,0 +1,46 @@
+<amesimExportCGs>
+  <constantgroup name="vw_golf_airbag">
+    <entry name="v_acc" type="double ">
+      <default>20</default>
+      <variant condition="Hatchback">12</variant>
+      <variant condition="Sedan_VW">15</variant>
+    </entry>
+    <entry name="T_Safe_CG" type="double /s/">
+      <default>30 s</default>
+      <variant condition="Hatchback">30 s</variant>
+      <variant condition="Sedan_VW">30 s</variant>
+    </entry>
+  </constantgroup>
+  <constantgroup name="ConfigurationIndependent">
+    <entry name="T_SAFE" type="double /s/">
+      <default>2 s</default>
+    </entry>
+    <entry name="D_BRAKE_sedan" type="double /m/">
+      <default>70 m</default>
+    </entry>
+    <entry name="KD_SS" type="double ">
+      <default>0.0</default>
+    </entry>
+    <entry name="KD_ST" type="double ">
+      <default>0.0</default>
+    </entry>
+    <entry name="KI_SS_hatchback" type="double ">
+      <default>0.0</default>
+    </entry>
+    <entry name="KI_ST" type="double ">
+      <default>0.0</default>
+    </entry>
+    <entry name="KP_SS" type="double ">
+      <default>1.0</default>
+    </entry>
+    <entry name="KP_ST" type="double ">
+      <default>1.0</default>
+    </entry>
+    <entry name="MODE_CRUISE" type="double ">
+      <default>1.0</default>
+    </entry>
+    <entry name="MODE_DISTFOLLOW" type="double ">
+      <default>2.0</default>
+    </entry>
+  </constantgroup>
+</amesimExportCGs>

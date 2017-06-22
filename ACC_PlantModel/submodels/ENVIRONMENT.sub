@@ -1,0 +1,1540 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE SUB>
+<SUB DOC_VERSION="2" AME_VERSION="14.0.0 -  42489-40390 2015">
+
+ <SUPERCOMPONENT>
+  <SC_SUB_NAME>ENVIRONMENT</SC_SUB_NAME>
+  <CATNAME>ACC_Plant</CATNAME>
+  <SC_PORTS_MAP_LIST>
+   <SC_PORT_MAP>6 0 187 293 3 signal 0.000000 0.000000</SC_PORT_MAP>
+   <SC_PORT_MAP>2 0 136 186 3 signal 0.000000 0.000000</SC_PORT_MAP>
+   <SC_PORT_MAP>1 0 137 139 3 signal 0.000000 0.000000</SC_PORT_MAP>
+   <SC_PORT_MAP>0 0 138 82 3 signal 0.000000 0.000000</SC_PORT_MAP>
+   <SC_PORT_MAP>7 1 139 225 0 signal 0.000000 0.000000</SC_PORT_MAP>
+   <SC_PORT_MAP>5 1 123 278 0 signal 0.000000 0.000000</SC_PORT_MAP>
+  </SC_PORTS_MAP_LIST>
+  <CIRCUIT>
+   <AME_APPLICATION>AMESim</AME_APPLICATION>
+   <COMPS_LIST>
+    <COMP>
+     <ALIAS>constant</ALIAS>
+     <COMP_NAME>constant</COMP_NAME>
+     <COMP_DISPLAYNAME>constant</COMP_DISPLAYNAME>
+     <COMP_ICON_DESCRIPTION>constant signal source</COMP_ICON_DESCRIPTION>
+     <COMP_LIBRARY_ID>sig.constant</COMP_LIBRARY_ID>
+     <COMP_POS>98 67</COMP_POS>
+     <COMP_DEPTH>65535</COMP_DEPTH>
+     <MAP>
+      #define ame_width 40
+      #define ame_height 29
+      static unsigned char ame_bits[] = {
+      0x00,0xf8,0x03,0x00,0x00,0x00,0x07,0x1c,0x00,0x00,0x80,0x00,0x20,0x00,0x00,
+      0x60,0x00,0xc0,0x00,0x00,0x10,0x00,0x00,0x01,0x00,0x08,0x00,0x00,0x02,0x00,
+      0x08,0x00,0x00,0x02,0x00,0x04,0x00,0x00,0x04,0x00,0x02,0x00,0x00,0x08,0x00,
+      0x02,0x20,0x00,0x08,0x00,0x02,0x20,0x00,0x08,0x00,0x01,0x20,0x00,0x30,0x00,
+      0x01,0x20,0x02,0xd0,0x00,0x01,0x20,0x01,0x10,0x03,0x01,0xa0,0x00,0x10,0xfe,
+      0x01,0x60,0x00,0x10,0x03,0x01,0xa0,0x00,0xd0,0x00,0x01,0x20,0x01,0x30,0x00,
+      0x02,0x20,0x02,0x08,0x00,0x02,0x00,0x00,0x08,0x00,0x02,0x00,0x00,0x08,0x00,
+      0x04,0x00,0x00,0x04,0x00,0x08,0x00,0x00,0x02,0x00,0x08,0x00,0x00,0x02,0x00,
+      0x10,0x00,0x00,0x01,0x00,0x60,0x00,0xc0,0x00,0x00,0x80,0x00,0x20,0x00,0x00,
+      0x00,0x07,0x1c,0x00,0x00,0x00,0xf8,0x03,0x00,0x00
+      };
+     </MAP>
+     <COMP_SCALE_X>1.000000</COMP_SCALE_X>
+     <COMP_SCALE_Y>1.000000</COMP_SCALE_Y>
+     <COMP_GEOMETRY>1</COMP_GEOMETRY>
+     <COMP_PORTS_LIST>
+      <COMP_PORT>
+       <PORT_POS>40 15</PORT_POS>
+       <PORT_FACE>3</PORT_FACE>
+       <PORT_TYPE>signal</PORT_TYPE>
+       <PORT_NAME></PORT_NAME>
+       <PORT_DECORATION_VISIBLE>0</PORT_DECORATION_VISIBLE>
+       <PORT_DECORATION_ORIENTATION>0</PORT_DECORATION_ORIENTATION>
+       <PORT_DECORATION_BOUNDING_RECT>0 0 0 0</PORT_DECORATION_BOUNDING_RECT>
+       <PORT_CONNECT>0</PORT_CONNECT>
+       <CONNECT_LIST>
+        <CONNECT>
+         <CONNECT_ENTITY_NUM>1</CONNECT_ENTITY_NUM>
+         <CONNECT_ENTITY_PORT>0</CONNECT_ENTITY_PORT>
+        </CONNECT>
+       </CONNECT_LIST>
+      </COMP_PORT>
+     </COMP_PORTS_LIST>
+     <LABEL_POS>0 0 0 0</LABEL_POS>
+     <LABEL_VISIBLE>0</LABEL_VISIBLE>
+     <COMP_COPYPARAMS>1</COMP_COPYPARAMS>
+     <CIRCUIT_SCOPE_ID>36</CIRCUIT_SCOPE_ID>
+     <SUBMODEL>
+      <SUB_TYPE>0</SUB_TYPE>
+      <SUB_NAME>CONS00</SUB_NAME>
+      <SUB_DIR>$AME/libsig/submodels</SUB_DIR>
+      <SUB_ID_MAX>4</SUB_ID_MAX>
+      <SUB_LABEL>constant signal</SUB_LABEL>
+      <SUB_UNIT>1</SUB_UNIT>
+      <HAS_NO_CALC>1</HAS_NO_CALC>
+      <OUTPUT_TYPE>1</OUTPUT_TYPE>
+      <RPARAMS_LIST>
+       <RPARAM>
+        <SUB_ID>3</SUB_ID>
+        <TITLE>constant value</TITLE>
+        <VARNAME>k</VARNAME>
+        <VISIBILITY>True</VISIBILITY>
+        <DEF_VALUE>1.20500000000000e+00</DEF_VALUE>
+        <VALUE>1.20500000000000e+00</VALUE>
+        <MIN_VALUE>-1.00000000000000e+030</MIN_VALUE>
+        <MAX_VALUE>1.00000000000000e+030</MAX_VALUE>
+        <UNITS>null</UNITS>
+       </RPARAM>
+      </RPARAMS_LIST>
+      <EVARS_LIST>
+       <PORT>
+        <EVAR>
+         <SUB_ID>4</SUB_ID>
+         <TITLE>output</TITLE>
+         <VARNAME>out</VARNAME>
+         <VISIBILITY>True</VISIBILITY>
+         <TYPE>7</TYPE>
+         <SAVE_VALUE>1</SAVE_VALUE>
+         <UNITS>null</UNITS>
+         <EXPRESS2>r1</EXPRESS2>
+        </EVAR>
+       </PORT>
+      </EVARS_LIST>
+     </SUBMODEL>
+    </COMP>
+    <COMP>
+     <ALIAS>constant_1</ALIAS>
+     <COMP_NAME>constant</COMP_NAME>
+     <COMP_DISPLAYNAME>constant</COMP_DISPLAYNAME>
+     <COMP_ICON_DESCRIPTION>constant signal source</COMP_ICON_DESCRIPTION>
+     <COMP_LIBRARY_ID>sig.constant</COMP_LIBRARY_ID>
+     <COMP_POS>97 124</COMP_POS>
+     <COMP_DEPTH>-1</COMP_DEPTH>
+     <MAP>
+      #define ame_width 40
+      #define ame_height 29
+      static unsigned char ame_bits[] = {
+      0x00,0xf8,0x03,0x00,0x00,0x00,0x07,0x1c,0x00,0x00,0x80,0x00,0x20,0x00,0x00,
+      0x60,0x00,0xc0,0x00,0x00,0x10,0x00,0x00,0x01,0x00,0x08,0x00,0x00,0x02,0x00,
+      0x08,0x00,0x00,0x02,0x00,0x04,0x00,0x00,0x04,0x00,0x02,0x00,0x00,0x08,0x00,
+      0x02,0x20,0x00,0x08,0x00,0x02,0x20,0x00,0x08,0x00,0x01,0x20,0x00,0x30,0x00,
+      0x01,0x20,0x02,0xd0,0x00,0x01,0x20,0x01,0x10,0x03,0x01,0xa0,0x00,0x10,0xfe,
+      0x01,0x60,0x00,0x10,0x03,0x01,0xa0,0x00,0xd0,0x00,0x01,0x20,0x01,0x30,0x00,
+      0x02,0x20,0x02,0x08,0x00,0x02,0x00,0x00,0x08,0x00,0x02,0x00,0x00,0x08,0x00,
+      0x04,0x00,0x00,0x04,0x00,0x08,0x00,0x00,0x02,0x00,0x08,0x00,0x00,0x02,0x00,
+      0x10,0x00,0x00,0x01,0x00,0x60,0x00,0xc0,0x00,0x00,0x80,0x00,0x20,0x00,0x00,
+      0x00,0x07,0x1c,0x00,0x00,0x00,0xf8,0x03,0x00,0x00
+      };
+     </MAP>
+     <COMP_SCALE_X>1.000000</COMP_SCALE_X>
+     <COMP_SCALE_Y>1.000000</COMP_SCALE_Y>
+     <COMP_GEOMETRY>1</COMP_GEOMETRY>
+     <COMP_PORTS_LIST>
+      <COMP_PORT>
+       <PORT_POS>40 15</PORT_POS>
+       <PORT_FACE>3</PORT_FACE>
+       <PORT_TYPE>signal</PORT_TYPE>
+       <PORT_NAME></PORT_NAME>
+       <PORT_DECORATION_VISIBLE>0</PORT_DECORATION_VISIBLE>
+       <PORT_DECORATION_ORIENTATION>0</PORT_DECORATION_ORIENTATION>
+       <PORT_DECORATION_BOUNDING_RECT>0 0 0 0</PORT_DECORATION_BOUNDING_RECT>
+       <PORT_CONNECT>0</PORT_CONNECT>
+       <CONNECT_LIST>
+        <CONNECT>
+         <CONNECT_ENTITY_NUM>2</CONNECT_ENTITY_NUM>
+         <CONNECT_ENTITY_PORT>0</CONNECT_ENTITY_PORT>
+        </CONNECT>
+       </CONNECT_LIST>
+      </COMP_PORT>
+     </COMP_PORTS_LIST>
+     <LABEL_POS>0 0 0 0</LABEL_POS>
+     <LABEL_VISIBLE>0</LABEL_VISIBLE>
+     <COMP_COPYPARAMS>1</COMP_COPYPARAMS>
+     <CIRCUIT_SCOPE_ID>37</CIRCUIT_SCOPE_ID>
+     <SUBMODEL>
+      <SUB_TYPE>0</SUB_TYPE>
+      <SUB_NAME>CONS00</SUB_NAME>
+      <SUB_DIR>$AME/libsig/submodels</SUB_DIR>
+      <SUB_ID_MAX>4</SUB_ID_MAX>
+      <SUB_LABEL>constant signal</SUB_LABEL>
+      <SUB_UNIT>1</SUB_UNIT>
+      <HAS_NO_CALC>1</HAS_NO_CALC>
+      <OUTPUT_TYPE>1</OUTPUT_TYPE>
+      <RPARAMS_LIST>
+       <RPARAM>
+        <SUB_ID>3</SUB_ID>
+        <TITLE>constant value</TITLE>
+        <VARNAME>k</VARNAME>
+        <VISIBILITY>True</VISIBILITY>
+        <DEF_VALUE>2.00000000000000e+01</DEF_VALUE>
+        <VALUE>2.00000000000000e+01</VALUE>
+        <MIN_VALUE>-1.00000000000000e+030</MIN_VALUE>
+        <MAX_VALUE>1.00000000000000e+030</MAX_VALUE>
+        <UNITS>null</UNITS>
+       </RPARAM>
+      </RPARAMS_LIST>
+      <EVARS_LIST>
+       <PORT>
+        <EVAR>
+         <SUB_ID>4</SUB_ID>
+         <TITLE>output</TITLE>
+         <VARNAME>out</VARNAME>
+         <VISIBILITY>True</VISIBILITY>
+         <TYPE>7</TYPE>
+         <SAVE_VALUE>1</SAVE_VALUE>
+         <UNITS>null</UNITS>
+         <EXPRESS2>r1</EXPRESS2>
+        </EVAR>
+       </PORT>
+      </EVARS_LIST>
+     </SUBMODEL>
+    </COMP>
+    <COMP>
+     <ALIAS>constant_2</ALIAS>
+     <COMP_NAME>constant</COMP_NAME>
+     <COMP_DISPLAYNAME>constant</COMP_DISPLAYNAME>
+     <COMP_ICON_DESCRIPTION>constant signal source</COMP_ICON_DESCRIPTION>
+     <COMP_LIBRARY_ID>sig.constant</COMP_LIBRARY_ID>
+     <COMP_POS>96 171</COMP_POS>
+     <COMP_DEPTH>-1</COMP_DEPTH>
+     <MAP>
+      #define ame_width 40
+      #define ame_height 29
+      static unsigned char ame_bits[] = {
+      0x00,0xf8,0x03,0x00,0x00,0x00,0x07,0x1c,0x00,0x00,0x80,0x00,0x20,0x00,0x00,
+      0x60,0x00,0xc0,0x00,0x00,0x10,0x00,0x00,0x01,0x00,0x08,0x00,0x00,0x02,0x00,
+      0x08,0x00,0x00,0x02,0x00,0x04,0x00,0x00,0x04,0x00,0x02,0x00,0x00,0x08,0x00,
+      0x02,0x20,0x00,0x08,0x00,0x02,0x20,0x00,0x08,0x00,0x01,0x20,0x00,0x30,0x00,
+      0x01,0x20,0x02,0xd0,0x00,0x01,0x20,0x01,0x10,0x03,0x01,0xa0,0x00,0x10,0xfe,
+      0x01,0x60,0x00,0x10,0x03,0x01,0xa0,0x00,0xd0,0x00,0x01,0x20,0x01,0x30,0x00,
+      0x02,0x20,0x02,0x08,0x00,0x02,0x00,0x00,0x08,0x00,0x02,0x00,0x00,0x08,0x00,
+      0x04,0x00,0x00,0x04,0x00,0x08,0x00,0x00,0x02,0x00,0x08,0x00,0x00,0x02,0x00,
+      0x10,0x00,0x00,0x01,0x00,0x60,0x00,0xc0,0x00,0x00,0x80,0x00,0x20,0x00,0x00,
+      0x00,0x07,0x1c,0x00,0x00,0x00,0xf8,0x03,0x00,0x00
+      };
+     </MAP>
+     <COMP_SCALE_X>1.000000</COMP_SCALE_X>
+     <COMP_SCALE_Y>1.000000</COMP_SCALE_Y>
+     <COMP_GEOMETRY>1</COMP_GEOMETRY>
+     <COMP_PORTS_LIST>
+      <COMP_PORT>
+       <PORT_POS>40 15</PORT_POS>
+       <PORT_FACE>3</PORT_FACE>
+       <PORT_TYPE>signal</PORT_TYPE>
+       <PORT_NAME></PORT_NAME>
+       <PORT_DECORATION_VISIBLE>0</PORT_DECORATION_VISIBLE>
+       <PORT_DECORATION_ORIENTATION>0</PORT_DECORATION_ORIENTATION>
+       <PORT_DECORATION_BOUNDING_RECT>0 0 0 0</PORT_DECORATION_BOUNDING_RECT>
+       <PORT_CONNECT>0</PORT_CONNECT>
+       <CONNECT_LIST>
+        <CONNECT>
+         <CONNECT_ENTITY_NUM>3</CONNECT_ENTITY_NUM>
+         <CONNECT_ENTITY_PORT>0</CONNECT_ENTITY_PORT>
+        </CONNECT>
+       </CONNECT_LIST>
+      </COMP_PORT>
+     </COMP_PORTS_LIST>
+     <LABEL_POS>0 0 0 0</LABEL_POS>
+     <LABEL_VISIBLE>0</LABEL_VISIBLE>
+     <COMP_COPYPARAMS>1</COMP_COPYPARAMS>
+     <CIRCUIT_SCOPE_ID>3</CIRCUIT_SCOPE_ID>
+     <SUBMODEL>
+      <SUB_TYPE>0</SUB_TYPE>
+      <SUB_NAME>CONS00</SUB_NAME>
+      <SUB_DIR>$AME/libsig/submodels</SUB_DIR>
+      <SUB_ID_MAX>4</SUB_ID_MAX>
+      <SUB_LABEL>constant signal</SUB_LABEL>
+      <SUB_UNIT>1</SUB_UNIT>
+      <HAS_NO_CALC>1</HAS_NO_CALC>
+      <OUTPUT_TYPE>1</OUTPUT_TYPE>
+      <RPARAMS_LIST>
+       <RPARAM>
+        <SUB_ID>3</SUB_ID>
+        <TITLE>constant value</TITLE>
+        <VARNAME>k</VARNAME>
+        <VISIBILITY>True</VISIBILITY>
+        <DEF_VALUE>0.00000000000000e+00</DEF_VALUE>
+        <VALUE>0.00000000000000e+00</VALUE>
+        <MIN_VALUE>-1.00000000000000e+030</MIN_VALUE>
+        <MAX_VALUE>1.00000000000000e+030</MAX_VALUE>
+        <UNITS>null</UNITS>
+       </RPARAM>
+      </RPARAMS_LIST>
+      <EVARS_LIST>
+       <PORT>
+        <EVAR>
+         <SUB_ID>4</SUB_ID>
+         <TITLE>output</TITLE>
+         <VARNAME>out</VARNAME>
+         <VISIBILITY>True</VISIBILITY>
+         <TYPE>7</TYPE>
+         <SAVE_VALUE>1</SAVE_VALUE>
+         <UNITS>null</UNITS>
+         <EXPRESS2>r1</EXPRESS2>
+        </EVAR>
+       </PORT>
+      </EVARS_LIST>
+     </SUBMODEL>
+    </COMP>
+    <COMP>
+     <ALIAS>piecewiselinear</ALIAS>
+     <COMP_NAME>piecewiselinear</COMP_NAME>
+     <COMP_DISPLAYNAME>piecewiselinear</COMP_DISPLAYNAME>
+     <COMP_ICON_DESCRIPTION>piecewise linear signal source</COMP_ICON_DESCRIPTION>
+     <COMP_LIBRARY_ID>sig.piecewiselinear</COMP_LIBRARY_ID>
+     <COMP_POS>83 225</COMP_POS>
+     <COMP_DEPTH>3145760</COMP_DEPTH>
+     <MAP>
+      #define ame_width 40
+      #define ame_height 29
+      static unsigned char ame_bits[] = {
+      0x00,0xf8,0x03,0x00,0x00,0x00,0x07,0x1c,0x00,0x00,0x80,0x00,0x20,0x00,0x00,
+      0x60,0x00,0xc0,0x00,0x00,0x10,0x00,0x04,0x01,0x00,0x08,0x00,0x06,0x02,0x00,
+      0x08,0x00,0x06,0x02,0x00,0x04,0x00,0x09,0x04,0x00,0x02,0x00,0x09,0x08,0x00,
+      0x02,0x80,0x08,0x08,0x00,0x02,0x80,0x08,0x08,0x00,0x01,0x78,0x10,0x30,0x00,
+      0x01,0x04,0x10,0xd0,0x00,0x01,0x04,0x10,0x10,0x03,0x01,0x02,0x10,0x10,0xfe,
+      0x01,0x02,0x10,0x10,0x03,0x01,0x01,0x20,0xd0,0x00,0x01,0x01,0x20,0x30,0x00,
+      0xf2,0x00,0xe0,0x0b,0x00,0x02,0x00,0x00,0x08,0x00,0x02,0x00,0x00,0x08,0x00,
+      0x04,0x00,0x00,0x04,0x00,0x08,0x00,0x00,0x02,0x00,0x08,0x00,0x00,0x02,0x00,
+      0x10,0x00,0x00,0x01,0x00,0x60,0x00,0xc0,0x00,0x00,0x80,0x00,0x20,0x00,0x00,
+      0x00,0x07,0x1c,0x00,0x00,0x00,0xf8,0x03,0x00,0x00
+      };
+     </MAP>
+     <COMP_SCALE_X>1.000000</COMP_SCALE_X>
+     <COMP_SCALE_Y>1.000000</COMP_SCALE_Y>
+     <COMP_GEOMETRY>1</COMP_GEOMETRY>
+     <COMP_PORTS_LIST>
+      <COMP_PORT>
+       <PORT_POS>40 15</PORT_POS>
+       <PORT_FACE>3</PORT_FACE>
+       <PORT_TYPE>signal</PORT_TYPE>
+       <PORT_NAME></PORT_NAME>
+       <PORT_DECORATION_VISIBLE>0</PORT_DECORATION_VISIBLE>
+       <PORT_DECORATION_ORIENTATION>0</PORT_DECORATION_ORIENTATION>
+       <PORT_DECORATION_BOUNDING_RECT>0 0 0 0</PORT_DECORATION_BOUNDING_RECT>
+       <PORT_CONNECT>1</PORT_CONNECT>
+       <CONNECT_LIST>
+        <CONNECT>
+         <CONNECT_ENTITY_NUM>7</CONNECT_ENTITY_NUM>
+         <CONNECT_ENTITY_PORT>2</CONNECT_ENTITY_PORT>
+        </CONNECT>
+       </CONNECT_LIST>
+      </COMP_PORT>
+     </COMP_PORTS_LIST>
+     <LABEL_POS>0 0 0 0</LABEL_POS>
+     <LABEL_VISIBLE>0</LABEL_VISIBLE>
+     <COMP_COPYPARAMS>1</COMP_COPYPARAMS>
+     <CIRCUIT_SCOPE_ID>38</CIRCUIT_SCOPE_ID>
+     <SUBMODEL>
+      <SUB_TYPE>0</SUB_TYPE>
+      <SUB_NAME>UD00</SUB_NAME>
+      <SUB_DIR>$AME/libsig/submodels</SUB_DIR>
+      <SUB_ID_MAX>28</SUB_ID_MAX>
+      <SUB_LABEL>piecewise linear signal source</SUB_LABEL>
+      <SUB_UNIT>0</SUB_UNIT>
+      <R_STORES_NUMBER>9</R_STORES_NUMBER>
+      <I_STORES_NUMBER>2</I_STORES_NUMBER>
+      <DISCONTINUITY>1</DISCONTINUITY>
+      <TIME_REQUIRED>1</TIME_REQUIRED>
+      <OUTPUT_TYPE>1</OUTPUT_TYPE>
+      <RPARAMS_LIST>
+       <RPARAM>
+        <SUB_ID>2</SUB_ID>
+        <TITLE>time at which duty cycle starts</TITLE>
+        <VISIBILITY>True</VISIBILITY>
+        <DEF_VALUE>0.00000000000000e+00</DEF_VALUE>
+        <VALUE>0.00000000000000e+00</VALUE>
+        <MIN_VALUE>-1.00000000000000e+030</MIN_VALUE>
+        <MAX_VALUE>1.00000000000000e+030</MAX_VALUE>
+        <UNITS>s</UNITS>
+       </RPARAM>
+       <RPARAM>
+        <SUB_ID>3</SUB_ID>
+        <TITLE>output at start of stage 1</TITLE>
+        <VISIBILITY>True</VISIBILITY>
+        <DEF_VALUE>0.00000000000000e+00</DEF_VALUE>
+        <VALUE>0.00000000000000e+00</VALUE>
+        <MIN_VALUE>-1.00000000000000e+030</MIN_VALUE>
+        <MAX_VALUE>1.00000000000000e+030</MAX_VALUE>
+        <UNITS>null</UNITS>
+       </RPARAM>
+       <RPARAM>
+        <SUB_ID>4</SUB_ID>
+        <TITLE>output at end of stage 1</TITLE>
+        <VISIBILITY>True</VISIBILITY>
+        <DEF_VALUE>2.00000000000000e+01</DEF_VALUE>
+        <VALUE>2.00000000000000e+01</VALUE>
+        <MIN_VALUE>-1.00000000000000e+030</MIN_VALUE>
+        <MAX_VALUE>1.00000000000000e+030</MAX_VALUE>
+        <UNITS>null</UNITS>
+       </RPARAM>
+       <RPARAM>
+        <SUB_ID>5</SUB_ID>
+        <TITLE>duration of stage 1</TITLE>
+        <VISIBILITY>True</VISIBILITY>
+        <DEF_VALUE>5.00000000000000e+01</DEF_VALUE>
+        <VALUE>5.00000000000000e+01</VALUE>
+        <MIN_VALUE>0.00000000000000e+000</MIN_VALUE>
+        <MAX_VALUE>1.00000000000000e+030</MAX_VALUE>
+        <UNITS>s</UNITS>
+       </RPARAM>
+       <RPARAM>
+        <SUB_ID>6</SUB_ID>
+        <TITLE>output at start of stage 2</TITLE>
+        <VISIBILITY>(nstages == 2)||(nstages == 3)||(nstages == 4)||(nstages == 5)||(nstages == 6)||(nstages == 7)||(nstages == 8)</VISIBILITY>
+        <DEF_VALUE>2.00000000000000e+01</DEF_VALUE>
+        <VALUE>2.00000000000000e+01</VALUE>
+        <MIN_VALUE>-1.00000000000000e+030</MIN_VALUE>
+        <MAX_VALUE>1.00000000000000e+030</MAX_VALUE>
+        <UNITS>null</UNITS>
+       </RPARAM>
+       <RPARAM>
+        <SUB_ID>7</SUB_ID>
+        <TITLE>output at end of stage 2</TITLE>
+        <VISIBILITY>(nstages == 2)||(nstages == 3)||(nstages == 4)||(nstages == 5)||(nstages == 6)||(nstages == 7)||(nstages == 8)</VISIBILITY>
+        <DEF_VALUE>2.00000000000000e+01</DEF_VALUE>
+        <VALUE>2.00000000000000e+01</VALUE>
+        <MIN_VALUE>-1.00000000000000e+030</MIN_VALUE>
+        <MAX_VALUE>1.00000000000000e+030</MAX_VALUE>
+        <UNITS>null</UNITS>
+       </RPARAM>
+       <RPARAM>
+        <SUB_ID>8</SUB_ID>
+        <TITLE>duration of stage 2</TITLE>
+        <VISIBILITY>(nstages == 2)||(nstages == 3)||(nstages == 4)||(nstages == 5)||(nstages == 6)||(nstages == 7)||(nstages == 8)</VISIBILITY>
+        <DEF_VALUE>4.50000000000000e+02</DEF_VALUE>
+        <VALUE>4.50000000000000e+02</VALUE>
+        <MIN_VALUE>0.00000000000000e+000</MIN_VALUE>
+        <MAX_VALUE>1.00000000000000e+030</MAX_VALUE>
+        <UNITS>s</UNITS>
+       </RPARAM>
+       <RPARAM>
+        <SUB_ID>9</SUB_ID>
+        <TITLE>output at start of stage 3</TITLE>
+        <VISIBILITY>(nstages == 3)||(nstages == 4)||(nstages == 5)||(nstages == 6)||(nstages == 7)||(nstages == 8)</VISIBILITY>
+        <DEF_VALUE>0.00000000000000e+00</DEF_VALUE>
+        <VALUE>0.00000000000000e+00</VALUE>
+        <MIN_VALUE>-1.00000000000000e+030</MIN_VALUE>
+        <MAX_VALUE>1.00000000000000e+030</MAX_VALUE>
+        <UNITS>null</UNITS>
+       </RPARAM>
+       <RPARAM>
+        <SUB_ID>10</SUB_ID>
+        <TITLE>output at end of stage 3</TITLE>
+        <VISIBILITY>(nstages == 3)||(nstages == 4)||(nstages == 5)||(nstages == 6)||(nstages == 7)||(nstages == 8)</VISIBILITY>
+        <DEF_VALUE>0.00000000000000e+00</DEF_VALUE>
+        <VALUE>0.00000000000000e+00</VALUE>
+        <MIN_VALUE>-1.00000000000000e+030</MIN_VALUE>
+        <MAX_VALUE>1.00000000000000e+030</MAX_VALUE>
+        <UNITS>null</UNITS>
+       </RPARAM>
+       <RPARAM>
+        <SUB_ID>11</SUB_ID>
+        <TITLE>duration of stage 3</TITLE>
+        <VISIBILITY>(nstages == 3)||(nstages == 4)||(nstages == 5)||(nstages == 6)||(nstages == 7)||(nstages == 8)</VISIBILITY>
+        <DEF_VALUE>1.00000000000000e+06</DEF_VALUE>
+        <VALUE>1.00000000000000e+06</VALUE>
+        <MIN_VALUE>0.00000000000000e+000</MIN_VALUE>
+        <MAX_VALUE>1.00000000000000e+030</MAX_VALUE>
+        <UNITS>s</UNITS>
+       </RPARAM>
+       <RPARAM>
+        <SUB_ID>12</SUB_ID>
+        <TITLE>output at start of stage 4</TITLE>
+        <VISIBILITY>(nstages == 4)||(nstages == 5)||(nstages == 6)||(nstages == 7)||(nstages == 8)</VISIBILITY>
+        <DEF_VALUE>0.00000000000000e+00</DEF_VALUE>
+        <VALUE>0.00000000000000e+00</VALUE>
+        <MIN_VALUE>-1.00000000000000e+030</MIN_VALUE>
+        <MAX_VALUE>1.00000000000000e+030</MAX_VALUE>
+        <UNITS>null</UNITS>
+       </RPARAM>
+       <RPARAM>
+        <SUB_ID>13</SUB_ID>
+        <TITLE>output at end of stage 4</TITLE>
+        <VISIBILITY>(nstages == 4)||(nstages == 5)||(nstages == 6)||(nstages == 7)||(nstages == 8)</VISIBILITY>
+        <DEF_VALUE>0.00000000000000e+00</DEF_VALUE>
+        <VALUE>0.00000000000000e+00</VALUE>
+        <MIN_VALUE>-1.00000000000000e+030</MIN_VALUE>
+        <MAX_VALUE>1.00000000000000e+030</MAX_VALUE>
+        <UNITS>null</UNITS>
+       </RPARAM>
+       <RPARAM>
+        <SUB_ID>14</SUB_ID>
+        <TITLE>duration of stage 4</TITLE>
+        <VISIBILITY>(nstages == 4)||(nstages == 5)||(nstages == 6)||(nstages == 7)||(nstages == 8)</VISIBILITY>
+        <DEF_VALUE>1.00000000000000e+06</DEF_VALUE>
+        <VALUE>1.00000000000000e+06</VALUE>
+        <MIN_VALUE>0.00000000000000e+000</MIN_VALUE>
+        <MAX_VALUE>1.00000000000000e+030</MAX_VALUE>
+        <UNITS>s</UNITS>
+       </RPARAM>
+       <RPARAM>
+        <SUB_ID>15</SUB_ID>
+        <TITLE>output at start of stage 5</TITLE>
+        <VISIBILITY>(nstages == 5)||(nstages == 6)||(nstages == 7)||(nstages == 8)</VISIBILITY>
+        <DEF_VALUE>0.00000000000000e+00</DEF_VALUE>
+        <VALUE>0.00000000000000e+00</VALUE>
+        <MIN_VALUE>-1.00000000000000e+030</MIN_VALUE>
+        <MAX_VALUE>1.00000000000000e+030</MAX_VALUE>
+        <UNITS>null</UNITS>
+       </RPARAM>
+       <RPARAM>
+        <SUB_ID>16</SUB_ID>
+        <TITLE>output at end of stage 5</TITLE>
+        <VISIBILITY>(nstages == 5)||(nstages == 6)||(nstages == 7)||(nstages == 8)</VISIBILITY>
+        <DEF_VALUE>0.00000000000000e+00</DEF_VALUE>
+        <VALUE>0.00000000000000e+00</VALUE>
+        <MIN_VALUE>-1.00000000000000e+030</MIN_VALUE>
+        <MAX_VALUE>1.00000000000000e+030</MAX_VALUE>
+        <UNITS>null</UNITS>
+       </RPARAM>
+       <RPARAM>
+        <SUB_ID>17</SUB_ID>
+        <TITLE>duration of stage 5</TITLE>
+        <VISIBILITY>(nstages == 5)||(nstages == 6)||(nstages == 7)||(nstages == 8)</VISIBILITY>
+        <DEF_VALUE>1.00000000000000e+06</DEF_VALUE>
+        <VALUE>1.00000000000000e+06</VALUE>
+        <MIN_VALUE>0.00000000000000e+000</MIN_VALUE>
+        <MAX_VALUE>1.00000000000000e+030</MAX_VALUE>
+        <UNITS>s</UNITS>
+       </RPARAM>
+       <RPARAM>
+        <SUB_ID>18</SUB_ID>
+        <TITLE>output at start of stage 6</TITLE>
+        <VISIBILITY>(nstages == 6)||(nstages == 7)||(nstages == 8)</VISIBILITY>
+        <DEF_VALUE>0.00000000000000e+00</DEF_VALUE>
+        <VALUE>0.00000000000000e+00</VALUE>
+        <MIN_VALUE>-1.00000000000000e+030</MIN_VALUE>
+        <MAX_VALUE>1.00000000000000e+030</MAX_VALUE>
+        <UNITS>null</UNITS>
+       </RPARAM>
+       <RPARAM>
+        <SUB_ID>19</SUB_ID>
+        <TITLE>output at end of stage 6</TITLE>
+        <VISIBILITY>(nstages == 6)||(nstages == 7)||(nstages == 8)</VISIBILITY>
+        <DEF_VALUE>0.00000000000000e+00</DEF_VALUE>
+        <VALUE>0.00000000000000e+00</VALUE>
+        <MIN_VALUE>-1.00000000000000e+030</MIN_VALUE>
+        <MAX_VALUE>1.00000000000000e+030</MAX_VALUE>
+        <UNITS>null</UNITS>
+       </RPARAM>
+       <RPARAM>
+        <SUB_ID>20</SUB_ID>
+        <TITLE>duration of stage 6</TITLE>
+        <VISIBILITY>(nstages == 6)||(nstages == 7)||(nstages == 8)</VISIBILITY>
+        <DEF_VALUE>1.00000000000000e+06</DEF_VALUE>
+        <VALUE>1.00000000000000e+06</VALUE>
+        <MIN_VALUE>0.00000000000000e+000</MIN_VALUE>
+        <MAX_VALUE>1.00000000000000e+030</MAX_VALUE>
+        <UNITS>s</UNITS>
+       </RPARAM>
+       <RPARAM>
+        <SUB_ID>21</SUB_ID>
+        <TITLE>output at start of stage 7</TITLE>
+        <VISIBILITY>(nstages == 7)||(nstages == 8)</VISIBILITY>
+        <DEF_VALUE>0.00000000000000e+00</DEF_VALUE>
+        <VALUE>0.00000000000000e+00</VALUE>
+        <MIN_VALUE>-1.00000000000000e+030</MIN_VALUE>
+        <MAX_VALUE>1.00000000000000e+030</MAX_VALUE>
+        <UNITS>null</UNITS>
+       </RPARAM>
+       <RPARAM>
+        <SUB_ID>22</SUB_ID>
+        <TITLE>output at end of stage 7</TITLE>
+        <VISIBILITY>(nstages == 7)||(nstages == 8)</VISIBILITY>
+        <DEF_VALUE>0.00000000000000e+00</DEF_VALUE>
+        <VALUE>0.00000000000000e+00</VALUE>
+        <MIN_VALUE>-1.00000000000000e+030</MIN_VALUE>
+        <MAX_VALUE>1.00000000000000e+030</MAX_VALUE>
+        <UNITS>null</UNITS>
+       </RPARAM>
+       <RPARAM>
+        <SUB_ID>23</SUB_ID>
+        <TITLE>duration of stage 7</TITLE>
+        <VISIBILITY>(nstages == 7)||(nstages == 8)</VISIBILITY>
+        <DEF_VALUE>1.00000000000000e+06</DEF_VALUE>
+        <VALUE>1.00000000000000e+06</VALUE>
+        <MIN_VALUE>0.00000000000000e+000</MIN_VALUE>
+        <MAX_VALUE>1.00000000000000e+030</MAX_VALUE>
+        <UNITS>s</UNITS>
+       </RPARAM>
+       <RPARAM>
+        <SUB_ID>24</SUB_ID>
+        <TITLE>output at start of stage 8</TITLE>
+        <VISIBILITY>(nstages == 8)</VISIBILITY>
+        <DEF_VALUE>0.00000000000000e+00</DEF_VALUE>
+        <VALUE>0.00000000000000e+00</VALUE>
+        <MIN_VALUE>-1.00000000000000e+030</MIN_VALUE>
+        <MAX_VALUE>1.00000000000000e+030</MAX_VALUE>
+        <UNITS>null</UNITS>
+       </RPARAM>
+       <RPARAM>
+        <SUB_ID>25</SUB_ID>
+        <TITLE>output at end of stage 8</TITLE>
+        <VISIBILITY>(nstages == 8)</VISIBILITY>
+        <DEF_VALUE>0.00000000000000e+00</DEF_VALUE>
+        <VALUE>0.00000000000000e+00</VALUE>
+        <MIN_VALUE>-1.00000000000000e+030</MIN_VALUE>
+        <MAX_VALUE>1.00000000000000e+030</MAX_VALUE>
+        <UNITS>null</UNITS>
+       </RPARAM>
+       <RPARAM>
+        <SUB_ID>26</SUB_ID>
+        <TITLE>duration of stage 8</TITLE>
+        <VISIBILITY>(nstages == 8)</VISIBILITY>
+        <DEF_VALUE>1.00000000000000e+06</DEF_VALUE>
+        <VALUE>1.00000000000000e+06</VALUE>
+        <MIN_VALUE>0.00000000000000e+000</MIN_VALUE>
+        <MAX_VALUE>1.00000000000000e+030</MAX_VALUE>
+        <UNITS>s</UNITS>
+       </RPARAM>
+      </RPARAMS_LIST>
+      <IPARAMS_LIST>
+       <IPARAM>
+        <SUB_ID>27</SUB_ID>
+        <TITLE>number of stages</TITLE>
+        <VARNAME>nstages</VARNAME>
+        <VISIBILITY>True</VISIBILITY>
+        <DEF_VALUE>2</DEF_VALUE>
+        <VALUE>2</VALUE>
+        <MIN_VALUE>1</MIN_VALUE>
+        <MAX_VALUE>8</MAX_VALUE>
+        <ENUM_LIST>
+         <ENUM>
+          <ENUM_STRING>1</ENUM_STRING>
+         </ENUM>
+         <ENUM>
+          <ENUM_STRING>2</ENUM_STRING>
+         </ENUM>
+         <ENUM>
+          <ENUM_STRING>3</ENUM_STRING>
+         </ENUM>
+         <ENUM>
+          <ENUM_STRING>4</ENUM_STRING>
+         </ENUM>
+         <ENUM>
+          <ENUM_STRING>5</ENUM_STRING>
+         </ENUM>
+         <ENUM>
+          <ENUM_STRING>6</ENUM_STRING>
+         </ENUM>
+         <ENUM>
+          <ENUM_STRING>7</ENUM_STRING>
+         </ENUM>
+         <ENUM>
+          <ENUM_STRING>8</ENUM_STRING>
+         </ENUM>
+        </ENUM_LIST>
+       </IPARAM>
+       <IPARAM>
+        <SUB_ID>28</SUB_ID>
+        <TITLE>cyclic</TITLE>
+        <VARNAME>iscyclic</VARNAME>
+        <VISIBILITY>True</VISIBILITY>
+        <DEF_VALUE>1</DEF_VALUE>
+        <VALUE>1</VALUE>
+        <MIN_VALUE>1</MIN_VALUE>
+        <MAX_VALUE>2</MAX_VALUE>
+        <ENUM_LIST>
+         <ENUM>
+          <ENUM_STRING>no</ENUM_STRING>
+         </ENUM>
+         <ENUM>
+          <ENUM_STRING>yes</ENUM_STRING>
+         </ENUM>
+        </ENUM_LIST>
+       </IPARAM>
+      </IPARAMS_LIST>
+      <EVARS_LIST>
+       <PORT>
+        <EVAR>
+         <SUB_ID>1</SUB_ID>
+         <TITLE>user defined duty cycle output</TITLE>
+         <VARNAME>output</VARNAME>
+         <VISIBILITY>True</VISIBILITY>
+         <TYPE>0</TYPE>
+         <SAVE_VALUE>1</SAVE_VALUE>
+         <DIMENSION>1</DIMENSION>
+         <IO>2</IO>
+         <UNITS>null</UNITS>
+        </EVAR>
+       </PORT>
+      </EVARS_LIST>
+     </SUBMODEL>
+    </COMP>
+    <COMP>
+     <ALIAS>piecewiselinear_1</ALIAS>
+     <COMP_NAME>piecewiselinear</COMP_NAME>
+     <COMP_DISPLAYNAME>piecewiselinear</COMP_DISPLAYNAME>
+     <COMP_ICON_DESCRIPTION>piecewise linear signal source</COMP_ICON_DESCRIPTION>
+     <COMP_LIBRARY_ID>sig.piecewiselinear</COMP_LIBRARY_ID>
+     <COMP_POS>67 278</COMP_POS>
+     <COMP_DEPTH>-1</COMP_DEPTH>
+     <MAP>
+      #define ame_width 40
+      #define ame_height 29
+      static unsigned char ame_bits[] = {
+      0x00,0xf8,0x03,0x00,0x00,0x00,0x07,0x1c,0x00,0x00,0x80,0x00,0x20,0x00,0x00,
+      0x60,0x00,0xc0,0x00,0x00,0x10,0x00,0x04,0x01,0x00,0x08,0x00,0x06,0x02,0x00,
+      0x08,0x00,0x06,0x02,0x00,0x04,0x00,0x09,0x04,0x00,0x02,0x00,0x09,0x08,0x00,
+      0x02,0x80,0x08,0x08,0x00,0x02,0x80,0x08,0x08,0x00,0x01,0x78,0x10,0x30,0x00,
+      0x01,0x04,0x10,0xd0,0x00,0x01,0x04,0x10,0x10,0x03,0x01,0x02,0x10,0x10,0xfe,
+      0x01,0x02,0x10,0x10,0x03,0x01,0x01,0x20,0xd0,0x00,0x01,0x01,0x20,0x30,0x00,
+      0xf2,0x00,0xe0,0x0b,0x00,0x02,0x00,0x00,0x08,0x00,0x02,0x00,0x00,0x08,0x00,
+      0x04,0x00,0x00,0x04,0x00,0x08,0x00,0x00,0x02,0x00,0x08,0x00,0x00,0x02,0x00,
+      0x10,0x00,0x00,0x01,0x00,0x60,0x00,0xc0,0x00,0x00,0x80,0x00,0x20,0x00,0x00,
+      0x00,0x07,0x1c,0x00,0x00,0x00,0xf8,0x03,0x00,0x00
+      };
+     </MAP>
+     <COMP_SCALE_X>1.000000</COMP_SCALE_X>
+     <COMP_SCALE_Y>1.000000</COMP_SCALE_Y>
+     <COMP_GEOMETRY>1</COMP_GEOMETRY>
+     <COMP_PORTS_LIST>
+      <COMP_PORT>
+       <PORT_POS>40 15</PORT_POS>
+       <PORT_FACE>3</PORT_FACE>
+       <PORT_TYPE>signal</PORT_TYPE>
+       <PORT_NAME></PORT_NAME>
+       <PORT_DECORATION_VISIBLE>0</PORT_DECORATION_VISIBLE>
+       <PORT_DECORATION_ORIENTATION>0</PORT_DECORATION_ORIENTATION>
+       <PORT_DECORATION_BOUNDING_RECT>0 0 0 0</PORT_DECORATION_BOUNDING_RECT>
+       <PORT_CONNECT>1</PORT_CONNECT>
+       <CONNECT_LIST>
+        <CONNECT>
+         <CONNECT_ENTITY_NUM>5</CONNECT_ENTITY_NUM>
+         <CONNECT_ENTITY_PORT>2</CONNECT_ENTITY_PORT>
+        </CONNECT>
+       </CONNECT_LIST>
+      </COMP_PORT>
+     </COMP_PORTS_LIST>
+     <LABEL_POS>0 0 0 0</LABEL_POS>
+     <LABEL_VISIBLE>0</LABEL_VISIBLE>
+     <COMP_COPYPARAMS>1</COMP_COPYPARAMS>
+     <CIRCUIT_SCOPE_ID>39</CIRCUIT_SCOPE_ID>
+     <SUBMODEL>
+      <SUB_TYPE>0</SUB_TYPE>
+      <SUB_NAME>UD00</SUB_NAME>
+      <SUB_DIR>$AME/libsig/submodels</SUB_DIR>
+      <SUB_ID_MAX>28</SUB_ID_MAX>
+      <SUB_LABEL>piecewise linear signal source</SUB_LABEL>
+      <SUB_UNIT>0</SUB_UNIT>
+      <R_STORES_NUMBER>9</R_STORES_NUMBER>
+      <I_STORES_NUMBER>2</I_STORES_NUMBER>
+      <DISCONTINUITY>1</DISCONTINUITY>
+      <TIME_REQUIRED>1</TIME_REQUIRED>
+      <OUTPUT_TYPE>1</OUTPUT_TYPE>
+      <RPARAMS_LIST>
+       <RPARAM>
+        <SUB_ID>2</SUB_ID>
+        <TITLE>time at which duty cycle starts</TITLE>
+        <VISIBILITY>True</VISIBILITY>
+        <DEF_VALUE>0.00000000000000e+00</DEF_VALUE>
+        <VALUE>0.00000000000000e+00</VALUE>
+        <MIN_VALUE>-1.00000000000000e+030</MIN_VALUE>
+        <MAX_VALUE>1.00000000000000e+030</MAX_VALUE>
+        <UNITS>s</UNITS>
+       </RPARAM>
+       <RPARAM>
+        <SUB_ID>3</SUB_ID>
+        <TITLE>output at start of stage 1</TITLE>
+        <VISIBILITY>True</VISIBILITY>
+        <DEF_VALUE>0.00000000000000e+00</DEF_VALUE>
+        <VALUE>0.00000000000000e+00</VALUE>
+        <MIN_VALUE>-1.00000000000000e+030</MIN_VALUE>
+        <MAX_VALUE>1.00000000000000e+030</MAX_VALUE>
+        <UNITS>null</UNITS>
+       </RPARAM>
+       <RPARAM>
+        <SUB_ID>4</SUB_ID>
+        <TITLE>output at end of stage 1</TITLE>
+        <VISIBILITY>True</VISIBILITY>
+        <DEF_VALUE>2.00000000000000e+01</DEF_VALUE>
+        <VALUE>2.00000000000000e+01</VALUE>
+        <MIN_VALUE>-1.00000000000000e+030</MIN_VALUE>
+        <MAX_VALUE>1.00000000000000e+030</MAX_VALUE>
+        <UNITS>null</UNITS>
+       </RPARAM>
+       <RPARAM>
+        <SUB_ID>5</SUB_ID>
+        <TITLE>duration of stage 1</TITLE>
+        <VISIBILITY>True</VISIBILITY>
+        <DEF_VALUE>5.00000000000000e+01</DEF_VALUE>
+        <VALUE>5.00000000000000e+01</VALUE>
+        <MIN_VALUE>0.00000000000000e+000</MIN_VALUE>
+        <MAX_VALUE>1.00000000000000e+030</MAX_VALUE>
+        <UNITS>s</UNITS>
+       </RPARAM>
+       <RPARAM>
+        <SUB_ID>6</SUB_ID>
+        <TITLE>output at start of stage 2</TITLE>
+        <VISIBILITY>(nstages == 2)||(nstages == 3)||(nstages == 4)||(nstages == 5)||(nstages == 6)||(nstages == 7)||(nstages == 8)</VISIBILITY>
+        <DEF_VALUE>2.00000000000000e+01</DEF_VALUE>
+        <VALUE>2.00000000000000e+01</VALUE>
+        <MIN_VALUE>-1.00000000000000e+030</MIN_VALUE>
+        <MAX_VALUE>1.00000000000000e+030</MAX_VALUE>
+        <UNITS>null</UNITS>
+       </RPARAM>
+       <RPARAM>
+        <SUB_ID>7</SUB_ID>
+        <TITLE>output at end of stage 2</TITLE>
+        <VISIBILITY>(nstages == 2)||(nstages == 3)||(nstages == 4)||(nstages == 5)||(nstages == 6)||(nstages == 7)||(nstages == 8)</VISIBILITY>
+        <DEF_VALUE>2.00000000000000e+01</DEF_VALUE>
+        <VALUE>2.00000000000000e+01</VALUE>
+        <MIN_VALUE>-1.00000000000000e+030</MIN_VALUE>
+        <MAX_VALUE>1.00000000000000e+030</MAX_VALUE>
+        <UNITS>null</UNITS>
+       </RPARAM>
+       <RPARAM>
+        <SUB_ID>8</SUB_ID>
+        <TITLE>duration of stage 2</TITLE>
+        <VISIBILITY>(nstages == 2)||(nstages == 3)||(nstages == 4)||(nstages == 5)||(nstages == 6)||(nstages == 7)||(nstages == 8)</VISIBILITY>
+        <DEF_VALUE>1.00000000000000e+02</DEF_VALUE>
+        <VALUE>1.00000000000000e+02</VALUE>
+        <MIN_VALUE>0.00000000000000e+000</MIN_VALUE>
+        <MAX_VALUE>1.00000000000000e+030</MAX_VALUE>
+        <UNITS>s</UNITS>
+       </RPARAM>
+       <RPARAM>
+        <SUB_ID>9</SUB_ID>
+        <TITLE>output at start of stage 3</TITLE>
+        <VISIBILITY>(nstages == 3)||(nstages == 4)||(nstages == 5)||(nstages == 6)||(nstages == 7)||(nstages == 8)</VISIBILITY>
+        <DEF_VALUE>2.00000000000000e+01</DEF_VALUE>
+        <VALUE>2.00000000000000e+01</VALUE>
+        <MIN_VALUE>-1.00000000000000e+030</MIN_VALUE>
+        <MAX_VALUE>1.00000000000000e+030</MAX_VALUE>
+        <UNITS>null</UNITS>
+       </RPARAM>
+       <RPARAM>
+        <SUB_ID>10</SUB_ID>
+        <TITLE>output at end of stage 3</TITLE>
+        <VISIBILITY>(nstages == 3)||(nstages == 4)||(nstages == 5)||(nstages == 6)||(nstages == 7)||(nstages == 8)</VISIBILITY>
+        <DEF_VALUE>1.80000000000000e+01</DEF_VALUE>
+        <VALUE>1.80000000000000e+01</VALUE>
+        <MIN_VALUE>-1.00000000000000e+030</MIN_VALUE>
+        <MAX_VALUE>1.00000000000000e+030</MAX_VALUE>
+        <UNITS>null</UNITS>
+       </RPARAM>
+       <RPARAM>
+        <SUB_ID>11</SUB_ID>
+        <TITLE>duration of stage 3</TITLE>
+        <VISIBILITY>(nstages == 3)||(nstages == 4)||(nstages == 5)||(nstages == 6)||(nstages == 7)||(nstages == 8)</VISIBILITY>
+        <DEF_VALUE>2.50000000000000e+01</DEF_VALUE>
+        <VALUE>2.50000000000000e+01</VALUE>
+        <MIN_VALUE>0.00000000000000e+000</MIN_VALUE>
+        <MAX_VALUE>1.00000000000000e+030</MAX_VALUE>
+        <UNITS>s</UNITS>
+       </RPARAM>
+       <RPARAM>
+        <SUB_ID>12</SUB_ID>
+        <TITLE>output at start of stage 4</TITLE>
+        <VISIBILITY>(nstages == 4)||(nstages == 5)||(nstages == 6)||(nstages == 7)||(nstages == 8)</VISIBILITY>
+        <DEF_VALUE>1.80000000000000e+01</DEF_VALUE>
+        <VALUE>1.80000000000000e+01</VALUE>
+        <MIN_VALUE>-1.00000000000000e+030</MIN_VALUE>
+        <MAX_VALUE>1.00000000000000e+030</MAX_VALUE>
+        <UNITS>null</UNITS>
+       </RPARAM>
+       <RPARAM>
+        <SUB_ID>13</SUB_ID>
+        <TITLE>output at end of stage 4</TITLE>
+        <VISIBILITY>(nstages == 4)||(nstages == 5)||(nstages == 6)||(nstages == 7)||(nstages == 8)</VISIBILITY>
+        <DEF_VALUE>1.80000000000000e+01</DEF_VALUE>
+        <VALUE>1.80000000000000e+01</VALUE>
+        <MIN_VALUE>-1.00000000000000e+030</MIN_VALUE>
+        <MAX_VALUE>1.00000000000000e+030</MAX_VALUE>
+        <UNITS>null</UNITS>
+       </RPARAM>
+       <RPARAM>
+        <SUB_ID>14</SUB_ID>
+        <TITLE>duration of stage 4</TITLE>
+        <VISIBILITY>(nstages == 4)||(nstages == 5)||(nstages == 6)||(nstages == 7)||(nstages == 8)</VISIBILITY>
+        <DEF_VALUE>1.25000000000000e+02</DEF_VALUE>
+        <VALUE>1.25000000000000e+02</VALUE>
+        <MIN_VALUE>0.00000000000000e+000</MIN_VALUE>
+        <MAX_VALUE>1.00000000000000e+030</MAX_VALUE>
+        <UNITS>s</UNITS>
+       </RPARAM>
+       <RPARAM>
+        <SUB_ID>15</SUB_ID>
+        <TITLE>output at start of stage 5</TITLE>
+        <VISIBILITY>(nstages == 5)||(nstages == 6)||(nstages == 7)||(nstages == 8)</VISIBILITY>
+        <DEF_VALUE>1.80000000000000e+01</DEF_VALUE>
+        <VALUE>1.80000000000000e+01</VALUE>
+        <MIN_VALUE>-1.00000000000000e+030</MIN_VALUE>
+        <MAX_VALUE>1.00000000000000e+030</MAX_VALUE>
+        <UNITS>null</UNITS>
+       </RPARAM>
+       <RPARAM>
+        <SUB_ID>16</SUB_ID>
+        <TITLE>output at end of stage 5</TITLE>
+        <VISIBILITY>(nstages == 5)||(nstages == 6)||(nstages == 7)||(nstages == 8)</VISIBILITY>
+        <DEF_VALUE>2.20000000000000e+01</DEF_VALUE>
+        <VALUE>2.20000000000000e+01</VALUE>
+        <MIN_VALUE>-1.00000000000000e+030</MIN_VALUE>
+        <MAX_VALUE>1.00000000000000e+030</MAX_VALUE>
+        <UNITS>null</UNITS>
+       </RPARAM>
+       <RPARAM>
+        <SUB_ID>17</SUB_ID>
+        <TITLE>duration of stage 5</TITLE>
+        <VISIBILITY>(nstages == 5)||(nstages == 6)||(nstages == 7)||(nstages == 8)</VISIBILITY>
+        <DEF_VALUE>5.00000000000000e+01</DEF_VALUE>
+        <VALUE>5.00000000000000e+01</VALUE>
+        <MIN_VALUE>0.00000000000000e+000</MIN_VALUE>
+        <MAX_VALUE>1.00000000000000e+030</MAX_VALUE>
+        <UNITS>s</UNITS>
+       </RPARAM>
+       <RPARAM>
+        <SUB_ID>18</SUB_ID>
+        <TITLE>output at start of stage 6</TITLE>
+        <VISIBILITY>(nstages == 6)||(nstages == 7)||(nstages == 8)</VISIBILITY>
+        <DEF_VALUE>2.20000000000000e+01</DEF_VALUE>
+        <VALUE>2.20000000000000e+01</VALUE>
+        <MIN_VALUE>-1.00000000000000e+030</MIN_VALUE>
+        <MAX_VALUE>1.00000000000000e+030</MAX_VALUE>
+        <UNITS>null</UNITS>
+       </RPARAM>
+       <RPARAM>
+        <SUB_ID>19</SUB_ID>
+        <TITLE>output at end of stage 6</TITLE>
+        <VISIBILITY>(nstages == 6)||(nstages == 7)||(nstages == 8)</VISIBILITY>
+        <DEF_VALUE>2.20000000000000e+01</DEF_VALUE>
+        <VALUE>2.20000000000000e+01</VALUE>
+        <MIN_VALUE>-1.00000000000000e+030</MIN_VALUE>
+        <MAX_VALUE>1.00000000000000e+030</MAX_VALUE>
+        <UNITS>null</UNITS>
+       </RPARAM>
+       <RPARAM>
+        <SUB_ID>20</SUB_ID>
+        <TITLE>duration of stage 6</TITLE>
+        <VISIBILITY>(nstages == 6)||(nstages == 7)||(nstages == 8)</VISIBILITY>
+        <DEF_VALUE>1.50000000000000e+02</DEF_VALUE>
+        <VALUE>1.50000000000000e+02</VALUE>
+        <MIN_VALUE>0.00000000000000e+000</MIN_VALUE>
+        <MAX_VALUE>1.00000000000000e+030</MAX_VALUE>
+        <UNITS>s</UNITS>
+       </RPARAM>
+       <RPARAM>
+        <SUB_ID>21</SUB_ID>
+        <TITLE>output at start of stage 7</TITLE>
+        <VISIBILITY>(nstages == 7)||(nstages == 8)</VISIBILITY>
+        <DEF_VALUE>0.00000000000000e+00</DEF_VALUE>
+        <VALUE>0.00000000000000e+00</VALUE>
+        <MIN_VALUE>-1.00000000000000e+030</MIN_VALUE>
+        <MAX_VALUE>1.00000000000000e+030</MAX_VALUE>
+        <UNITS>null</UNITS>
+       </RPARAM>
+       <RPARAM>
+        <SUB_ID>22</SUB_ID>
+        <TITLE>output at end of stage 7</TITLE>
+        <VISIBILITY>(nstages == 7)||(nstages == 8)</VISIBILITY>
+        <DEF_VALUE>0.00000000000000e+00</DEF_VALUE>
+        <VALUE>0.00000000000000e+00</VALUE>
+        <MIN_VALUE>-1.00000000000000e+030</MIN_VALUE>
+        <MAX_VALUE>1.00000000000000e+030</MAX_VALUE>
+        <UNITS>null</UNITS>
+       </RPARAM>
+       <RPARAM>
+        <SUB_ID>23</SUB_ID>
+        <TITLE>duration of stage 7</TITLE>
+        <VISIBILITY>(nstages == 7)||(nstages == 8)</VISIBILITY>
+        <DEF_VALUE>1.00000000000000e+06</DEF_VALUE>
+        <VALUE>1.00000000000000e+06</VALUE>
+        <MIN_VALUE>0.00000000000000e+000</MIN_VALUE>
+        <MAX_VALUE>1.00000000000000e+030</MAX_VALUE>
+        <UNITS>s</UNITS>
+       </RPARAM>
+       <RPARAM>
+        <SUB_ID>24</SUB_ID>
+        <TITLE>output at start of stage 8</TITLE>
+        <VISIBILITY>(nstages == 8)</VISIBILITY>
+        <DEF_VALUE>0.00000000000000e+00</DEF_VALUE>
+        <VALUE>0.00000000000000e+00</VALUE>
+        <MIN_VALUE>-1.00000000000000e+030</MIN_VALUE>
+        <MAX_VALUE>1.00000000000000e+030</MAX_VALUE>
+        <UNITS>null</UNITS>
+       </RPARAM>
+       <RPARAM>
+        <SUB_ID>25</SUB_ID>
+        <TITLE>output at end of stage 8</TITLE>
+        <VISIBILITY>(nstages == 8)</VISIBILITY>
+        <DEF_VALUE>0.00000000000000e+00</DEF_VALUE>
+        <VALUE>0.00000000000000e+00</VALUE>
+        <MIN_VALUE>-1.00000000000000e+030</MIN_VALUE>
+        <MAX_VALUE>1.00000000000000e+030</MAX_VALUE>
+        <UNITS>null</UNITS>
+       </RPARAM>
+       <RPARAM>
+        <SUB_ID>26</SUB_ID>
+        <TITLE>duration of stage 8</TITLE>
+        <VISIBILITY>(nstages == 8)</VISIBILITY>
+        <DEF_VALUE>1.00000000000000e+06</DEF_VALUE>
+        <VALUE>1.00000000000000e+06</VALUE>
+        <MIN_VALUE>0.00000000000000e+000</MIN_VALUE>
+        <MAX_VALUE>1.00000000000000e+030</MAX_VALUE>
+        <UNITS>s</UNITS>
+       </RPARAM>
+      </RPARAMS_LIST>
+      <IPARAMS_LIST>
+       <IPARAM>
+        <SUB_ID>27</SUB_ID>
+        <TITLE>number of stages</TITLE>
+        <VARNAME>nstages</VARNAME>
+        <VISIBILITY>True</VISIBILITY>
+        <DEF_VALUE>6</DEF_VALUE>
+        <VALUE>6</VALUE>
+        <MIN_VALUE>1</MIN_VALUE>
+        <MAX_VALUE>8</MAX_VALUE>
+        <ENUM_LIST>
+         <ENUM>
+          <ENUM_STRING>1</ENUM_STRING>
+         </ENUM>
+         <ENUM>
+          <ENUM_STRING>2</ENUM_STRING>
+         </ENUM>
+         <ENUM>
+          <ENUM_STRING>3</ENUM_STRING>
+         </ENUM>
+         <ENUM>
+          <ENUM_STRING>4</ENUM_STRING>
+         </ENUM>
+         <ENUM>
+          <ENUM_STRING>5</ENUM_STRING>
+         </ENUM>
+         <ENUM>
+          <ENUM_STRING>6</ENUM_STRING>
+         </ENUM>
+         <ENUM>
+          <ENUM_STRING>7</ENUM_STRING>
+         </ENUM>
+         <ENUM>
+          <ENUM_STRING>8</ENUM_STRING>
+         </ENUM>
+        </ENUM_LIST>
+       </IPARAM>
+       <IPARAM>
+        <SUB_ID>28</SUB_ID>
+        <TITLE>cyclic</TITLE>
+        <VARNAME>iscyclic</VARNAME>
+        <VISIBILITY>True</VISIBILITY>
+        <DEF_VALUE>1</DEF_VALUE>
+        <VALUE>1</VALUE>
+        <MIN_VALUE>1</MIN_VALUE>
+        <MAX_VALUE>2</MAX_VALUE>
+        <ENUM_LIST>
+         <ENUM>
+          <ENUM_STRING>no</ENUM_STRING>
+         </ENUM>
+         <ENUM>
+          <ENUM_STRING>yes</ENUM_STRING>
+         </ENUM>
+        </ENUM_LIST>
+       </IPARAM>
+      </IPARAMS_LIST>
+      <EVARS_LIST>
+       <PORT>
+        <EVAR>
+         <SUB_ID>1</SUB_ID>
+         <TITLE>user defined duty cycle output</TITLE>
+         <VARNAME>output</VARNAME>
+         <VISIBILITY>True</VISIBILITY>
+         <TYPE>0</TYPE>
+         <SAVE_VALUE>1</SAVE_VALUE>
+         <DIMENSION>1</DIMENSION>
+         <IO>2</IO>
+         <UNITS>null</UNITS>
+        </EVAR>
+       </PORT>
+      </EVARS_LIST>
+     </SUBMODEL>
+    </COMP>
+    <COMP>
+     <ALIAS>splitter2p2</ALIAS>
+     <COMP_NAME>splitter2p2</COMP_NAME>
+     <COMP_DISPLAYNAME>splitter2p2</COMP_DISPLAYNAME>
+     <COMP_ICON_DESCRIPTION>signal duplication (alternative)</COMP_ICON_DESCRIPTION>
+     <COMP_LIBRARY_ID>sig.splitter2p2</COMP_LIBRARY_ID>
+     <COMP_POS>107 277</COMP_POS>
+     <COMP_DEPTH>-1</COMP_DEPTH>
+     <MAP>
+      #define ame_width 31
+      #define ame_height 31
+      static unsigned char ame_bits[] = {
+      0x00,0x80,0x00,0x00,0x00,0x80,0x00,0x00,0x00,0x80,0x00,0x00,0x00,0x80,0x00,
+      0x00,0x00,0xc0,0x01,0x00,0x00,0x40,0x01,0x00,0x00,0x20,0x02,0x00,0x00,0x20,
+      0x02,0x00,0x00,0xf0,0x07,0x00,0x00,0x80,0x00,0x00,0x00,0x80,0x00,0x00,0x00,
+      0x80,0x00,0x00,0x10,0x80,0x40,0x00,0x60,0x80,0xc0,0x01,0x80,0xc1,0x41,0x06,
+      0xff,0xff,0x7f,0x7c,0x80,0xc1,0x41,0x06,0x60,0x00,0xc0,0x01,0x10,0x00,0x40,
+      0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,
+      0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,
+      0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,
+      0x00,0x00,0x00,0x00
+      };
+     </MAP>
+     <COMP_SCALE_X>1.000000</COMP_SCALE_X>
+     <COMP_SCALE_Y>1.000000</COMP_SCALE_Y>
+     <COMP_GEOMETRY>1</COMP_GEOMETRY>
+     <COMP_PORTS_LIST>
+      <COMP_PORT>
+       <PORT_POS>31 16</PORT_POS>
+       <PORT_FACE>3</PORT_FACE>
+       <PORT_TYPE>signal</PORT_TYPE>
+       <PORT_NAME></PORT_NAME>
+       <PORT_DECORATION_VISIBLE>0</PORT_DECORATION_VISIBLE>
+       <PORT_DECORATION_ORIENTATION>0</PORT_DECORATION_ORIENTATION>
+       <PORT_DECORATION_BOUNDING_RECT>0 0 0 0</PORT_DECORATION_BOUNDING_RECT>
+       <PORT_CONNECT>1</PORT_CONNECT>
+       <CONNECT_LIST>
+        <CONNECT>
+         <CONNECT_ENTITY_NUM>6</CONNECT_ENTITY_NUM>
+         <CONNECT_ENTITY_PORT>1</CONNECT_ENTITY_PORT>
+        </CONNECT>
+       </CONNECT_LIST>
+      </COMP_PORT>
+      <COMP_PORT>
+       <PORT_POS>16 1</PORT_POS>
+       <PORT_FACE>0</PORT_FACE>
+       <PORT_TYPE>signal</PORT_TYPE>
+       <PORT_NAME></PORT_NAME>
+       <PORT_DECORATION_VISIBLE>0</PORT_DECORATION_VISIBLE>
+       <PORT_DECORATION_ORIENTATION>0</PORT_DECORATION_ORIENTATION>
+       <PORT_DECORATION_BOUNDING_RECT>0 0 0 0</PORT_DECORATION_BOUNDING_RECT>
+       <PORT_CONNECT>0</PORT_CONNECT>
+       <CONNECT_LIST>
+        <CONNECT>
+         <CONNECT_ENTITY_NUM>1</CONNECT_ENTITY_NUM>
+         <CONNECT_ENTITY_PORT>1</CONNECT_ENTITY_PORT>
+        </CONNECT>
+       </CONNECT_LIST>
+      </COMP_PORT>
+      <COMP_PORT>
+       <PORT_POS>1 16</PORT_POS>
+       <PORT_FACE>2</PORT_FACE>
+       <PORT_TYPE>signal</PORT_TYPE>
+       <PORT_NAME></PORT_NAME>
+       <PORT_DECORATION_VISIBLE>0</PORT_DECORATION_VISIBLE>
+       <PORT_DECORATION_ORIENTATION>0</PORT_DECORATION_ORIENTATION>
+       <PORT_DECORATION_BOUNDING_RECT>0 0 0 0</PORT_DECORATION_BOUNDING_RECT>
+       <PORT_CONNECT>1</PORT_CONNECT>
+       <CONNECT_LIST>
+        <CONNECT>
+         <CONNECT_ENTITY_NUM>4</CONNECT_ENTITY_NUM>
+         <CONNECT_ENTITY_PORT>0</CONNECT_ENTITY_PORT>
+        </CONNECT>
+       </CONNECT_LIST>
+      </COMP_PORT>
+     </COMP_PORTS_LIST>
+     <LABEL_POS>0 0 0 0</LABEL_POS>
+     <LABEL_VISIBLE>0</LABEL_VISIBLE>
+     <COMP_COPYPARAMS>1</COMP_COPYPARAMS>
+     <CIRCUIT_SCOPE_ID>40</CIRCUIT_SCOPE_ID>
+     <SUBMODEL>
+      <SUB_TYPE>0</SUB_TYPE>
+      <SUB_NAME>SPLT0</SUB_NAME>
+      <SUB_DIR>$AME/libsig/submodels</SUB_DIR>
+      <SUB_ID_MAX>3</SUB_ID_MAX>
+      <SUB_LABEL>splitter junction</SUB_LABEL>
+      <SUB_UNIT>0</SUB_UNIT>
+      <HAS_NO_CALC>1</HAS_NO_CALC>
+      <OUTPUT_TYPE>1</OUTPUT_TYPE>
+      <EVARS_LIST>
+       <PORT>
+        <EVAR>
+         <SUB_ID>1</SUB_ID>
+         <TITLE>input to junction</TITLE>
+         <VARNAME>out1</VARNAME>
+         <VISIBILITY>True</VISIBILITY>
+         <TYPE>4</TYPE>
+         <SAVE_VALUE>1</SAVE_VALUE>
+         <PRIMARY_PORT>2</PRIMARY_PORT>
+         <PRIMARY_VAR>0</PRIMARY_VAR>
+         <DUP_TYPE>0</DUP_TYPE>
+        </EVAR>
+       </PORT>
+       <PORT>
+        <EVAR>
+         <SUB_ID>2</SUB_ID>
+         <TITLE>input to junction</TITLE>
+         <VARNAME>out2</VARNAME>
+         <VISIBILITY>True</VISIBILITY>
+         <TYPE>4</TYPE>
+         <SAVE_VALUE>1</SAVE_VALUE>
+         <PRIMARY_PORT>2</PRIMARY_PORT>
+         <PRIMARY_VAR>0</PRIMARY_VAR>
+         <DUP_TYPE>0</DUP_TYPE>
+        </EVAR>
+       </PORT>
+       <PORT>
+        <EVAR>
+         <SUB_ID>3</SUB_ID>
+         <TITLE>input to junction</TITLE>
+         <VARNAME>in3</VARNAME>
+         <VISIBILITY>True</VISIBILITY>
+         <TYPE>0</TYPE>
+         <SAVE_VALUE>1</SAVE_VALUE>
+         <DIMENSION>1</DIMENSION>
+         <IO>1</IO>
+         <UNITS>null</UNITS>
+        </EVAR>
+       </PORT>
+      </EVARS_LIST>
+     </SUBMODEL>
+    </COMP>
+    <COMP>
+     <ALIAS>limitedintegrator</ALIAS>
+     <COMP_NAME>limitedintegrator</COMP_NAME>
+     <COMP_DISPLAYNAME>limitedintegrator</COMP_DISPLAYNAME>
+     <COMP_ICON_DESCRIPTION>limited integrator</COMP_ICON_DESCRIPTION>
+     <COMP_LIBRARY_ID>sig.limitedintegrator</COMP_LIBRARY_ID>
+     <COMP_POS>138 277</COMP_POS>
+     <COMP_DEPTH>-1</COMP_DEPTH>
+     <MAP>
+      #define ame_width 49
+      #define ame_height 31
+      static unsigned char ame_bits[] = {
+      0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0xff,0xff,0xff,0xff,0x01,0x00,0x00,
+      0x01,0x00,0x00,0x00,0x01,0x00,0x00,0x01,0x00,0x00,0x00,0x01,0x00,0x00,0x01,
+      0x00,0x00,0x00,0x01,0x00,0x00,0x01,0x00,0x00,0x00,0x01,0x00,0x00,0x81,0x00,
+      0x00,0x00,0x01,0x00,0x00,0x81,0x00,0x00,0x3c,0x01,0x00,0x00,0x81,0x04,0x00,
+      0x04,0x01,0x00,0x00,0x81,0x02,0x00,0x02,0x01,0x00,0x00,0x81,0x01,0x00,0x02,
+      0x01,0x00,0x00,0x81,0x02,0x00,0x01,0x01,0x00,0x04,0x81,0x04,0x00,0x01,0x03,
+      0x00,0x18,0x01,0x00,0x80,0x00,0x0d,0x00,0x60,0x01,0x00,0x80,0x00,0x31,0x00,
+      0xff,0xf9,0x7f,0x40,0x00,0xe1,0x01,0x60,0x01,0x00,0x40,0x00,0x31,0x00,0x18,
+      0x01,0x00,0x20,0x00,0x0d,0x00,0x04,0x01,0x03,0x20,0x00,0x03,0x00,0x00,0x81,
+      0x04,0x10,0x00,0x01,0x00,0x00,0x81,0x00,0x10,0x00,0x01,0x00,0x00,0x01,0x03,
+      0x08,0x00,0x01,0x00,0x00,0x01,0x84,0x0f,0x00,0x01,0x00,0x00,0x81,0x04,0x00,
+      0x00,0x01,0x00,0x00,0x01,0x03,0x00,0x00,0x01,0x00,0x00,0x01,0x00,0x00,0x00,
+      0x01,0x00,0x00,0x01,0x00,0x00,0x00,0x01,0x00,0x00,0x01,0x00,0x00,0x00,0x01,
+      0x00,0x00,0x01,0x00,0x00,0x00,0x01,0x00,0x00,0xff,0xff,0xff,0xff,0x01,0x00,
+      0x00,0x00,0x00,0x00,0x00,0x00,0x00
+      };
+     </MAP>
+     <COMP_SCALE_X>1.000000</COMP_SCALE_X>
+     <COMP_SCALE_Y>1.000000</COMP_SCALE_Y>
+     <COMP_GEOMETRY>1</COMP_GEOMETRY>
+     <COMP_PORTS_LIST>
+      <COMP_PORT>
+       <PORT_POS>49 16</PORT_POS>
+       <PORT_FACE>3</PORT_FACE>
+       <PORT_TYPE>signal</PORT_TYPE>
+       <PORT_NAME></PORT_NAME>
+       <PORT_DECORATION_VISIBLE>0</PORT_DECORATION_VISIBLE>
+       <PORT_DECORATION_ORIENTATION>0</PORT_DECORATION_ORIENTATION>
+       <PORT_DECORATION_BOUNDING_RECT>0 0 0 0</PORT_DECORATION_BOUNDING_RECT>
+       <PORT_CONNECT>0</PORT_CONNECT>
+       <CONNECT_LIST>
+        <CONNECT>
+         <CONNECT_ENTITY_NUM>4</CONNECT_ENTITY_NUM>
+         <CONNECT_ENTITY_PORT>0</CONNECT_ENTITY_PORT>
+        </CONNECT>
+       </CONNECT_LIST>
+      </COMP_PORT>
+      <COMP_PORT>
+       <PORT_POS>1 16</PORT_POS>
+       <PORT_FACE>2</PORT_FACE>
+       <PORT_TYPE>signal</PORT_TYPE>
+       <PORT_NAME></PORT_NAME>
+       <PORT_DECORATION_VISIBLE>0</PORT_DECORATION_VISIBLE>
+       <PORT_DECORATION_ORIENTATION>0</PORT_DECORATION_ORIENTATION>
+       <PORT_DECORATION_BOUNDING_RECT>0 0 0 0</PORT_DECORATION_BOUNDING_RECT>
+       <PORT_CONNECT>1</PORT_CONNECT>
+       <CONNECT_LIST>
+        <CONNECT>
+         <CONNECT_ENTITY_NUM>5</CONNECT_ENTITY_NUM>
+         <CONNECT_ENTITY_PORT>0</CONNECT_ENTITY_PORT>
+        </CONNECT>
+       </CONNECT_LIST>
+      </COMP_PORT>
+     </COMP_PORTS_LIST>
+     <LABEL_POS>0 0 0 0</LABEL_POS>
+     <LABEL_VISIBLE>0</LABEL_VISIBLE>
+     <COMP_COPYPARAMS>1</COMP_COPYPARAMS>
+     <CIRCUIT_SCOPE_ID>41</CIRCUIT_SCOPE_ID>
+     <SUBMODEL>
+      <SUB_TYPE>0</SUB_TYPE>
+      <SUB_NAME>LINT0</SUB_NAME>
+      <SUB_DIR>$AME/libsig/submodels</SUB_DIR>
+      <SUB_ID_MAX>5</SUB_ID_MAX>
+      <SUB_LABEL>limited integrator</SUB_LABEL>
+      <SUB_UNIT>1</SUB_UNIT>
+      <I_STORES_NUMBER>1</I_STORES_NUMBER>
+      <DISCONTINUITY>1</DISCONTINUITY>
+      <OUTPUT_TYPE>0</OUTPUT_TYPE>
+      <RPARAMS_LIST>
+       <RPARAM>
+        <SUB_ID>3</SUB_ID>
+        <TITLE>integrator gain</TITLE>
+        <VARNAME>gain</VARNAME>
+        <VISIBILITY>True</VISIBILITY>
+        <DEF_VALUE>1.00000000000000e+00</DEF_VALUE>
+        <VALUE>1.00000000000000e+00</VALUE>
+        <MIN_VALUE>-1.00000000000000e+030</MIN_VALUE>
+        <MAX_VALUE>1.00000000000000e+030</MAX_VALUE>
+        <UNITS>null</UNITS>
+       </RPARAM>
+       <RPARAM>
+        <SUB_ID>4</SUB_ID>
+        <TITLE>minimum permitted output value</TITLE>
+        <VARNAME>smin</VARNAME>
+        <VISIBILITY>True</VISIBILITY>
+        <DEF_VALUE>0.00000000000000e+00</DEF_VALUE>
+        <VALUE>0.00000000000000e+00</VALUE>
+        <MIN_VALUE>-1.00000000000000e+030</MIN_VALUE>
+        <MAX_VALUE>1.00000000000000e+030</MAX_VALUE>
+        <UNITS>null</UNITS>
+       </RPARAM>
+       <RPARAM>
+        <SUB_ID>5</SUB_ID>
+        <TITLE>maximum permitted output value</TITLE>
+        <VARNAME>smax</VARNAME>
+        <VISIBILITY>True</VISIBILITY>
+        <DEF_VALUE>1.00000000000000e+00</DEF_VALUE>
+        <VALUE>1.00000000000000e+00</VALUE>
+        <MIN_VALUE>-1.00000000000000e+030</MIN_VALUE>
+        <MAX_VALUE>1.00000000000000e+030</MAX_VALUE>
+        <UNITS>null</UNITS>
+       </RPARAM>
+      </RPARAMS_LIST>
+      <EVARS_LIST>
+       <PORT>
+        <EVAR>
+         <SUB_ID>1</SUB_ID>
+         <TITLE>integrator output</TITLE>
+         <VARNAME>output</VARNAME>
+         <VARNAME2>dout</VARNAME2>
+         <VISIBILITY>True</VISIBILITY>
+         <TYPE>1</TYPE>
+         <SAVE_VALUE>1</SAVE_VALUE>
+         <DIMENSION>1</DIMENSION>
+         <IO>2</IO>
+         <UNITS>null</UNITS>
+         <MIN_VALUE>-1.00000000000000e+030</MIN_VALUE>
+         <MAX_VALUE>1.00000000000000e+030</MAX_VALUE>
+         <DEF_VALUE>0.00000000000000e+000</DEF_VALUE>
+         <VALUE>0.00000000000000e+000</VALUE>
+        </EVAR>
+       </PORT>
+       <PORT>
+        <EVAR>
+         <SUB_ID>2</SUB_ID>
+         <TITLE>integrator input</TITLE>
+         <VARNAME>input</VARNAME>
+         <VISIBILITY>True</VISIBILITY>
+         <TYPE>0</TYPE>
+         <SAVE_VALUE>1</SAVE_VALUE>
+         <DIMENSION>1</DIMENSION>
+         <IO>1</IO>
+         <UNITS>null</UNITS>
+        </EVAR>
+       </PORT>
+      </EVARS_LIST>
+     </SUBMODEL>
+    </COMP>
+    <COMP>
+     <ALIAS>splitter2p2_1</ALIAS>
+     <COMP_NAME>splitter2p2</COMP_NAME>
+     <COMP_DISPLAYNAME>splitter2p2</COMP_DISPLAYNAME>
+     <COMP_ICON_DESCRIPTION>signal duplication (alternative)</COMP_ICON_DESCRIPTION>
+     <COMP_LIBRARY_ID>sig.splitter2p2</COMP_LIBRARY_ID>
+     <COMP_POS>123 224</COMP_POS>
+     <COMP_DEPTH>-1</COMP_DEPTH>
+     <MAP>
+      #define ame_width 31
+      #define ame_height 31
+      static unsigned char ame_bits[] = {
+      0x00,0x80,0x00,0x00,0x00,0x80,0x00,0x00,0x00,0x80,0x00,0x00,0x00,0x80,0x00,
+      0x00,0x00,0xc0,0x01,0x00,0x00,0x40,0x01,0x00,0x00,0x20,0x02,0x00,0x00,0x20,
+      0x02,0x00,0x00,0xf0,0x07,0x00,0x00,0x80,0x00,0x00,0x00,0x80,0x00,0x00,0x00,
+      0x80,0x00,0x00,0x10,0x80,0x40,0x00,0x60,0x80,0xc0,0x01,0x80,0xc1,0x41,0x06,
+      0xff,0xff,0x7f,0x7c,0x80,0xc1,0x41,0x06,0x60,0x00,0xc0,0x01,0x10,0x00,0x40,
+      0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,
+      0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,
+      0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,
+      0x00,0x00,0x00,0x00
+      };
+     </MAP>
+     <COMP_SCALE_X>1.000000</COMP_SCALE_X>
+     <COMP_SCALE_Y>1.000000</COMP_SCALE_Y>
+     <COMP_GEOMETRY>1</COMP_GEOMETRY>
+     <COMP_PORTS_LIST>
+      <COMP_PORT>
+       <PORT_POS>31 16</PORT_POS>
+       <PORT_FACE>3</PORT_FACE>
+       <PORT_TYPE>signal</PORT_TYPE>
+       <PORT_NAME></PORT_NAME>
+       <PORT_DECORATION_VISIBLE>0</PORT_DECORATION_VISIBLE>
+       <PORT_DECORATION_ORIENTATION>0</PORT_DECORATION_ORIENTATION>
+       <PORT_DECORATION_BOUNDING_RECT>0 0 0 0</PORT_DECORATION_BOUNDING_RECT>
+       <PORT_CONNECT>1</PORT_CONNECT>
+       <CONNECT_LIST>
+        <CONNECT>
+         <CONNECT_ENTITY_NUM>8</CONNECT_ENTITY_NUM>
+         <CONNECT_ENTITY_PORT>0</CONNECT_ENTITY_PORT>
+        </CONNECT>
+       </CONNECT_LIST>
+      </COMP_PORT>
+      <COMP_PORT>
+       <PORT_POS>16 1</PORT_POS>
+       <PORT_FACE>0</PORT_FACE>
+       <PORT_TYPE>signal</PORT_TYPE>
+       <PORT_NAME></PORT_NAME>
+       <PORT_DECORATION_VISIBLE>0</PORT_DECORATION_VISIBLE>
+       <PORT_DECORATION_ORIENTATION>0</PORT_DECORATION_ORIENTATION>
+       <PORT_DECORATION_BOUNDING_RECT>0 0 0 0</PORT_DECORATION_BOUNDING_RECT>
+       <PORT_CONNECT>0</PORT_CONNECT>
+       <CONNECT_LIST>
+        <CONNECT>
+         <CONNECT_ENTITY_NUM>0</CONNECT_ENTITY_NUM>
+         <CONNECT_ENTITY_PORT>1</CONNECT_ENTITY_PORT>
+        </CONNECT>
+       </CONNECT_LIST>
+      </COMP_PORT>
+      <COMP_PORT>
+       <PORT_POS>1 16</PORT_POS>
+       <PORT_FACE>2</PORT_FACE>
+       <PORT_TYPE>signal</PORT_TYPE>
+       <PORT_NAME></PORT_NAME>
+       <PORT_DECORATION_VISIBLE>0</PORT_DECORATION_VISIBLE>
+       <PORT_DECORATION_ORIENTATION>0</PORT_DECORATION_ORIENTATION>
+       <PORT_DECORATION_BOUNDING_RECT>0 0 0 0</PORT_DECORATION_BOUNDING_RECT>
+       <PORT_CONNECT>1</PORT_CONNECT>
+       <CONNECT_LIST>
+        <CONNECT>
+         <CONNECT_ENTITY_NUM>3</CONNECT_ENTITY_NUM>
+         <CONNECT_ENTITY_PORT>0</CONNECT_ENTITY_PORT>
+        </CONNECT>
+       </CONNECT_LIST>
+      </COMP_PORT>
+     </COMP_PORTS_LIST>
+     <LABEL_POS>0 0 0 0</LABEL_POS>
+     <LABEL_VISIBLE>0</LABEL_VISIBLE>
+     <COMP_COPYPARAMS>1</COMP_COPYPARAMS>
+     <CIRCUIT_SCOPE_ID>15</CIRCUIT_SCOPE_ID>
+     <SUBMODEL>
+      <SUB_TYPE>0</SUB_TYPE>
+      <SUB_NAME>SPLT0</SUB_NAME>
+      <SUB_DIR>$AME/libsig/submodels</SUB_DIR>
+      <SUB_ID_MAX>3</SUB_ID_MAX>
+      <SUB_LABEL>splitter junction</SUB_LABEL>
+      <SUB_UNIT>0</SUB_UNIT>
+      <HAS_NO_CALC>1</HAS_NO_CALC>
+      <OUTPUT_TYPE>1</OUTPUT_TYPE>
+      <EVARS_LIST>
+       <PORT>
+        <EVAR>
+         <SUB_ID>1</SUB_ID>
+         <TITLE>input to junction</TITLE>
+         <VARNAME>out1</VARNAME>
+         <VISIBILITY>True</VISIBILITY>
+         <TYPE>4</TYPE>
+         <SAVE_VALUE>1</SAVE_VALUE>
+         <PRIMARY_PORT>2</PRIMARY_PORT>
+         <PRIMARY_VAR>0</PRIMARY_VAR>
+         <DUP_TYPE>0</DUP_TYPE>
+        </EVAR>
+       </PORT>
+       <PORT>
+        <EVAR>
+         <SUB_ID>2</SUB_ID>
+         <TITLE>input to junction</TITLE>
+         <VARNAME>out2</VARNAME>
+         <VISIBILITY>True</VISIBILITY>
+         <TYPE>4</TYPE>
+         <SAVE_VALUE>1</SAVE_VALUE>
+         <PRIMARY_PORT>2</PRIMARY_PORT>
+         <PRIMARY_VAR>0</PRIMARY_VAR>
+         <DUP_TYPE>0</DUP_TYPE>
+        </EVAR>
+       </PORT>
+       <PORT>
+        <EVAR>
+         <SUB_ID>3</SUB_ID>
+         <TITLE>input to junction</TITLE>
+         <VARNAME>in3</VARNAME>
+         <VISIBILITY>True</VISIBILITY>
+         <TYPE>0</TYPE>
+         <SAVE_VALUE>1</SAVE_VALUE>
+         <DIMENSION>1</DIMENSION>
+         <IO>1</IO>
+         <UNITS>null</UNITS>
+        </EVAR>
+       </PORT>
+      </EVARS_LIST>
+     </SUBMODEL>
+    </COMP>
+    <COMP>
+     <ALIAS>signalsink</ALIAS>
+     <COMP_NAME>signalsink</COMP_NAME>
+     <COMP_DISPLAYNAME>signalsink</COMP_DISPLAYNAME>
+     <COMP_ICON_DESCRIPTION>general signal sink</COMP_ICON_DESCRIPTION>
+     <COMP_LIBRARY_ID>sig.signalsink</COMP_LIBRARY_ID>
+     <COMP_POS>154 235</COMP_POS>
+     <COMP_DEPTH>-1</COMP_DEPTH>
+     <MAP>
+      #define ame_width 9
+      #define ame_height 9
+      static unsigned char ame_bits[] = {
+      0x80,0x01,0x88,0x01,0xb0,0x01,0xc0,0x01,0xff,0x01,0xc0,0x01,0xb0,0x01,0x88,
+      0x01,0x80,0x01
+      };
+     </MAP>
+     <COMP_SCALE_X>1.000000</COMP_SCALE_X>
+     <COMP_SCALE_Y>1.000000</COMP_SCALE_Y>
+     <COMP_GEOMETRY>1</COMP_GEOMETRY>
+     <COMP_PORTS_LIST>
+      <COMP_PORT>
+       <PORT_POS>1 5</PORT_POS>
+       <PORT_FACE>2</PORT_FACE>
+       <PORT_TYPE>signal</PORT_TYPE>
+       <PORT_NAME></PORT_NAME>
+       <PORT_DECORATION_VISIBLE>0</PORT_DECORATION_VISIBLE>
+       <PORT_DECORATION_ORIENTATION>0</PORT_DECORATION_ORIENTATION>
+       <PORT_DECORATION_BOUNDING_RECT>0 0 0 0</PORT_DECORATION_BOUNDING_RECT>
+       <PORT_CONNECT>1</PORT_CONNECT>
+       <CONNECT_LIST>
+        <CONNECT>
+         <CONNECT_ENTITY_NUM>7</CONNECT_ENTITY_NUM>
+         <CONNECT_ENTITY_PORT>0</CONNECT_ENTITY_PORT>
+        </CONNECT>
+       </CONNECT_LIST>
+      </COMP_PORT>
+     </COMP_PORTS_LIST>
+     <LABEL_POS>0 0 0 0</LABEL_POS>
+     <LABEL_VISIBLE>0</LABEL_VISIBLE>
+     <COMP_COPYPARAMS>1</COMP_COPYPARAMS>
+     <CIRCUIT_SCOPE_ID>44</CIRCUIT_SCOPE_ID>
+     <SUBMODEL>
+      <SUB_TYPE>0</SUB_TYPE>
+      <SUB_NAME>SSINK</SUB_NAME>
+      <SUB_DIR>$AME/libsig/submodels</SUB_DIR>
+      <SUB_ID_MAX>1</SUB_ID_MAX>
+      <SUB_LABEL>plug for signal port</SUB_LABEL>
+      <SUB_UNIT>1</SUB_UNIT>
+      <HAS_NO_CALC>1</HAS_NO_CALC>
+      <OUTPUT_TYPE>1</OUTPUT_TYPE>
+      <EVARS_LIST>
+       <PORT>
+        <EVAR>
+         <SUB_ID>1</SUB_ID>
+         <TITLE>signal input</TITLE>
+         <VARNAME>sink</VARNAME>
+         <VISIBILITY>True</VISIBILITY>
+         <TYPE>0</TYPE>
+         <SAVE_VALUE>1</SAVE_VALUE>
+         <DIMENSION>1</DIMENSION>
+         <IO>1</IO>
+         <UNITS>null</UNITS>
+        </EVAR>
+       </PORT>
+      </EVARS_LIST>
+     </SUBMODEL>
+    </COMP>
+   </COMPS_LIST>
+   <ANIMATION_PROPERTIES>
+    <SPEED>1.00000000000000e+000</SPEED>
+    <LOOP>0</LOOP>
+   </ANIMATION_PROPERTIES>
+  </CIRCUIT>
+ </SUPERCOMPONENT>
+</SUB>
